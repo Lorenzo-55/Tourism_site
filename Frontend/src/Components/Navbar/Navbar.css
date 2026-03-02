@@ -1,0 +1,217 @@
+/* src/components/NavBar/NavBar.css */
+
+:root {
+  --nav-bg: #ffffff;
+  --nav-text: #111111;
+  --nav-muted: #6b7280;
+  --nav-border: rgba(17, 17, 17, 0.08);
+  --nav-accent: #d46a00; /* warm orange */
+  --nav-teal: #0aa6a6;   /* teal accent */
+  --nav-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --radius: 14px;
+}
+
+.nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  transform: translateY(0);
+  transition: transform 240ms ease;
+}
+
+.nav-hidden {
+  transform: translateY(-110%);
+}
+
+.nav {
+  height: 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--nav-text);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.nav-brand-text {
+  font-size: 20px;
+  line-height: 1;
+  color: var(--nav-accent);
+}
+
+.nav-mark {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+}
+
+.mark-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--nav-accent);
+  top: 2px;
+  left: 6px;
+}
+
+.mark-swoosh {
+  position: absolute;
+  width: 30px;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--nav-teal), rgba(10, 166, 166, 0.0));
+  bottom: 3px;
+  left: 2px;
+  transform: rotate(-18deg);
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-link {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--nav-text);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background: rgba(17, 17, 17, 0.05);
+}
+
+.nav-caret {
+  margin-left: 6px;
+  font-size: 12px;
+  color: var(--nav-muted);
+}
+
+.nav-dd {
+  position: relative;
+}
+
+.nav-dd-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dd-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 220px;
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-border);
+  border-radius: var(--radius);
+  box-shadow: var(--nav-shadow);
+  padding: 10px;
+  display: none;
+}
+
+/* .nav-dd.open .nav-dd-menu,
+.nav-dd:hover .nav-dd-menu {
+  display: block;
+} */
+
+/* open when hovered OR when the button is focused (keyboard) OR when React sets .open */
+.nav-dd:hover .nav-dd-menu,
+.nav-dd:focus-within .nav-dd-menu,
+.nav-dd.open .nav-dd-menu {
+  display: block;
+}
+
+/* keep a small invisible “hover bridge” so the pointer can move from button -> menu */
+.nav-dd-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 10px;
+}
+
+/* make sure menu sits above other stuff */
+.nav-dd-menu {
+  z-index: 100;
+}
+
+.nav-dd-item {
+  display: block;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--nav-text);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-dd-item:hover {
+  background: rgba(17, 17, 17, 0.06);
+}
+
+.nav-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--nav-border);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: #fff;
+}
+
+.nav-search-icon {
+  color: var(--nav-muted);
+  font-size: 14px;
+}
+
+.nav-search-input {
+  border: none;
+  outline: none;
+  width: 160px;
+  font-size: 14px;
+  color: var(--nav-text);
+}
+
+.nav-search-input::placeholder {
+  color: var(--nav-muted);
+}
+
+/* Simple responsiveness */
+@media (max-width: 900px) {
+  .nav-center {
+    display: none; /* keep it simple; add mobile menu later */
+  }
+  .nav-search-input {
+    width: 120px;
+  }
+}
