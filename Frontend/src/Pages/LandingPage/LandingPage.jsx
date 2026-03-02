@@ -1,6 +1,8 @@
 // src/pages/LandingPage/LandingPage.jsx
 import { useEffect, useMemo, useState } from "react";
 import NavBar from "../../Components/Navbar/Navbar.jsx";
+import MapSection from "../../Components/MapSection/MapSection";
+import Footer from "../../Components/Footer/Footer";
 import "./LandingPage.css";
 
 
@@ -163,6 +165,8 @@ export default function Landing() {
       <HeroSlider />
       <AboutSection />
       <StaySection />
+      <MapSection />
+      <Footer />
     </div>
   );
 }

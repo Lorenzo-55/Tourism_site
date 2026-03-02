@@ -1,0 +1,92 @@
+/* src/Components/Footer/Footer.css */
+
+.footer {
+  background: #111111;
+  color: #ffffff;
+  padding: 80px 0 30px;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 80px;
+}
+
+/* Left side */
+.footer-brand {
+  max-width: 380px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Right side */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.footer-column a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
