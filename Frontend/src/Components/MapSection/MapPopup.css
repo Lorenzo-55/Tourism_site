@@ -1,0 +1,47 @@
+/* src/Components/MapSection/MapPopup.css */
+.map-popup {
+  position: absolute;
+  transform: translate(10px, -100%); /* offset to the right of the pin */
+  width: 220px;
+  background: rgba(10, 16, 24, 0.92);
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+  z-index: 5;
+}
+
+.map-popup-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.map-popup-body {
+  cursor: pointer;
+  padding-right: 18px;
+}
+
+.map-popup-title {
+  margin: 0 0 6px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.map-popup-summary {
+  margin: 0 0 8px;
+  font-size: 12px;
+  opacity: 0.9;
+  line-height: 1.35;
+}
+
+.map-popup-cta {
+  font-size: 12px;
+  opacity: 0.95;
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+/* src/Components/MapSection/MapMarker.css */
+.map-marker {
+  position: absolute;
+  transform: translate(-50%, -100%); /* anchor to bottom center */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.map-marker-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  display: block;
+  background: #f4d03f; /* tweak to match your palette */
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.25);
+}
+
+.map-marker.active .map-marker-dot {
+  transform: scale(1.15);
+}

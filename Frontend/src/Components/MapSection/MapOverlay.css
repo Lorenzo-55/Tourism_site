@@ -1,0 +1,14 @@
+/* src/Components/MapSection/MapOverlay.css */
+.map-stage {
+  position: relative;
+  width: 100%;
+  max-width: 520px; /* optional */
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none; /* markers handle clicks */
+}

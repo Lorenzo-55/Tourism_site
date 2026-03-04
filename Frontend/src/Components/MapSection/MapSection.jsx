@@ -1,18 +1,15 @@
 // src/Components/MapSection/MapSection.jsx
 import "./MapSection.css";
+import MapOverlay from "./MapOverlay";
+import { locations } from "../../Data/Location";
 
 export default function MapSection() {
   return (
     <section className="map-section">
       <div className="map-container">
-        {/* Left Side – Map Image */}
+        {/* Left Side – Map Image + Interactive Overlay */}
         <div className="map-image-wrap">
-          {/* Replace with your real image */}
-          <img
-            src="/Map.PNG"
-            alt="Map of Sri Lanka"
-            className="map-image"
-          />
+          <MapOverlay imageSrc="/Map.PNG" locations={locations} />
         </div>
 
         {/* Right Side – Text Content */}
@@ -30,7 +27,7 @@ export default function MapSection() {
             gems waiting to be explored. Your journey begins here.
           </p>
 
-          <a href="#" className="map-button">
+          <a href="#places" className="map-button">
             START EXPLORING
           </a>
         </div>
