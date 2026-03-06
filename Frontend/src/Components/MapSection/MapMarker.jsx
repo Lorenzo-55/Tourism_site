@@ -1,4 +1,6 @@
 // src/Components/MapSection/MapMarker.jsx
+import { CiLocationOn } from "react-icons/ci";
+import { FaLocationDot } from "react-icons/fa6";
 import "./MapMarker.css";
 
 export default function MapMarker({ x, y, label, isActive, onClick }) {
@@ -11,7 +13,8 @@ export default function MapMarker({ x, y, label, isActive, onClick }) {
       aria-label={`Open info for ${label}`}
       title={label}
     >
-      <span className="map-marker-dot" />
+      <CiLocationOn className="marker-icon default-icon" />
+      <FaLocationDot className="marker-icon hover-icon" />
     </button>
   );
 }

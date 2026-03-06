@@ -9,7 +9,7 @@ export default function MapSection() {
       <div className="map-container">
         {/* Left Side – Map Image + Interactive Overlay */}
         <div className="map-image-wrap">
-          <MapOverlay imageSrc="/Map.PNG" locations={locations} />
+          <MapOverlay imageSrc={`${import.meta.env.BASE_URL}Map.PNG`} locations={locations} />
         </div>
 
         {/* Right Side – Text Content */}

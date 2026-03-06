@@ -9,9 +9,9 @@ import "./LandingPage.css";
 function HeroSlider() {
   const slides = useMemo(
     () => [
-      { src: "/images2.jpg", alt: "Sri Lanka coast" },
-      { src: "/images4.avif", alt: "Tea hills" },
-      { src: "/images5.jpg", alt: "Temple & heritage" },
+    { src: `${import.meta.env.BASE_URL}images2.jpg`, alt: "Sri Lanka coast" },
+    { src: `${import.meta.env.BASE_URL}images4.avif`, alt: "Tea hills" },
+    { src: `${import.meta.env.BASE_URL}images5.jpg`, alt: "Temple & heritage" },
     ],
     []
   );

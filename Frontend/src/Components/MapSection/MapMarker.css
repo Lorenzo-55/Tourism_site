@@ -1,22 +1,45 @@
 /* src/Components/MapSection/MapMarker.css */
+
 .map-marker {
   position: absolute;
-  transform: translate(-50%, -100%); /* anchor to bottom center */
+  transform: translate(-50%, -100%);
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
 }
 
-.map-marker-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  display: block;
-  background: #f4d03f; /* tweak to match your palette */
-  box-shadow: 0 0 0 3px rgba(0,0,0,0.25);
+/* both icons sit on top of each other */
+.marker-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  transition: color 0.35s ease, opacity 0.35s ease;
 }
 
-.map-marker.active .map-marker-dot {
-  transform: scale(1.15);
+/* large default icon */
+.default-icon {
+  font-size: 28px;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* smaller icon that appears on hover */
+.hover-icon {
+  font-size: 22px;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* when hovered or active */
+.map-marker:hover .default-icon,
+.map-marker.active .default-icon {
+  color: #ffffff; /* turns yellow */
+}
+
+.map-marker:hover .hover-icon,
+.map-marker.active .hover-icon {
+  opacity: 1; /* small icon appears */
 }
