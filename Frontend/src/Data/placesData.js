@@ -1,271 +1,454 @@
-// src/data/placesData.js
-
-const base = import.meta.env.BASE_URL;
-
 export const placesData = [
   {
-    slug: "colombo",
     name: "Colombo",
+    slug: "colombo",
     kicker: "Commercial Capital",
-    heroImage: `${base}images2.jpg`,
+    heroImage: "/images/colombo/hero.jpg",
     summary:
-      "Colombo is Sri Lanka’s commercial capital, where colonial history, busy markets, religious landmarks, and a fast-changing skyline meet the Indian Ocean.",
-    quickFacts: [
-      { label: "Province", value: "Western Province" },
-      { label: "Best For", value: "History, city life, culture, food" },
-      { label: "Vibe", value: "Urban, coastal, multicultural" },
-      { label: "Ideal Stay", value: "2–3 days" },
+      "Colombo is Sri Lanka’s commercial capital, where colonial history, markets, museums, food, and modern city life all meet.",
+    tags: [
+      "commercial capital",
+      "colonial history",
+      "museums",
+      "markets",
+      "nightlife",
+      "nearby beach access",
     ],
 
-    history: [
+    quickFacts: [
+      { label: "Province", value: "Western" },
+      { label: "Best known for", value: "Business, history, shopping" },
+      { label: "Nearest airport", value: "Bandaranaike International Airport" },
+      { label: "Ideal stay", value: "2–3 days" },
+    ],
+
+    overview: [
       {
-        title: "Ancient Trading Port",
-        body:
-          "Colombo has been connected to regional and global trade for over 2,000 years. Its natural harbor attracted Roman, Arab, and Chinese traders long before colonial rule.",
+        title: "Today / Vibe",
+        text: "Fast-moving, urban, layered, and full of contrasts between old and new.",
       },
       {
-        title: "Portuguese Period",
-        body:
-          "The Portuguese established an early fort and trading presence, using Colombo as a strategic base for trade and military control along the coast.",
+        title: "Historical Importance",
+        text: "A major Indian Ocean port shaped by Portuguese, Dutch, and British rule.",
       },
       {
-        title: "Dutch Period",
-        body:
-          "The Dutch rebuilt and expanded Colombo’s fortifications, laid out parts of the city grid, and shaped the urban structure of areas like Pettah and Fort.",
-      },
-      {
-        title: "British Period",
-        body:
-          "Under British rule, Colombo grew into the island’s main administrative and commercial center, with railways, harbor development, civic buildings, and new suburbs.",
-      },
-      {
-        title: "Today",
-        body:
-          "Today Colombo is Sri Lanka’s financial and commercial center, blending colonial landmarks, modern towers, religious diversity, and a lively urban atmosphere.",
+        title: "Best For",
+        text: "Museums, architecture, local food, shopping, nightlife, and city culture.",
       },
     ],
+
+    history: {
+      intro:
+        "Colombo developed through trade, empire, religion, and urban expansion over centuries.",
+      periods: [
+        {
+          title: "Ancient Trading Port",
+          intro:
+            "Long before European rule, Colombo was already linked to regional and global trade routes.",
+          points: [
+            "Connected to Indian Ocean trade networks",
+            "Known to traders from Asia and beyond",
+            "Its coastal location made it commercially valuable",
+          ],
+          legacy:
+            "The city’s port identity still shapes its role in Sri Lanka today.",
+        },
+        {
+          title: "Portuguese Period",
+          intro:
+            "The Portuguese established control over coastal areas and strengthened Colombo’s strategic value.",
+          points: [
+            "Fortified the area for defense and trade",
+            "Introduced lasting Catholic influences",
+            "Helped shape early colonial urban patterns",
+          ],
+          legacy:
+            "Elements of fort origins, surnames, and Catholic heritage remain visible.",
+        },
+        {
+          title: "Dutch Period",
+          intro:
+            "The Dutch expanded Colombo’s administrative and commercial systems.",
+          points: [
+            "Strengthened the trading city model",
+            "Influenced street organization in parts of the city",
+            "Left legal and architectural legacies",
+          ],
+          legacy:
+            "Pettah’s grid, Dutch Hospital, and Wolvendaal Church reflect this era.",
+        },
+        {
+          title: "British Period",
+          intro:
+            "Under the British, Colombo grew into a key colonial capital and major port.",
+          points: [
+            "Expansion of rail, harbor, and administration",
+            "Growth of civic and institutional buildings",
+            "Development of districts such as Cinnamon Gardens",
+          ],
+          legacy:
+            "Fort, museum buildings, and parts of the civic core still reflect the British period.",
+        },
+        {
+          title: "Post-Independence / Today",
+          intro:
+            "After independence, Colombo continued growing as the commercial center of Sri Lanka.",
+          points: [
+            "Business and finance became central",
+            "Urban development accelerated",
+            "Modern towers now sit beside colonial structures",
+          ],
+          legacy:
+            "Today’s Colombo is defined by both historical layering and rapid modernization.",
+        },
+      ],
+    },
+
+    today: {
+      title: "Colombo Today",
+      intro:
+        "Colombo is a modern commercial center with a multicultural population, mixed architecture, and fast urban change.",
+      cards: [
+        {
+          title: "Commercial Capital",
+          text: "It remains the country’s main business and commercial hub.",
+        },
+        {
+          title: "Major Port",
+          text: "Port activity continues to be central to the city’s economy and identity.",
+        },
+        {
+          title: "Mixed Skyline",
+          text: "Colonial buildings, temples, offices, malls, and towers all coexist.",
+        },
+      ],
+    },
+
+    districts: [
+      {
+        name: "Fort",
+        number: "Colombo 1",
+        character: "Historic business core",
+        bestKnownFor: "Colonial buildings and offices",
+        type: "commercial / historic",
+        description:
+          "Fort is the old administrative and commercial center, where many colonial-era and office buildings remain.",
+        tags: ["history", "architecture", "walking"],
+        highlights: ["Colonial streetscape", "Business district", "Historic core"],
+      },
+      {
+        name: "Slave Island",
+        number: "Colombo 2",
+        character: "Mixed urban area",
+        bestKnownFor: "Dense city character and central location",
+        type: "mixed",
+        description:
+          "A busy central district with layered history and a mix of residential and commercial activity.",
+        tags: ["urban", "central"],
+        highlights: ["Central access", "Mixed character"],
+      },
+      {
+        name: "Kollupitiya",
+        number: "Colombo 3",
+        character: "Commercial and lifestyle area",
+        bestKnownFor: "Shopping, dining, and city activity",
+        type: "commercial / mixed",
+        description:
+          "A well-known urban district with malls, hotels, restaurants, and major roads.",
+        tags: ["shopping", "food", "city life"],
+        highlights: ["Retail", "Hotels", "Dining"],
+      },
+    ],
+
+    economy: {
+      intro:
+        "For a tourism-oriented city page, Colombo’s economy matters because it helps explain the city’s pace, skyline, and infrastructure.",
+      sectors: [
+        {
+          title: "Finance",
+          text: "Banking, headquarters, and corporate services are concentrated in the city.",
+        },
+        {
+          title: "Shipping / Port",
+          text: "Port services remain one of the city’s strongest economic pillars.",
+        },
+        {
+          title: "ICT / BPM",
+          text: "Technology and business services are increasingly important.",
+        },
+        {
+          title: "Trade",
+          text: "Wholesale and commercial trade remain central, especially in older market areas.",
+        },
+        {
+          title: "Real Estate / Construction",
+          text: "Urban redevelopment and high-rise projects continue reshaping the skyline.",
+        },
+        {
+          title: "Tourism / Hospitality",
+          text: "Hotels, dining, culture, and business travel all support the visitor economy.",
+        },
+      ],
+    },
 
     highlights: [
       {
-        name: "Historical Fort Area",
-        category: "Historic District",
-        description:
-          "The historic and financial core of Colombo, home to colonial landmarks, government buildings, and major commercial offices.",
+        name: "Galle Face Green",
+        category: "Sunset / Promenade",
+        shortDescription:
+          "A famous oceanfront public space popular for walks, kites, snacks, and sunset views.",
+        image: "/images/colombo/galle-face.jpg",
+        tags: ["sunset", "families", "street food"],
+        mapLink: "#",
       },
       {
         name: "Pettah",
         category: "Market District",
-        description:
-          "A dense and energetic market quarter filled with specialty streets, traders, food, and heritage buildings.",
+        shortDescription:
+          "One of the city’s most energetic and chaotic market areas, full of trade and street-level life.",
+        image: "/images/colombo/pettah.jpg",
+        tags: ["shopping", "markets", "local life"],
+        mapLink: "#",
       },
       {
-        name: "Gangaramaya Temple & Seema Malaka",
-        category: "Religious Landmark",
-        description:
-          "One of Colombo’s most iconic temple complexes, combining history, design, and a serene lakeside setting.",
+        name: "Gangaramaya Temple",
+        category: "Religious / Cultural",
+        shortDescription:
+          "One of Colombo’s best-known temple complexes, combining worship, architecture, and museum-like collections.",
+        image: "/images/colombo/gangaramaya.jpg",
+        tags: ["religion", "architecture", "culture"],
+        mapLink: "#",
+      },
+    ],
+
+    museums: [
+      {
+        name: "National Museum",
+        category: "National / History Museum",
+        shortDescription:
+          "The country’s principal museum, covering history, culture, and heritage.",
+        location: "Cinnamon Gardens",
+        practicalNotes: ["Check current opening times before visiting."],
       },
       {
-        name: "Colombo Lotus Tower",
-        category: "Modern Landmark",
-        description:
-          "A modern skyline icon offering panoramic city views, dining, and entertainment experiences.",
+        name: "Number 11",
+        category: "Architecture Museum",
+        shortDescription:
+          "A design and architecture-focused space associated with Geoffrey Bawa.",
+        location: "Colombo",
+        practicalNotes: ["Advance booking may be required."],
+      },
+    ],
+
+    religiousSites: {
+      buddhist: [
+        {
+          name: "Gangaramaya Temple",
+          religion: "Buddhist",
+          shortDescription:
+            "One of the most recognized Buddhist sites in Colombo.",
+          architecturalNote:
+            "Eclectic complex with mixed architectural influences",
+          practicalNotes: ["Dress modestly", "Remove shoes"],
+        },
+      ],
+      hindu: [
+        {
+          name: "Sri Kailawasanathan Swami Devasthanam",
+          religion: "Hindu",
+          shortDescription:
+            "A historic Hindu kovil known for its color and ritual significance.",
+          architecturalNote: "Traditional South Indian Dravidian influence",
+          practicalNotes: ["Remove shoes", "Respect active worship"],
+        },
+      ],
+      christian: [
+        {
+          name: "Wolvendaal Church",
+          religion: "Christian",
+          shortDescription:
+            "An important colonial-era church with strong Dutch heritage value.",
+          architecturalNote: "Dutch colonial church architecture",
+          practicalNotes: ["Active religious site", "Dress respectfully"],
+        },
+      ],
+      muslim: [
+        {
+          name: "Jami Ul-Alfar Mosque",
+          religion: "Muslim",
+          shortDescription:
+            "A visually striking mosque that stands out in the Pettah area.",
+          architecturalNote: "Distinctive striped façade",
+          practicalNotes: ["Dress modestly", "Respect prayer times"],
+        },
+      ],
+    },
+
+    markets: [
+      {
+        name: "Pettah Market",
+        featured: true,
+        category: "Major Market Experience",
+        shortDescription:
+          "The city’s most important market district, best experienced as a dense network of specialized streets.",
+        streets: [
+          {
+            name: "Main Street",
+            description: "Busy general trade and constant foot traffic.",
+          },
+          {
+            name: "Sea Street",
+            description: "Well known for jewelry and gold shops.",
+          },
+          {
+            name: "1st Cross Street",
+            description: "Dense wholesale-style retail and general goods.",
+          },
+          {
+            name: "2nd Cross Street",
+            description: "Popular for clothing and bargain-oriented shopping.",
+          },
+        ],
+        practicalNotes: [
+          "Keep an eye on belongings",
+          "Expect crowds and noise",
+          "Bargaining may be normal in some contexts",
+        ],
       },
       {
-        name: "Galle Face Green",
-        category: "Seafront",
-        description:
-          "A popular urban promenade for sunset walks, street food, and ocean views.",
+        name: "Floating Market",
+        category: "Secondary Shopping Spot",
+        shortDescription:
+          "A more curated retail environment compared with Pettah’s dense street market energy.",
+        mapLink: "#",
       },
     ],
 
     beaches: [
       {
         name: "Galle Face Green",
-        type: "Promenade",
-        description:
-          "Best for sunset strolls and city atmosphere rather than swimming.",
+        category: "City waterfront",
+        shortDescription:
+          "Better for promenade, breeze, snacks, and sunset than for swimming.",
       },
       {
         name: "Mount Lavinia Beach",
-        type: "Swimming Beach",
-        description:
-          "A popular nearby beach known for swimming, dining, and an easy coastal escape from the city.",
+        category: "Nearby swimming beach",
+        shortDescription:
+          "A more beach-oriented option outside the core city area.",
       },
     ],
 
-    activities: [],
-
-    culture: [
+    restaurants: [
       {
-        name: "National Museum",
-        type: "Museum",
-        description:
-          "Sri Lanka’s most important museum, covering archaeology, royal regalia, and historical artifacts.",
+        name: "Ministry of Crab",
+        category: "Seafood",
+        shortDescription:
+          "Well-known for crab-focused dining in a polished setting.",
+        website: "#",
+        mapLink: "#",
+        reservationLink: "#",
       },
       {
-        name: "Jami Ul-Alfar Mosque",
-        type: "Mosque",
-        description:
-          "The famous Red Mosque in Pettah, known for its striking red-and-white striped architecture.",
+        name: "Upali’s",
+        category: "Sri Lankan",
+        shortDescription:
+          "A popular option for classic Sri Lankan dishes in a comfortable setting.",
+        website: "#",
+        mapLink: "#",
       },
       {
-        name: "Wolvendaal Church",
-        type: "Church",
-        description:
-          "A key Dutch colonial church and one of the most important surviving historic religious structures in Colombo.",
-      },
-      {
-        name: "Sri Kailawasanathan Swami Devasthanam Kovil",
-        type: "Hindu Temple",
-        description:
-          "One of the oldest Hindu temples in Colombo, with rich Dravidian architectural detail.",
-      },
-    ],
-
-    practicalInfo: [
-      "Best for travelers interested in heritage, city culture, religion, food, and urban exploration.",
-      "Traffic can be heavy, especially during peak hours.",
-      "Dress modestly when visiting religious sites and remove footwear where required.",
-      "Use ride-hailing apps like PickMe or Uber for easier transport within the city.",
-    ],
-  },
-
-  {
-    slug: "matara",
-    name: "Matara",
-    kicker: "Southern Coast",
-    heroImage: `${base}images4.avif`,
-    summary:
-      "Matara is a southern coastal city known for Dutch-era fortifications, religious landmarks, local beaches, and easy access to surfing and snorkeling spots.",
-    quickFacts: [
-      { label: "Province", value: "Southern Province" },
-      { label: "Best For", value: "Beaches, history, surfing, culture" },
-      { label: "Vibe", value: "Coastal, historic, relaxed" },
-      { label: "Ideal Stay", value: "2–4 days" },
-    ],
-
-    history: [
-      {
-        title: "Portuguese Period",
-        body:
-          "The Portuguese established an early fortification at the mouth of the Nilwala River to control coastal trade, especially cinnamon.",
-      },
-      {
-        title: "Dutch Period",
-        body:
-          "The Dutch transformed Matara into a major fortified administrative and trade center, rebuilding the fort and constructing the Star Fort after inland attacks.",
-      },
-      {
-        title: "British Period",
-        body:
-          "Under the British, the forts shifted from military to administrative use, while landmarks like Dondra Head Lighthouse reflected Matara’s maritime importance.",
+        name: "Cloud Red",
+        category: "Rooftop Dining",
+        shortDescription:
+          "A rooftop option suited to city views and evening dining.",
+        website: "#",
+        mapLink: "#",
       },
     ],
 
-    highlights: [
-      {
-        name: "Matara Fort",
-        category: "Fort",
-        description:
-          "A historic coastal fort first established by the Portuguese and later expanded by the Dutch.",
-      },
-      {
-        name: "Star Fort",
-        category: "Fort",
-        description:
-          "A distinctive six-pointed Dutch fort built to defend inland approaches to Matara.",
-      },
-      {
-        name: "Old Dutch Trade Centre",
-        category: "Colonial Landmark",
-        description:
-          "Also known as the Nupe Market, this historic structure reflects Matara’s old commercial role.",
-      },
-      {
-        name: "Dondra Head Lighthouse",
-        category: "Lighthouse",
-        description:
-          "Sri Lanka’s tallest lighthouse, built during the British period near the island’s southern tip.",
-      },
-      {
-        name: "Parey Dewa Temple",
-        category: "Temple",
-        description:
-          "A scenic island temple reached by a pedestrian bridge, offering sea views and a peaceful setting.",
-      },
-    ],
+    nightlife: {
+      rooftops: [
+        {
+          name: "Sky Lounge",
+          category: "Rooftop Bar",
+          shortDescription: "City views, drinks, and a more elevated night-out feel.",
+          area: "Central Colombo",
+        },
+      ],
+      clubs: [
+        {
+          name: "Example Club",
+          category: "Club",
+          shortDescription: "Late-night venue with louder music and a party atmosphere.",
+          area: "Colombo",
+        },
+      ],
+      pubs: [
+        {
+          name: "Example Pub",
+          category: "Pub / Live Music",
+          shortDescription: "Relaxed evening venue with a more casual social vibe.",
+          area: "Colombo",
+        },
+      ],
+      casinos: [
+        {
+          name: "Example Casino",
+          category: "Casino",
+          shortDescription: "Gaming-focused nightlife option in the city.",
+          area: "Colombo",
+        },
+      ],
+      tips: [
+        "Arrange transport ahead of time for late returns.",
+        "Dress codes vary depending on the venue.",
+        "Some places may charge entry fees or have minimum spends.",
+      ],
+    },
 
-    beaches: [
+    hotels: [
       {
-        name: "Polhena Beach",
-        type: "Swimming / Snorkeling",
-        description:
-          "A calm reef-protected beach ideal for swimming, beginner snorkeling, and spotting sea turtles.",
+        name: "Galle Face Hotel",
+        category: "Luxury / Heritage",
+        shortDescription:
+          "An iconic seafront stay with strong historic atmosphere.",
+        longDescription:
+          "A classic Colombo hotel option for travelers who want heritage character, ocean views, and central access.",
+        website: "#",
+        mapLink: "#",
       },
       {
-        name: "Matara Beach",
-        type: "City Beach",
-        description:
-          "A quieter local beach suitable for walks and coastal views near the city center.",
-      },
-      {
-        name: "Weligama Beach",
-        type: "Surf Beach",
-        description:
-          "One of Sri Lanka’s best beginner surf beaches, just a short ride from Matara.",
-      },
-      {
-        name: "Talalla Beach",
-        type: "Relaxation Beach",
-        description:
-          "A quieter stretch of sand known for its scenic and less crowded atmosphere.",
-      },
-      {
-        name: "Hiriketiya Beach",
-        type: "Surf / Cove Beach",
-        description:
-          "A lively horseshoe-shaped cove popular for surfing, cafes, and a laid-back coastal vibe.",
-      },
-    ],
-
-    activities: [
-      {
-        title: "Surfing",
-        body:
-          "Matara is a strong base for exploring nearby surf spots. Weligama is ideal for beginners, Hiriketiya suits mixed skill levels, and Madiha offers more advanced reef breaks.",
-      },
-      {
-        title: "Surf Schools",
-        body:
-          "Most surf schools are concentrated in Weligama, Hiriketiya, and the Polhena/Madiha area, making it easy to choose based on your level and where you stay.",
-      },
-      {
-        title: "Diving & Snorkeling",
-        body:
-          "Polhena is the standout snorkeling spot near Matara, with calm water and regular turtle sightings. Local dive centers also run trips to nearby reef and wreck sites.",
-      },
-    ],
-
-    culture: [
-      {
-        name: "Parey Dewa Temple",
-        type: "Buddhist Temple",
-        description:
-          "An offshore island temple offering a peaceful setting and strong local religious significance.",
-      },
-      {
-        name: "Weherahena Temple",
-        type: "Buddhist Temple",
-        description:
-          "An important religious site in the Matara area known for its large Buddha image and tunnel temple features.",
+        name: "Example Boutique Stay",
+        category: "Boutique",
+        shortDescription:
+          "A smaller stay option suited to travelers who want a more personal feel.",
+        website: "#",
+        mapLink: "#",
       },
     ],
 
     practicalInfo: [
-      "Best season for beaches, surfing, snorkeling, and diving is generally from November to April.",
-      "Polhena is one of the best local options for calm swimming and snorkeling.",
-      "Matara works well as both a short stop and a base for nearby coastal towns.",
-      "For first-time surfing, Weligama is the easiest nearby place to start.",
+      {
+        title: "Best Time to Visit",
+        text: "December to March is often considered one of the more comfortable periods for visitors.",
+      },
+      {
+        title: "Getting Around",
+        text: "Traffic can be heavy, so always allow extra travel time inside the city.",
+      },
+      {
+        title: "Religious Sites",
+        text: "Dress modestly and be prepared to remove shoes where required.",
+      },
+      {
+        title: "Markets",
+        text: "Pettah can be crowded and intense, so keep belongings secure and stay aware of your surroundings.",
+      },
+      {
+        title: "Beaches",
+        text: "Colombo is better for promenade and sunset than for classic beach swimming inside the city core.",
+      },
     ],
   },
 ];
