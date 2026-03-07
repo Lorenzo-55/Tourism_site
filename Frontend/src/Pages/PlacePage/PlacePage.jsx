@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useMemo, useState } from "react";
 import NavBar from "../../Components/Navbar/Navbar.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
-import { placesData } from "../../data/placesData.js";
+import { placesData } from "../../Data/placesData.js";
 import "./PlacePage.css";
 
 function hasItems(value) {

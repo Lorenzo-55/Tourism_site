@@ -68,3 +68,15 @@ export default function ContentCard({
     </Link>
   );
 }
+
+
+//   <ContentCard
+//     to="/places/galle-face-green"
+//     image="/images/galle-face.jpg"
+//     imageAlt="Galle Face Green"
+//     kicker="Sunset / Promenade"
+//     title="Galle Face Green"
+//     description="A famous oceanfront public space popular for walks, kites, snacks, and sunset views."
+//     tags={["Sunset", "Families", "Street Food"]}
+//     buttonLabel="Map"
+//   />

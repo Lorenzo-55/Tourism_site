@@ -1,0 +1,255 @@
+/* src/pages/ColomboPage/ColomboPage.css */
+
+.colombo-page {
+  background: #ffffff;
+  color: #111111;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.colombo-hero {
+  position: relative;
+  min-height: 52vh;
+  display: flex;
+  align-items: end;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.34)),
+    url("Colombo1.webp") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.colombo-heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.50),
+    rgba(0, 0, 0, 0.20),
+    rgba(0, 0, 0, 0.10)
+  );
+}
+
+.colombo-heroInner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 56px;
+  color: #ffffff;
+}
+
+.colombo-heroKicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  opacity: 0.92;
+}
+
+.colombo-heroTitle {
+  margin: 12px 0 0;
+  font-size: clamp(46px, 7vw, 96px);
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+}
+
+.colombo-introGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.colombo-sectionHead,
+.colombo-poiHead {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colombo-sectionKicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.colombo-sectionTitle {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 54px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+}
+
+.colombo-copy {
+  max-width: 760px;
+}
+
+.colombo-copy p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(17, 17, 17, 0.76);
+}
+
+.colombo-poi {
+  padding-top: 10px;
+}
+
+.colombo-poiHead {
+  margin-bottom: 34px;
+  text-align: center;
+  align-items: center;
+}
+
+.colombo-cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+@media (max-width: 980px) {
+  .colombo-introGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .colombo-cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .colombo-heroInner {
+    padding-top: 110px;
+    padding-bottom: 42px;
+  }
+
+  .colombo-cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .colombo-copy p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+/* DISTRICTS */
+
+.colombo-districts {
+  padding: 70px 0;
+  background: #f7f7f7;
+}
+
+.districts-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.districts-kicker {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: rgba(17,17,17,0.45);
+}
+
+.districts-title {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.districts-list {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.district-item {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(17,17,17,0.08);
+  overflow: hidden;
+}
+
+.district-summary {
+  width: 100%;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.district-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* teal accent on right text */
+.district-type {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #197d95;
+}
+
+.district-body {
+  padding: 0 22px 20px 38px;
+  color: rgba(17,17,17,0.75);
+  line-height: 1.7;
+}
+
+/* Best known for */
+.district-best {
+  margin: 6px 0 10px;
+  font-size: 14px;
+}
+
+.district-best strong {
+  font-weight: 700;
+}
+
+/* tags */
+
+.district-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 12px;
+}
+
+.district-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #e9e9e9;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
