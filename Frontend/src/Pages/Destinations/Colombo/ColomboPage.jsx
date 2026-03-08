@@ -2,10 +2,16 @@
 import NavBar from "../../../Components/Navbar/Navbar.jsx";
 import Footer from "../../../Components/Footer/Footer.jsx";
 import ContentCard from "../../../Components/ContentCard/ContentCard.jsx";
+import Breadcrumbs from "../../../Components/Breadcrumbs/Breadcrumbs";
 import "./ColomboPage.css";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa";
+
+  const breadcrumbItems = [
+    { label: "Home", to: "/" },
+    { label: "Colombo", to: "/colombo" },
+  ];
 
 const pointsOfInterest = [
   {
@@ -275,6 +281,7 @@ export default function ColomboPage() {
         <section className="section colombo-intro">
           <div className="container colombo-introGrid">
             <div className="colombo-sectionHead">
+              <Breadcrumbs items={breadcrumbItems} />
               <div className="colombo-sectionKicker">OVERVIEW</div>
               <h2 className="colombo-sectionTitle">A fast-moving capital with many layers</h2>
             </div>

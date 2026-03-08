@@ -1,0 +1,35 @@
+/* src/components/Breadcrumbs/Breadcrumbs.css */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumbs-link {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.breadcrumbs-separator {
+  margin: 0 0.4rem;
+  color: #888;
+}
+
+.breadcrumbs-current {
+  color: #111;
+  font-weight: 600;
+}
