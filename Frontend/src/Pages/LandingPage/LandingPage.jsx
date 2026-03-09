@@ -164,8 +164,8 @@ export default function Landing() {
       <NavBar />
       <HeroSlider />
       <AboutSection />
-      <StaySection />
       <MapSection />
+      <StaySection />
       <Footer />
     </div>
   );

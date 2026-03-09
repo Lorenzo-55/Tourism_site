@@ -80,5 +80,10 @@
 
   .map-content {
     max-width: none;
+    order: 1;
+  }
+
+  .map-image-wrap {
+    order: 2;
   }
 }

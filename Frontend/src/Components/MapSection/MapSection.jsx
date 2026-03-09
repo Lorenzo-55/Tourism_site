@@ -3,12 +3,21 @@ import "./MapSection.css";
 import MapOverlay from "./MapOverlay";
 import { locations } from "../../Data/Location";
 
+function getCoords(e) {
+  const rect = e.currentTarget.getBoundingClientRect();
+
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+  console.log(`x: ${x.toFixed(2)}, y: ${y.toFixed(2)}`);
+}
+
 export default function MapSection() {
   return (
     <section className="map-section">
       <div className="map-container">
         {/* Left Side – Map Image + Interactive Overlay */}
-        <div className="map-image-wrap">
+        <div className="map-image-wrap" onClick={getCoords}>
           <MapOverlay imageSrc={`${import.meta.env.BASE_URL}Map.PNG`} locations={locations} />
         </div>
 
@@ -33,5 +42,6 @@ export default function MapSection() {
         </div>
       </div>
     </section>
+    
   );
 }
