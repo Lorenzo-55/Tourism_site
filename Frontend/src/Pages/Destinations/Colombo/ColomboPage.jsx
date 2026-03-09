@@ -205,7 +205,6 @@ function DistrictsSection({ districts }) {
   return (
     <section className="colombo-districts">
       <div className="container">
-
         <div className="districts-head">
           <div className="districts-kicker">DISTRICTS</div>
           <h2 className="districts-title">District & Neighborhood Guide</h2>
@@ -216,45 +215,42 @@ function DistrictsSection({ districts }) {
             const isOpen = open === index;
 
             return (
-              <div key={district.name} className="district-item">
+              <div key={district.name} className={`district-item ${isOpen ? "open" : ""}`}>
                 <button
                   className="district-summary"
                   onClick={() => setOpen(isOpen ? null : index)}
+                  type="button"
                 >
                   <div className="district-left">
-                    {isOpen ? <FaAngleUp /> : <FaAngleDown />}
-                    <strong>{district.name}</strong>
+                    <span className="district-icon">
+                      {isOpen ? <FaAngleUp /> : <FaAngleDown />}
+                    </span>
+
+                    <strong className="district-name">{district.name}</strong>
                   </div>
 
-                  <span className="district-type">
-                    {district.character}
-                  </span>
+                  <span className="district-type">{district.character}</span>
                 </button>
 
-                {isOpen && (
-                  <div className="district-body">
-                    {district.bestKnownFor && (
-                      <p className="district-best">
-                        <strong>Best known for:</strong> {district.bestKnownFor}
-                      </p>
-                    )}
+                <div className="district-body">
+                  {district.bestKnownFor && (
+                    <p className="district-best">
+                      <strong>Best known for:</strong> {district.bestKnownFor}
+                    </p>
+                  )}
 
-                    {district.description && (
-                      <p>{district.description}</p>
-                    )}
+                  {district.description && <p>{district.description}</p>}
 
-                    {district.tags && (
-                      <div className="district-tags">
-                        {district.tags.map((tag, i) => (
-                          <span key={i} className="district-tag">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-
+                  {district.tags && (
+                    <div className="district-tags">
+                      {district.tags.map((tag, i) => (
+                        <span key={i} className="district-tag">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                )}
               </div>
             );
           })}

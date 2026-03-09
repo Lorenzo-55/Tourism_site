@@ -164,7 +164,7 @@
   font-size: 13px;
   letter-spacing: 0.18em;
   font-weight: 700;
-  color: rgba(17,17,17,0.45);
+  color: rgba(17, 17, 17, 0.45);
 }
 
 .districts-title {
@@ -185,7 +185,7 @@
 .district-item {
   background: #ffffff;
   border-radius: 12px;
-  border: 1px solid rgba(17,17,17,0.08);
+  border: 1px solid rgba(17, 17, 17, 0.08);
   overflow: hidden;
 }
 
@@ -194,35 +194,67 @@
   padding: 18px 22px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 18px;
   background: white;
   border: none;
   cursor: pointer;
+  text-align: left;
 }
 
 .district-left {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
 }
 
-/* teal accent on right text */
+.district-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+
+.district-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.district-name {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
 .district-type {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #197d95;
+  line-height: 1.4;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 .district-body {
-  padding: 0 22px 20px 38px;
-  color: rgba(17,17,17,0.75);
+  padding: 0 22px 20px 46px;
+  color: rgba(17, 17, 17, 0.75);
   line-height: 1.7;
 }
 
-/* Best known for */
+/* desktop accordion */
+.district-item .district-body {
+  display: none;
+}
+
+.district-item.open .district-body {
+  display: block;
+}
+
 .district-best {
   margin: 6px 0 10px;
   font-size: 14px;
@@ -231,8 +263,6 @@
 .district-best strong {
   font-weight: 700;
 }
-
-/* tags */
 
 .district-tags {
   display: flex;
@@ -252,4 +282,67 @@
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .districts-list {
+    max-width: none;
+    margin: 0;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4px 2px 14px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .districts-list::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .districts-list::-webkit-scrollbar-track {
+    background: rgba(17, 17, 17, 0.06);
+    border-radius: 999px;
+  }
+
+  .districts-list::-webkit-scrollbar-thumb {
+    background: rgba(17, 17, 17, 0.18);
+    border-radius: 999px;
+  }
+
+  .district-item {
+    min-width: 82%;
+    max-width: 82%;
+    flex: 0 0 82%;
+    border-radius: 16px;
+    scroll-snap-align: start;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .district-summary {
+    padding: 18px 18px 10px;
+    cursor: default;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .district-left {
+    width: 100%;
+  }
+
+  .district-icon {
+    display: none;
+  }
+
+  .district-type {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .district-body {
+    display: block !important;
+    padding: 0 18px 18px;
+  }
 }
