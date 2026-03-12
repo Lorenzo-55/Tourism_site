@@ -138,7 +138,7 @@ const { districts, pageContent, pointsOfInterest, poiHeader } = getColomboData(l
               {pointsOfInterest.map((item) => (
                 <ContentCard
                   key={item.title}
-                  to="#"
+                  to={`/places/${item.slug}`}
                   image={item.image}
                   imageAlt={item.imageAlt}
                   title={item.title}

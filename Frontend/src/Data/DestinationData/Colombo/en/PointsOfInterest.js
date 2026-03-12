@@ -5,6 +5,17 @@ export const poiHeader = {
 
 
 
+//   <ContentCard
+//     to="/places/galle-face-green"
+//     image="/images/galle-face.jpg"
+//     imageAlt="Galle Face Green"
+//     kicker="Sunset / Promenade"
+//     title="Galle Face Green"
+//     description="A famous oceanfront public space popular for walks, kites, snacks, and sunset views."
+//     tags={["Sunset", "Families", "Street Food"]}
+//     buttonLabel="Map"
+//   />
+
 
 export const pointsOfInterest = [
   {
@@ -14,12 +25,12 @@ export const pointsOfInterest = [
   },
   {
     title: "Beaches",
-    image: "/images/colombo-beaches.jpg",
+    image: `${import.meta.env.BASE_URL}Colombo/beaches1.webp`,
     imageAlt: "Colombo beaches",
   },
   {
     title: "Museums",
-    image: "/images/colombo-museums.jpg",
+    image: `${import.meta.env.BASE_URL}Colombo/Colombo-National-Museum.jpg`,
     imageAlt: "Colombo museums",
   },
   {
@@ -34,7 +45,8 @@ export const pointsOfInterest = [
   },
   {
     title: "Lotus Tower",
-    image: "/images/colombo-lotus-tower.jpg",
+    slug: "lotus-tower",
+    image: `${import.meta.env.BASE_URL}Colombo/lotustower1.jpg`,
     imageAlt: "Lotus Tower Colombo",
   },
   {
@@ -44,7 +56,8 @@ export const pointsOfInterest = [
   },
   {
     title: "Nightlife",
-    image: "/images/colombo-nightlife.jpg",
+    slug: "nightlife",
+    image: `${import.meta.env.BASE_URL}Colombo/colomboNight1.jpg`,
     imageAlt: "Colombo nightlife",
   },
   {
