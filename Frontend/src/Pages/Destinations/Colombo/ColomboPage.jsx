@@ -8,12 +8,8 @@ import Footer from "../../../Components/Footer/Footer.jsx";
 import ContentCard from "../../../Components/ContentCard/ContentCard.jsx";
 import Breadcrumbs from "../../../Components/Breadcrumbs/Breadcrumbs";
 
-import { districts } from "../../../Data/DestinationData/Colombo/Districts.js";
-import { colomboPageContent } from "../../../Data/DestinationData/Colombo/PageContent.js";
-import {
-  poiHeader,
-  pointsOfInterest,
-} from "../../../Data/DestinationData/Colombo/PointsOfInterest.js";
+import { useLanguage } from "../../../Context/LanguageContext.jsx";
+import { getColomboData } from "../../../Data/DestinationData/Colombo/index.js";
 
 import "./ColomboPage.css";
 
@@ -84,6 +80,10 @@ function DistrictsSection({ districts }) {
 }
 
 export default function ColomboPage() {
+  const { language } = useLanguage();
+
+const { districts, pageContent, pointsOfInterest, poiHeader } = getColomboData(language);
+
   return (
     <div className="colombo-page">
       <NavBar />
@@ -92,10 +92,10 @@ export default function ColomboPage() {
         <div className="colombo-heroOverlay" />
         <div className="container colombo-heroInner">
           <div className="colombo-heroKicker">
-            {colomboPageContent.hero.kicker}
+            {pageContent.hero.kicker}
           </div>
           <h1 className="colombo-heroTitle">
-            {colomboPageContent.hero.title}
+            {pageContent.hero.title}
           </h1>
         </div>
       </header>
@@ -106,15 +106,15 @@ export default function ColomboPage() {
             <div className="colombo-sectionHead">
               <Breadcrumbs items={breadcrumbItems} />
               <div className="colombo-sectionKicker">
-                {colomboPageContent.overview.kicker}
+                {pageContent.overview.kicker}
               </div>
               <h2 className="colombo-sectionTitle">
-                {colomboPageContent.overview.title}
+                {pageContent.overview.title}
               </h2>
             </div>
 
             <div className="colombo-copy">
-              {colomboPageContent.overview.paragraphs.map((text, index) => (
+              {pageContent.overview.paragraphs.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>

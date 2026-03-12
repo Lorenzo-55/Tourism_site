@@ -1,6 +1,9 @@
+//src/Components/Navbar/Navbar.jsx
+
 import { useEffect, useRef, useState } from "react";
 import { MdOutlineSearch } from "react-icons/md";
 import "./NavBar.css";
+import { useLanguage } from "../../Context/LanguageContext.jsx";
 
 const menuData = {
   places: ["Lorem ipsum", "Dolor sit amet", "Consectetur", "Adipiscing elit"],
@@ -59,6 +62,7 @@ function Dropdown({ label, items }) {
 export default function NavBar() {
   const [hidden, setHidden] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   const lastY = useRef(0);
   const ticking = useRef(false);
@@ -128,13 +132,25 @@ export default function NavBar() {
         <div className="nav-right">
           <div className="nav-dd">
             <button className="nav-link nav-dd-btn" type="button" aria-haspopup="listbox">
-              EN <span className="nav-caret" aria-hidden="true">▾</span>
+              {language.toUpperCase()} <span className="nav-caret" aria-hidden="true">▾</span>
             </button>
+
             <div className="nav-dd-menu" role="listbox">
-              <a className="nav-dd-item" href="#" role="option">EN</a>
-              <a className="nav-dd-item" href="#" role="option">සිං</a>
-              <a className="nav-dd-item" href="#" role="option">TA</a>
-              <a className="nav-dd-item" href="#" role="option">FR</a>
+              <button className="nav-dd-item" type="button" role="option" onClick={() => setLanguage("en")}>
+                EN
+              </button>
+              <button className="nav-dd-item" type="button" role="option" onClick={() => setLanguage("fr")}>
+                FR
+              </button>
+              <button className="nav-dd-item" type="button" role="option" onClick={() => setLanguage("it")}>
+                IT
+              </button>
+              <button className="nav-dd-item" type="button" role="option" onClick={() => setLanguage("si")}>
+                සිං
+              </button>
+              <button className="nav-dd-item" type="button" role="option" onClick={() => setLanguage("ta")}>
+                TA
+              </button>
             </div>
           </div>
 

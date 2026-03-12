@@ -1,4 +1,4 @@
-export const colomboPageContent = {
+export const pageContent = {
   hero: {
     kicker: "CITY GUIDE",
     title: "Colombo",
