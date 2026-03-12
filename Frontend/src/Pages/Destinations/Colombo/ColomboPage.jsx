@@ -9,8 +9,11 @@ import ContentCard from "../../../Components/ContentCard/ContentCard.jsx";
 import Breadcrumbs from "../../../Components/Breadcrumbs/Breadcrumbs";
 
 import { districts } from "../../../Data/DestinationData/Colombo/Districts.js";
-import { pointsOfInterest } from "../../../Data/DestinationData/Colombo/PointsOfInterest.js";
 import { colomboPageContent } from "../../../Data/DestinationData/Colombo/PageContent.js";
+import {
+  poiHeader,
+  pointsOfInterest,
+} from "../../../Data/DestinationData/Colombo/PointsOfInterest.js";
 
 import "./ColomboPage.css";
 
@@ -124,10 +127,10 @@ export default function ColomboPage() {
           <div className="container">
             <div className="colombo-poiHead">
               <div className="colombo-sectionKicker">
-                {colomboPageContent.poi.kicker}
+                {poiHeader.kicker}
               </div>
               <h2 className="colombo-sectionTitle">
-                {colomboPageContent.poi.title}
+                {poiHeader.title}
               </h2>
             </div>
 

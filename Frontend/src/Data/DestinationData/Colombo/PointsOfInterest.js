@@ -1,3 +1,10 @@
+export const poiHeader = {
+  kicker: "EXPLORE",
+  title: "Points of Interest",
+};
+
+
+
 
 export const pointsOfInterest = [
   {

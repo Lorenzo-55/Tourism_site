@@ -31,9 +31,4 @@ export const colomboPageContent = {
       neighborhoods, food, places of worship, and everyday life.`
     ]
   },
-
-  poi: {
-    kicker: "EXPLORE",
-    title: "Points of Interest"
-  }
 };

@@ -134,6 +134,7 @@ export default function NavBar() {
               <a className="nav-dd-item" href="#" role="option">EN</a>
               <a className="nav-dd-item" href="#" role="option">සිං</a>
               <a className="nav-dd-item" href="#" role="option">TA</a>
+              <a className="nav-dd-item" href="#" role="option">FR</a>
             </div>
           </div>
 
