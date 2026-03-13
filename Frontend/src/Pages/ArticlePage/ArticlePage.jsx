@@ -44,7 +44,7 @@ function CardsSection({ section }) {
           {section.items?.map((item, index) => (
             <ContentCard
               key={item.title || index}
-              to={item.to || "#"}
+              // to={item.to || "#"}
               image={item.image}
               imageAlt={item.imageAlt || item.title || "Card image"}
               title={item.title}

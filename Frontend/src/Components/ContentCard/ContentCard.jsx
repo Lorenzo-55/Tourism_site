@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./ContentCard.css";
 
 export default function ContentCard({
-  to = "/",
+  to,
   href,
   external = false,
   image,
@@ -15,6 +15,14 @@ export default function ContentCard({
   buttonLabel,
   className = "",
 }) {
+  const isExternalLink = external && !!href;
+  const isInternalLink = !external && !!to;
+  const isClickable = isExternalLink || isInternalLink;
+
+  const cardClassName = `content-card ${
+    isClickable ? "content-card--clickable" : "content-card--static"
+  } ${className}`.trim();
+
   const content = (
     <>
       {image && (
@@ -49,11 +57,11 @@ export default function ContentCard({
     </>
   );
 
-  if (external && href) {
+  if (isExternalLink) {
     return (
       <a
         href={href}
-        className={`content-card ${className}`}
+        className={cardClassName}
         target="_blank"
         rel="noreferrer"
       >
@@ -62,11 +70,15 @@ export default function ContentCard({
     );
   }
 
-  return (
-    <Link to={to} className={`content-card ${className}`}>
-      {content}
-    </Link>
-  );
+  if (isInternalLink) {
+    return (
+      <Link to={to} className={cardClassName}>
+        {content}
+      </Link>
+    );
+  }
+
+  return <div className={cardClassName}>{content}</div>;
 }
 
 
