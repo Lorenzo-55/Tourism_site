@@ -2,16 +2,18 @@
 import { useEffect, useMemo, useState } from "react";
 import NavBar from "../../Components/Navbar/Navbar.jsx";
 import MapSection from "../../Components/MapSection/MapSection";
+import SimpleMapsSriLanka from "../../Components/SimpleMapsSriLanka/SimpleMapsSriLanka.jsx";
 import Footer from "../../Components/Footer/Footer";
 import "./LandingPage.css";
 
+const SHOW_SIMPLEMAPS_MAP = true;
 
 function HeroSlider() {
   const slides = useMemo(
     () => [
-    { src: `${import.meta.env.BASE_URL}images2.jpg`, alt: "Sri Lanka coast" },
-    { src: `${import.meta.env.BASE_URL}images4.avif`, alt: "Tea hills" },
-    { src: `${import.meta.env.BASE_URL}images5.jpg`, alt: "Temple & heritage" },
+      { src: `${import.meta.env.BASE_URL}images2.jpg`, alt: "Sri Lanka coast" },
+      { src: `${import.meta.env.BASE_URL}images4.avif`, alt: "Tea hills" },
+      { src: `${import.meta.env.BASE_URL}images5.jpg`, alt: "Temple & heritage" },
     ],
     []
   );
@@ -39,7 +41,6 @@ function HeroSlider() {
 
       <div className="hero-overlay" />
 
-      {/* NEW: Text overlay on the slideshow (left side) */}
       <div className="hero-text">
         <div className="hero-kicker">VISIT</div>
         <div className="hero-title">
@@ -69,7 +70,7 @@ function AboutSection() {
     <section className="section about">
       <div className="container about-grid">
         <h1 className="about-title">
-          VISIT 
+          VISIT
           <br />
           SRI LANKA
         </h1>
@@ -158,13 +159,21 @@ function StaySection() {
   );
 }
 
+function MapSectionSwitcher() {
+  if (SHOW_SIMPLEMAPS_MAP) {
+    return <SimpleMapsSriLanka />;
+  }
+
+  return <MapSection />;
+}
+
 export default function Landing() {
   return (
     <div className="landing">
       <NavBar />
       <HeroSlider />
       <AboutSection />
-      <MapSection />
+      <MapSectionSwitcher />
       <StaySection />
       <Footer />
     </div>

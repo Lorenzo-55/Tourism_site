@@ -1,0 +1,29 @@
+/* src/Components/SimpleMapsSriLanka/SimpleMapsSriLanka.css */
+
+.simplemaps-sl__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.simplemaps-sl__frame {
+  width: 100%;
+  min-height: 520px;
+}
+
+.simplemaps-sl__frame #map {
+  width: 100%;
+  min-height: 520px;
+}
+
+@media (max-width: 900px) {
+  .simplemaps-sl__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .simplemaps-sl__frame,
+  .simplemaps-sl__frame #map {
+    min-height: 420px;
+  }
+}
