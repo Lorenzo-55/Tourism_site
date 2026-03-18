@@ -117,12 +117,15 @@ export default function NavBar() {
     <header className={`nav-wrap ${hidden ? "nav-hidden" : ""}`}>
       <nav className="nav" aria-label="Primary">
         <Link className="nav-brand" to="/">
-          <span className="nav-mark" aria-hidden="true">
-            <span className="mark-dot" />
-            <span className="mark-swoosh" />
-          </span>
+          <img
+            src={`${import.meta.env.BASE_URL}/Logo/LogoSquare.JPG`}
+            alt="logo"
+            className="nav-logo"
+          />
           <span className="nav-brand-text">Sri Lanka</span>
         </Link>
+
+
 
         <div className="nav-center">
           <Dropdown label="Places to go" items={menuData.places} />

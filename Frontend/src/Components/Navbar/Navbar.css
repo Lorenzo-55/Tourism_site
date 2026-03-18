@@ -36,6 +36,12 @@
   gap: 18px;
 }
 
+.nav-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
 .nav-brand {
   display: inline-flex;
   align-items: center;
