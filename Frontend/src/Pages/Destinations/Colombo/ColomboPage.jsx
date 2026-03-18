@@ -1,5 +1,5 @@
 // src/pages/ColomboPage/ColomboPage.jsx
-import { useState } from "react";
+import { useRef, useEffect } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa";
 
@@ -15,11 +15,57 @@ import "./ColomboPage.css";
 
 const breadcrumbItems = [
   { label: "Home", to: "/" },
-  { label: "Colombo", to: "/colombo" },
+  { label: "Colombo", to: "/places/colombo" },
 ];
 
 function DistrictsSection({ districts }) {
-  const [open, setOpen] = useState(null);
+  const areaRef = useRef(null);
+  const listRef = useRef(null);
+  const dragState = useRef({
+    isDown: false,
+    startX: 0,
+    scrollLeft: 0,
+  });
+
+  useEffect(() => {
+    const handleMouseUp = () => {
+      dragState.current.isDown = false;
+      areaRef.current?.classList.remove("is-dragging");
+    };
+
+    window.addEventListener("mouseup", handleMouseUp);
+
+    return () => {
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, []);
+
+  const handleMouseDown = (e) => {
+    const list = listRef.current;
+    const area = areaRef.current;
+    if (!list || !area) return;
+
+    dragState.current.isDown = true;
+    dragState.current.startX = e.clientX;
+    dragState.current.scrollLeft = list.scrollLeft;
+
+    area.classList.add("is-dragging");
+  };
+
+  const handleMouseMove = (e) => {
+    const list = listRef.current;
+    if (!list || !dragState.current.isDown) return;
+
+    e.preventDefault();
+
+    const dx = e.clientX - dragState.current.startX;
+    list.scrollLeft = dragState.current.scrollLeft - dx;
+  };
+
+  const handleMouseLeave = () => {
+    dragState.current.isDown = false;
+    areaRef.current?.classList.remove("is-dragging");
+  };
 
   return (
     <section className="colombo-districts">
@@ -29,27 +75,23 @@ function DistrictsSection({ districts }) {
           <h2 className="districts-title">District & Neighborhood Guide</h2>
         </div>
 
-        <div className="districts-list">
-          {districts.map((district, index) => {
-            const isOpen = open === index;
-
-            return (
-              <div key={district.name} className={`district-item ${isOpen ? "open" : ""}`}>
-                <button
-                  className="district-summary"
-                  onClick={() => setOpen(isOpen ? null : index)}
-                  type="button"
-                >
+        <div
+          ref={areaRef}
+          className="districts-scroll-area"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div ref={listRef} className="districts-list">
+            {districts.map((district) => (
+              <div key={district.name} className="district-item">
+                <div className="district-summary">
                   <div className="district-left">
-                    <span className="district-icon">
-                      {isOpen ? <FaAngleUp /> : <FaAngleDown />}
-                    </span>
-
                     <strong className="district-name">{district.name}</strong>
                   </div>
 
                   <span className="district-type">{district.character}</span>
-                </button>
+                </div>
 
                 <div className="district-body">
                   {district.bestKnownFor && (
@@ -71,8 +113,8 @@ function DistrictsSection({ districts }) {
                   )}
                 </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -81,8 +123,7 @@ function DistrictsSection({ districts }) {
 
 export default function ColomboPage() {
   const { language } = useLanguage();
-
-const { districts, pageContent, pointsOfInterest, poiHeader } = getColomboData(language);
+  const { districts, pageContent, pointsOfInterest, poiHeader } = getColomboData(language);
 
   return (
     <div className="colombo-page">
@@ -91,12 +132,8 @@ const { districts, pageContent, pointsOfInterest, poiHeader } = getColomboData(l
       <header className="colombo-hero">
         <div className="colombo-heroOverlay" />
         <div className="container colombo-heroInner">
-          <div className="colombo-heroKicker">
-            {pageContent.hero.kicker}
-          </div>
-          <h1 className="colombo-heroTitle">
-            {pageContent.hero.title}
-          </h1>
+          <div className="colombo-heroKicker">{pageContent.hero.kicker}</div>
+          <h1 className="colombo-heroTitle">{pageContent.hero.title}</h1>
         </div>
       </header>
 
@@ -126,12 +163,8 @@ const { districts, pageContent, pointsOfInterest, poiHeader } = getColomboData(l
         <section className="section colombo-poi">
           <div className="container">
             <div className="colombo-poiHead">
-              <div className="colombo-sectionKicker">
-                {poiHeader.kicker}
-              </div>
-              <h2 className="colombo-sectionTitle">
-                {poiHeader.title}
-              </h2>
+              <div className="colombo-sectionKicker">{poiHeader.kicker}</div>
+              <h2 className="colombo-sectionTitle">{poiHeader.title}</h2>
             </div>
 
             <div className="colombo-cardGrid">
