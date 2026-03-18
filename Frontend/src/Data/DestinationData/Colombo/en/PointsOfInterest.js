@@ -25,12 +25,12 @@ export const pointsOfInterest = [
   },
   {
     title: "Beaches",
-    image: `${import.meta.env.BASE_URL}Colombo/beaches1.webp`,
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/beaches1.webp`,
     imageAlt: "Colombo beaches",
   },
   {
     title: "Museums",
-    image: `${import.meta.env.BASE_URL}Colombo/Colombo-National-Museum.jpg`,
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/Colombo-National-Museum.jpg`,
     imageAlt: "Colombo museums",
   },
   {
@@ -46,7 +46,7 @@ export const pointsOfInterest = [
   {
     title: "Lotus Tower",
     slug: "lotus-tower",
-    image: `${import.meta.env.BASE_URL}Colombo/lotustower1.jpg`,
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/lotustower1.jpg`,
     imageAlt: "Lotus Tower Colombo",
   },
   {
@@ -57,7 +57,7 @@ export const pointsOfInterest = [
   {
     title: "Nightlife",
     slug: "nightlife",
-    image: `${import.meta.env.BASE_URL}Colombo/colomboNight1.jpg`,
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/colomboNight1.jpg`,
     imageAlt: "Colombo nightlife",
   },
   {

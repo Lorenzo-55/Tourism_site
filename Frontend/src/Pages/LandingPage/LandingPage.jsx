@@ -2,18 +2,15 @@
 import { useEffect, useMemo, useState } from "react";
 import NavBar from "../../Components/Navbar/Navbar.jsx";
 import MapSection from "../../Components/MapSection/MapSection";
-import SimpleMapsSriLanka from "../../Components/SimpleMapsSriLanka/SimpleMapsSriLanka.jsx";
 import Footer from "../../Components/Footer/Footer";
 import "./LandingPage.css";
-
-const SHOW_SIMPLEMAPS_MAP = false;
 
 function HeroSlider() {
   const slides = useMemo(
     () => [
-      { src: `${import.meta.env.BASE_URL}images2.jpg`, alt: "Sri Lanka coast" },
-      { src: `${import.meta.env.BASE_URL}images4.avif`, alt: "Tea hills" },
-      { src: `${import.meta.env.BASE_URL}images5.jpg`, alt: "Temple & heritage" },
+      { src: `${import.meta.env.BASE_URL}/Landing/images2.jpg`, alt: "Sri Lanka coast" },
+      { src: `${import.meta.env.BASE_URL}/Landing/images4.avif`, alt: "Tea hills" },
+      { src: `${import.meta.env.BASE_URL}/Landing/images5.jpg`, alt: "Temple & heritage" },
     ],
     []
   );
@@ -103,22 +100,22 @@ function StaySection() {
     {
       title: "RESORTS",
       desc: "From beachfront escapes to chic boutique resorts, find your perfect stay by the sea.",
-      img: "Resort1.jpg",
+      img: `${import.meta.env.BASE_URL}/Landing/Resort1.jpg`,
     },
     {
       title: "HOTELS",
       desc: "City comfort, heritage charm, or hill-country views—choose a hotel that fits your trip.",
-      img: "Hotel1.jpg",
+      img: `${import.meta.env.BASE_URL}/Landing/Hotel1.jpg`,
     },
     {
       title: "VILLAS",
       desc: "Private villas for families and friends—space, quiet, and the best of island living.",
-      img: "Villa1.webp",
+      img: `${import.meta.env.BASE_URL}/Landing/Villa1.webp`,
     },
     {
       title: "GUESTHOUSES",
       desc: "Stay local and cozy with welcoming hosts and authentic neighbourhood vibes.",
-      img: "Guesthouse1.jpg",
+      img: `${import.meta.env.BASE_URL}/Landing/Guesthouse1.jpg`,
     },
   ];
 
@@ -159,21 +156,13 @@ function StaySection() {
   );
 }
 
-function MapSectionSwitcher() {
-  if (SHOW_SIMPLEMAPS_MAP) {
-    return <SimpleMapsSriLanka />;
-  }
-
-  return <MapSection />;
-}
-
 export default function Landing() {
   return (
     <div className="landing">
       <NavBar />
       <HeroSlider />
       <AboutSection />
-      <MapSectionSwitcher />
+      <MapSection />
       <StaySection />
       <Footer />
     </div>

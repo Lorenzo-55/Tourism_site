@@ -1,14 +1,34 @@
 // src/Components/MapSection/MapSection.jsx
 import "./MapSection.css";
+import MapOverlay from "./MapOverlay";
+import { locations } from "../../Data/Location";
 import SimpleMapsSriLanka from "../SimpleMapsSriLanka/SimpleMapsSriLanka";
+
+const SHOW_SIMPLEMAPS = false;
+
+function getCoords(e) {
+  const rect = e.currentTarget.getBoundingClientRect();
+
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+  console.log(`x: ${x.toFixed(2)}, y: ${y.toFixed(2)}`);
+}
 
 export default function MapSection() {
   return (
     <section className="map-section">
       <div className="map-container">
-        {/* Left Side – Interactive Map */}
-        <div className="map-image-wrap">
-          <SimpleMapsSriLanka />
+        {/* Left Side – Map */}
+        <div className="map-image-wrap" onClick={getCoords}>
+          {SHOW_SIMPLEMAPS ? (
+            <SimpleMapsSriLanka />
+          ) : (
+            <MapOverlay
+              imageSrc={`${import.meta.env.BASE_URL}/Maps/Map.PNG`}
+              locations={locations}
+            />
+          )}
         </div>
 
         {/* Right Side – Text Content */}
