@@ -1,29 +1,71 @@
 /* src/Components/SimpleMapsSriLanka/SimpleMapsSriLanka.css */
 
-.simplemaps-sl__layout {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 2rem;
-  align-items: center;
-}
-
 .simplemaps-sl__frame {
   width: 100%;
-  min-height: 520px;
 }
 
-.simplemaps-sl__frame #map {
+.simplemaps-sl__inner {
   width: 100%;
   min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simplemaps-sl__frame #map,
+.simplemaps-sl__frame .simplemaps_countrymap {
+  width: 100% !important;
+  min-height: 520px !important;
+}
+
+/* the generated svg */
+.simplemaps-sl__frame svg {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+/* hover feel on regions if SimpleMaps uses svg paths */
+.simplemaps-sl__frame path,
+.simplemaps-sl__frame polygon {
+  transition: fill 0.25s ease, opacity 0.25s ease;
+}
+
+/* popup styling - targets common SimpleMaps popup output */
+.simplemaps-sl__frame .tt_sm,
+.simplemaps-sl__frame .tt_custom,
+.simplemaps-sl__frame div[id^="tt_sm"],
+.simplemaps-sl__frame .simplemaps_popup {
+  border-radius: 12px !important;
+  background: rgba(10, 16, 24, 0.92) !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35) !important;
+  border: none !important;
+  padding: 12px 12px 10px !important;
+  font-family: inherit !important;
+}
+
+/* popup text cleanup */
+.simplemaps-sl__frame .tt_sm_title,
+.simplemaps-sl__frame .tt_name_sm {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  margin-bottom: 6px !important;
+  color: #ffffff !important;
+}
+
+.simplemaps-sl__frame .tt_sm_content,
+.simplemaps-sl__frame .tt_description_sm {
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+  opacity: 0.92 !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 900px) {
-  .simplemaps-sl__layout {
-    grid-template-columns: 1fr;
-  }
-
-  .simplemaps-sl__frame,
-  .simplemaps-sl__frame #map {
-    min-height: 420px;
+  .simplemaps-sl__inner,
+  .simplemaps-sl__frame #map,
+  .simplemaps-sl__frame .simplemaps_countrymap {
+    min-height: 420px !important;
   }
 }

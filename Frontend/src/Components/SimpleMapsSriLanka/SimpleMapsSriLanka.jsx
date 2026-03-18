@@ -15,7 +15,13 @@ export default function SimpleMapsSriLanka() {
         );
 
         if (existing) {
-          resolve();
+          if (existing.dataset.loaded === "true") {
+            resolve();
+            return;
+          }
+
+          existing.addEventListener("load", resolve, { once: true });
+          existing.addEventListener("error", reject, { once: true });
           return;
         }
 
@@ -23,7 +29,12 @@ export default function SimpleMapsSriLanka() {
         script.src = src;
         script.async = false;
         script.dataset.simplemaps = attr;
-        script.onload = resolve;
+
+        script.onload = () => {
+          script.dataset.loaded = "true";
+          resolve();
+        };
+
         script.onerror = reject;
         document.body.appendChild(script);
       });
@@ -38,7 +49,11 @@ export default function SimpleMapsSriLanka() {
         }
 
         if (containerRef.current) {
-          containerRef.current.innerHTML = `<div id="map"></div>`;
+          containerRef.current.innerHTML = `
+            <div class="simplemaps-sl__inner">
+              <div id="map"></div>
+            </div>
+          `;
         }
 
         await loadScript(`${base}simplemaps/lk/countrymap.js`, "lk-countrymap");

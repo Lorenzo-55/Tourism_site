@@ -6,7 +6,7 @@ import SimpleMapsSriLanka from "../../Components/SimpleMapsSriLanka/SimpleMapsSr
 import Footer from "../../Components/Footer/Footer";
 import "./LandingPage.css";
 
-const SHOW_SIMPLEMAPS_MAP = true;
+const SHOW_SIMPLEMAPS_MAP = false;
 
 function HeroSlider() {
   const slides = useMemo(
