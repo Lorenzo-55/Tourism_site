@@ -5,10 +5,18 @@ import ArticlePage from "../ArticlePage/ArticlePage.jsx";
 
 import lotusTowerArticle from "../../Data/DestinationData/Colombo/en/LotusTowerArticle.js";
 import  NightLifeArticle  from "../../Data/DestinationData/Colombo/en/NightLifeArticle.js";
+import  BeachesArticle  from "../../Data/DestinationData/Colombo/en/BeachesArticle.js";
+import EconomyArticle  from "../../Data/DestinationData/Colombo/en/EconomyArticle.js";  
+import PettahArticle from "../../Data/DestinationData/Colombo/en/PettahArticle.js"; 
+import FortAreaArticle from "../../Data/DestinationData/Colombo/en/FortAreaAritcle.js";
 
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
+  "beaches": BeachesArticle,
+  "economy": EconomyArticle,
+  "pettah": PettahArticle,
+  "fort": FortAreaArticle,
 };
 
 export default function PlacePage() {

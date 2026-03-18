@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { MdOutlineSearch } from "react-icons/md";
 import "./NavBar.css";
 import { useLanguage } from "../../Context/LanguageContext.jsx";
+import { Link } from "react-router-dom";
 
 const menuData = {
   places: ["Lorem ipsum", "Dolor sit amet", "Consectetur", "Adipiscing elit"],
@@ -115,13 +116,13 @@ export default function NavBar() {
   return (
     <header className={`nav-wrap ${hidden ? "nav-hidden" : ""}`}>
       <nav className="nav" aria-label="Primary">
-        <a className="nav-brand" href="#">
+        <Link className="nav-brand" to="/">
           <span className="nav-mark" aria-hidden="true">
             <span className="mark-dot" />
             <span className="mark-swoosh" />
           </span>
           <span className="nav-brand-text">Sri Lanka</span>
-        </a>
+        </Link>
 
         <div className="nav-center">
           <Dropdown label="Places to go" items={menuData.places} />

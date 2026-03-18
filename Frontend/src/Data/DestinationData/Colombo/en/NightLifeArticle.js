@@ -3,7 +3,7 @@
 const NightLifeArticle = {
   breadcrumbItems: [
     { label: "Home", to: "/" },
-    { label: "Colombo", to: "/colombo" },
+    { label: "Colombo", to: "/places/colombo" },
     { label: "Nightlife in Colombo" },
   ],
 
@@ -108,13 +108,6 @@ const NightLifeArticle = {
         "Bally’s Casino is one of the city’s most established names, while Bellagio Casino is another popular option for gaming and entertainment.",
         "These venues often position themselves as more than just casinos, pairing gaming floors with food, music, and a lively late-night atmosphere.",
       ],
-    },
-
-    {
-      type: "quote",
-      quote:
-        "In Colombo, nightlife is less about endless streets of bars and more about knowing the right venues.",
-      author: "City Evening Guide",
     },
 
     {

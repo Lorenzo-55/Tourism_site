@@ -20,27 +20,31 @@ export const poiHeader = {
 export const pointsOfInterest = [
   {
     title: "Economy",
-    image: "/images/colombo-economy.jpg",
+    slug: "economy",
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboEconomy1x.webp`,
     imageAlt: "Colombo economy",
   },
   {
     title: "Beaches",
+    slug: "beaches",
     image: `${import.meta.env.BASE_URL}/Destinations/Colombo/beaches1.webp`,
     imageAlt: "Colombo beaches",
   },
   {
     title: "Museums",
+    slug: "museums",
     image: `${import.meta.env.BASE_URL}/Destinations/Colombo/Colombo-National-Museumx.jpg`,
     imageAlt: "Colombo museums",
   },
   {
     title: "Temples, Churches, and Mosques",
-    image: "/images/colombo-religious-sites.jpg",
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboTemple1.jpg`,
     imageAlt: "Temples churches and mosques in Colombo",
   },
   {
     title: "Pettah",
-    image: "/images/colombo-pettah.jpg",
+    slug: "pettah",
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboPettah1x.webp`,
     imageAlt: "Pettah market Colombo",
   },
   {
@@ -51,7 +55,8 @@ export const pointsOfInterest = [
   },
   {
     title: "Fort",
-    image: "/images/colombo-fort.jpg",
+    slug: "fort",
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboFort1x.jpg`,
     imageAlt: "Colombo Fort",
   },
   {
