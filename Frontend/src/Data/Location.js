@@ -24,4 +24,12 @@ export const locations = [
     y: 89.22,
     summary: "Fort town, cafes, sunsets, and colonial streets.",
   },
+    {
+    id: "matara",
+    name: "Matara",
+    slug: "matara",
+    x: 49.55,
+    y: 94.5,
+    summary: "Coastal city with beaches, temples, and a laid-back southern vibe.",
+  },
 ];

@@ -10,6 +10,8 @@ import EconomyArticle  from "../../Data/DestinationData/Colombo/en/EconomyArticl
 import PettahArticle from "../../Data/DestinationData/Colombo/en/PettahArticle.js"; 
 import FortAreaArticle from "../../Data/DestinationData/Colombo/en/FortAreaAritcle.js";
 
+import MataraArticle from "../../Data/DestinationData/Matara/en/MataraArticle.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -17,6 +19,8 @@ const placeRegistry = {
   "economy": EconomyArticle,
   "pettah": PettahArticle,
   "fort": FortAreaArticle,
+
+  "matara": MataraArticle,
 };
 
 export default function PlacePage() {
