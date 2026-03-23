@@ -1,0 +1,88 @@
+const articleData = {
+  breadcrumbItems: [
+    { label: "", to: "" },
+    { label: "", to: "" },
+  ],
+
+  hero: {
+    kicker: "",
+    title: "",
+    subtitle: "",
+    backgroundImage: "",
+  },
+
+  overview: {
+    kicker: "",
+    title: "",
+    paragraphs: [
+      "",
+      "",
+    ],
+  },
+
+  sections: [
+    // TEXT SECTION
+    {
+      type: "text",
+      kicker: "",
+      title: "",
+      align: "left", // optional: "left" | "center"
+      paragraphs: [
+        "",
+        "",
+      ],
+
+      // OPTIONAL: structured content (overrides paragraphs)
+      content: [
+        { type: "h3", text: "" },
+        { type: "p", text: "" },
+        { type: "p", text: "" },
+      ],
+    },
+
+    // CARDS SECTION
+    {
+      type: "cards",
+      kicker: "",
+      title: "",
+      align: "center", // optional
+      items: [
+        {
+          image: "",
+          imageAlt: "",
+          title: "",
+          description: "",
+          // to: "" // optional link (currently disabled in component)
+        },
+      ],
+    },
+
+    // SPLIT SECTION (image + text side by side)
+    {
+      type: "split",
+      kicker: "",
+      title: "",
+      image: "",
+      imageAlt: "",
+      paragraphs: [
+        "",
+        "",
+      ],
+
+      // OPTIONAL structured content
+      content: [
+        { type: "h3", text: "" },
+        { type: "p", text: "" },
+      ],
+    },
+
+    // (OPTIONAL — only if QuoteSection exists)
+    {
+      type: "quote",
+      quote: "",
+      author: "",
+    },
+  ],
+};
+
+export default articleData;

@@ -62,12 +62,13 @@ export const pointsOfInterest = [
   {
     title: "Nightlife",
     slug: "nightlife",
-    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/colomboNight1x.jpg`,
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboNight1x.jpg`,
     imageAlt: "Colombo nightlife",
   },
   {
     title: "History",
-    image: "/images/colombo-history.jpg",
+    slug: "history",
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboHistory1x.jpg`,
     imageAlt: "Historic Colombo",
   },
   {

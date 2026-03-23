@@ -1,3 +1,5 @@
+// src/Pages/ArticlePage/ArticlePage.jsx
+
 import NavBar from "../../Components/Navbar/Navbar.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 import Breadcrumbs from "../../Components/Breadcrumbs/Breadcrumbs.jsx";
@@ -12,19 +14,30 @@ function SectionHeader({ kicker, title, subtitle, align = "left" }) {
     <div className={`article-sectionHead article-sectionHead--${align}`}>
       {kicker && <div className="article-sectionKicker">{kicker}</div>}
       {title && <h2 className="article-sectionTitle">{title}</h2>}
-      {subtitle && <p className="article-sectionSubtitle">{subtitle}</p>}
     </div>
   );
 }
 
-function RichText({ paragraphs = [] }) {
-  if (!paragraphs?.length) return null;
+function RichText({ paragraphs = [], content = [] }) {
+  const hasStructured = content && content.length > 0;
+
+  if (!hasStructured && !paragraphs.length) return null;
 
   return (
     <div className="article-copy">
-      {paragraphs.map((text, index) => (
-        <p key={index}>{text}</p>
-      ))}
+      {hasStructured
+        ? content.map((block, index) => {
+            if (block.type === "h3") {
+              return (
+                <h3 key={index} className="article-subTitle">
+                  {block.text}
+                </h3>
+              );
+            }
+
+            return <p key={index}>{block.text}</p>;
+          })
+        : paragraphs.map((text, index) => <p key={index}>{text}</p>)}
     </div>
   );
 }
@@ -36,7 +49,6 @@ function CardsSection({ section }) {
         <SectionHeader
           kicker={section.kicker}
           title={section.title}
-          subtitle={section.subtitle}
           align={section.align || "center"}
         />
 
@@ -64,10 +76,9 @@ function TextSection({ section }) {
         <SectionHeader
           kicker={section.kicker}
           title={section.title}
-          subtitle={section.subtitle}
           align={section.align || "left"}
         />
-        <RichText paragraphs={section.paragraphs} />
+        <RichText paragraphs={section.paragraphs} content={section.content} />
       </div>
     </section>
   );
@@ -90,28 +101,15 @@ function SplitSection({ section }) {
           <SectionHeader
             kicker={section.kicker}
             title={section.title}
-            subtitle={section.subtitle}
             align="left"
           />
-          <RichText paragraphs={section.paragraphs} />
+          <RichText paragraphs={section.paragraphs} content={section.content} />
         </div>
       </div>
     </section>
   );
 }
 
-function QuoteSection({ section }) {
-  return (
-    <section className="section">
-      <div className="container article-quoteWrap">
-        <blockquote className="article-quote">
-          {section.quote && <p className="article-quoteText">“{section.quote}”</p>}
-          {section.author && <footer className="article-quoteAuthor">— {section.author}</footer>}
-        </blockquote>
-      </div>
-    </section>
-  );
-}
 
 function renderSection(section, index) {
   switch (section.type) {
@@ -123,9 +121,6 @@ function renderSection(section, index) {
 
     case "split":
       return <SplitSection key={index} section={section} />;
-
-    case "quote":
-      return <QuoteSection key={index} section={section} />;
 
     default:
       return null;
@@ -172,7 +167,6 @@ export default function ArticlePage({ data }) {
               <SectionHeader
                 kicker={overview.kicker}
                 title={overview.title}
-                subtitle={overview.subtitle}
                 align="left"
               />
             </div>

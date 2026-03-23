@@ -9,6 +9,8 @@ import  BeachesArticle  from "../../Data/DestinationData/Colombo/en/BeachesArtic
 import EconomyArticle  from "../../Data/DestinationData/Colombo/en/EconomyArticle.js";  
 import PettahArticle from "../../Data/DestinationData/Colombo/en/PettahArticle.js"; 
 import FortAreaArticle from "../../Data/DestinationData/Colombo/en/FortAreaAritcle.js";
+import ColomboHistoryArticle from "../../Data/DestinationData/Colombo/en/ColomboHistory.js";
+import MuseumsArticle from "../../Data/DestinationData/Colombo/en/MuseumsArticle.js";
 
 import MataraArticle from "../../Data/DestinationData/Matara/en/MataraArticle.js";
 
@@ -19,6 +21,8 @@ const placeRegistry = {
   "economy": EconomyArticle,
   "pettah": PettahArticle,
   "fort": FortAreaArticle,
+  "history": ColomboHistoryArticle,
+  "museums": MuseumsArticle,
 
   "matara": MataraArticle,
 };
