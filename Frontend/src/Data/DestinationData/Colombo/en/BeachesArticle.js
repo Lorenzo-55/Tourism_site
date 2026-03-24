@@ -12,7 +12,7 @@ const BeachesArticle = {
     title: "Beaches in and Around Colombo",
     subtitle:
       "From lively city promenades to relaxed coastal escapes, Colombo’s shoreline offers a mix of urban energy and nearby tropical beauty.",
-    backgroundImage: "/images/colombo-beaches-hero.jpg",
+    backgroundImage: "/Tourism_site/Destinations/Colombo/ColomboBeaches1x.webp",
   },
 
   overview: {
@@ -35,14 +35,14 @@ const BeachesArticle = {
         "Two of the most popular coastal spots, each offering a very different experience.",
       items: [
         {
-          image: "/images/mount-lavinia-beach.jpg",
+          image: "/Tourism_site/Destinations/Colombo/ColomboBeaches2.jpg",
           imageAlt: "Mount Lavinia Beach",
           title: "Mount Lavinia Beach",
           description:
             "The closest true swimming beach to Colombo, Mount Lavinia is known for its wide sandy stretch, calmer waters, and laid-back atmosphere. Just a short ride from the city, it’s popular for sunbathing, swimming, and beachside dining, especially in the evenings when restaurants set up tables right on the sand.",
         },
         {
-          image: "/images/galle-face-green.jpg",
+          image: "/Tourism_site/Destinations/Colombo/ColomboBeaches3.jpg",
           imageAlt: "Galle Face Green",
           title: "Galle Face Green",
           description:
@@ -70,7 +70,7 @@ const BeachesArticle = {
       title: "Sunsets by the Indian Ocean",
       subtitle:
         "Even without swimming, Colombo’s coastline delivers unforgettable evenings.",
-      image: "/images/colombo-sunset-beach.jpg",
+      image: "/Tourism_site/Destinations/Colombo/ColomboBeaches4x.jpg",
       imageAlt: "Sunset in Colombo beach",
       paragraphs: [
         "One of the highlights of Colombo’s beaches is the sunset. As the day winds down, the sky turns shades of orange and pink, reflecting across the ocean and creating a relaxed, almost cinematic atmosphere.",

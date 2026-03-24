@@ -1,117 +1,120 @@
-// src/Data/DestinationData/Colombo/en/EconomyArticle.js
-
-const EconomyArticle = {
+const articleData = {
   breadcrumbItems: [
-    { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Economy" },
+    { label: "Economy", to: "" },
   ],
 
   hero: {
-    kicker: "ECONOMIC ENGINE",
-    title: "Colombo’s Economy",
-    subtitle:
-      "The financial and commercial core of Sri Lanka, driven by services, trade, and rapid urban development.",
-    backgroundImage: "/images/colombo-economy-hero.jpg",
+    kicker: "Colombo",
+    title: "Economy",
+    subtitle: "The commercial and financial engine of Sri Lanka",
+    backgroundImage: "/Tourism_site/Destinations/Colombo/ColomboEconomy1x.webp",
   },
 
   overview: {
-    kicker: "OVERVIEW",
-    title: "Structure and Importance",
-    subtitle:
-      "A service-dominated economy with strong links to global trade and finance.",
+    kicker: "Overview",
+    title: "Economic Powerhouse",
     paragraphs: [
-      "Colombo’s economy is heavily concentrated in the services and industrial sectors, reflecting Sri Lanka’s broader economic structure where services contribute the majority of national output.",
-      "As the country’s commercial capital, Colombo acts as the central hub for finance, trade, logistics, and administration. Its economic performance is closely tied to national conditions, global trade flows, and foreign investment trends.",
+      "As the official Commercial Capital of Sri Lanka, Colombo is the undisputed economic engine of the nation. It generates a disproportionately large share of the country’s GDP, driven by its concentration of finance, trade, logistics, and services.",
+      "The city’s economy is heavily service-oriented, aligning with Sri Lanka’s broader economic structure where services account for roughly 60% of national GDP, supported by strong industrial and trade activities.",
     ],
   },
 
   sections: [
     {
-      type: "split",
-      kicker: "CORE DRIVER",
+      type: "text",
+      kicker: "Core Sectors",
       title: "Financial and Services Hub",
-      subtitle:
-        "The backbone of Colombo’s economic activity.",
-      image: "/images/colombo-financial-district.jpg",
-      imageAlt: "Colombo financial district skyline",
-      paragraphs: [
-        "Colombo serves as the financial, legal, and administrative center of Sri Lanka. It hosts the headquarters of the Central Bank, the Colombo Stock Exchange, and nearly all major local and international banks.",
-        "The city is also a key logistics hub. The Port of Colombo ranks among the busiest transshipment ports in South Asia, supporting extensive shipping, freight, and warehousing industries.",
-        "In recent years, the ICT and Business Process Outsourcing (BPO) sectors have grown rapidly. Colombo attracts international companies with its skilled, English-speaking workforce and competitive operating costs.",
-      ],
-    },
-
-    {
-      type: "cards",
-      kicker: "TRADE & INDUSTRY",
-      title: "Key Economic Activities",
-      subtitle:
-        "Colombo remains central to the movement and management of goods and production.",
-      items: [
+      content: [
+        { type: "h3", text: "Banking and Finance" },
         {
-          image: "/images/colombo-port.jpg",
-          imageAlt: "Port of Colombo",
-          title: "Trade and Logistics",
-          description:
-            "Colombo is the primary gateway for Sri Lanka’s imports and exports. Nearly all merchandise trade flows through the city, making logistics and port-related services critical to the national economy.",
+          type: "p",
+          text: "Colombo is the financial, legal, and administrative heart of Sri Lankan commerce. It hosts the Central Bank of Sri Lanka, the Colombo Stock Exchange, and nearly all major local and international banks, including Bank of Ceylon, Commercial Bank, and HSBC.",
         },
+        { type: "h3", text: "Logistics and Shipping" },
         {
-          image: "/images/garment-industry.jpg",
-          imageAlt: "Garment industry",
-          title: "Garment and Apparel",
-          description:
-            "Although manufacturing is spread across the country, Colombo hosts the headquarters, design centers, and export management operations of Sri Lanka’s globally significant apparel industry.",
+          type: "p",
+          text: "The Port of Colombo is one of the busiest transshipment hubs in South Asia. The city’s economy is deeply tied to port operations, logistics, warehousing, and international shipping networks.",
         },
+        { type: "h3", text: "ICT and Business Process Outsourcing" },
         {
-          image: "/images/tea-processing.jpg",
-          imageAlt: "Tea processing",
-          title: "Processing Industries",
-          description:
-            "The city supports industries linked to Sri Lanka’s key exports, including tea, rubber, and coconut products, focusing on processing, packaging, and export coordination.",
+          type: "p",
+          text: "Colombo is the center of Sri Lanka’s growing IT and BPO industry, attracting foreign investment due to its skilled, English-speaking workforce and expanding digital infrastructure.",
         },
       ],
     },
 
     {
       type: "text",
-      kicker: "URBAN GROWTH",
-      title: "Development and Real Estate",
-      subtitle:
-        "Infrastructure and construction are reshaping the city skyline.",
-      paragraphs: [
-        "Colombo is undergoing rapid urban transformation, driven by both local demand and foreign investment. High-rise residential buildings, commercial towers, and luxury hotels are reshaping the city’s landscape.",
-        "A major centerpiece of this growth is the Colombo Port City, a large-scale development built on reclaimed land. Designed as a Special Economic Zone, it aims to position Colombo as a major international financial and business hub in the Indian Ocean region.",
+      kicker: "Trade and Industry",
+      title: "National Trade Gateway",
+      content: [
+        { type: "h3", text: "Trade" },
+        {
+          type: "p",
+          text: "Colombo functions as the primary gateway for nearly all of Sri Lanka’s imports and exports, making it central to the country’s global trade connections.",
+        },
+        { type: "h3", text: "Garment and Apparel" },
+        {
+          type: "p",
+          text: "While production is spread across the island, Colombo hosts the headquarters, design centers, and export management operations of the apparel industry, one of Sri Lanka’s largest export sectors.",
+        },
+        { type: "h3", text: "Processing Industries" },
+        {
+          type: "p",
+          text: "The city also supports industries tied to key exports such as tea, rubber, and coconut, particularly in processing, packaging, and trade-related services.",
+        },
       ],
     },
 
     {
       type: "split",
-      kicker: "GLOBAL CONNECTION",
-      title: "Tourism and Business Travel",
-      subtitle:
-        "The main gateway for international visitors to Sri Lanka.",
-      image: "/images/colombo-hotel.jpg",
-      imageAlt: "Colombo hotel skyline",
-      paragraphs: [
-        "Colombo plays a key role in the country’s tourism sector, serving as the primary entry point for international travelers. The city offers a wide range of hotels, restaurants, and entertainment venues catering to both leisure and business visitors.",
-        "A significant share of tourism revenue comes from business travel, particularly MICE tourism—meetings, incentives, conferences, and exhibitions—supported by the city’s convention facilities and infrastructure.",
+      kicker: "Urban Growth",
+      title: "Development and Real Estate",
+      image: "/Tourism_site/Destinations/Colombo/ColomboEconomy2.jpg",
+      imageAlt: "Colombo Port City development",
+      content: [
+        { type: "h3", text: "Construction Boom" },
+        {
+          type: "p",
+          text: "Driven by a growing middle class and foreign investment, Colombo is experiencing rapid urban development. High-rise residential buildings, commercial towers, and luxury hotels continue to reshape the skyline.",
+        },
+        { type: "h3", text: "Colombo Port City" },
+        {
+          type: "p",
+          text: "The Colombo Port City project is a major development built on reclaimed land, designed as a Special Economic Zone and international financial hub. It aims to position Colombo as a key commercial center in the Indian Ocean region.",
+        },
       ],
     },
 
+    {
+      type: "text",
+      kicker: "Tourism",
+      title: "Hospitality and Business Travel",
+      content: [
+        { type: "h3", text: "Hospitality Sector" },
+        {
+          type: "p",
+          text: "Colombo serves as the main gateway for international visitors, offering a wide range of hotels, restaurants, and entertainment venues catering to both leisure and business travelers.",
+        },
+        { type: "h3", text: "Business Tourism" },
+        {
+          type: "p",
+          text: "A large portion of tourism revenue comes from business-related travel, including meetings, conferences, and exhibitions. The city hosts major convention centers and corporate events throughout the year.",
+        },
+      ],
+    },
 
     {
       type: "text",
-      kicker: "CURRENT CONTEXT",
-      title: "Economic Outlook",
-      subtitle:
-        "Stability, investment, and reform shape the current direction.",
+      kicker: "Outlook",
+      title: "Economic Challenges and Recovery",
       paragraphs: [
-        "The performance of Colombo’s economy is closely tied to the broader national outlook. Following a severe economic crisis in recent years, the focus has shifted toward stabilization and recovery.",
-        "Efforts are being directed at attracting foreign direct investment, strengthening exports, and implementing structural reforms aimed at improving long-term competitiveness and resilience.",
+        "The health of Colombo’s economy is closely tied to the national economic outlook. Following a severe economic crisis in recent years, the city is now focused on stabilization and recovery.",
+        "Efforts are centered on attracting foreign direct investment, strengthening exports, and implementing structural reforms to improve global competitiveness and long-term economic resilience.",
       ],
     },
   ],
 };
 
-export default EconomyArticle;
+export default articleData;

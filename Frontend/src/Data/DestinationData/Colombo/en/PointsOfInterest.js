@@ -27,7 +27,7 @@ export const pointsOfInterest = [
   {
     title: "Beaches",
     slug: "beaches",
-    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/beaches1.webp`,
+    image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboBeaches1x.webp`,
     imageAlt: "Colombo beaches",
   },
   {
