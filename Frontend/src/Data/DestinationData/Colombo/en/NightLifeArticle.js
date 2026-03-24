@@ -4,7 +4,7 @@ const NightLifeArticle = {
   breadcrumbItems: [
     { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Nightlife in Colombo" },
+    { label: "Nightlife in Colombo", to: "/places/colombo/nightlife" },
   ],
 
   hero: {

@@ -1,7 +1,8 @@
 const articleData = {
   breadcrumbItems: [
+    { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Economy", to: "" },
+    { label: "Economy", to: "/places/colombo/economy" },
   ],
 
   hero: {

@@ -4,7 +4,7 @@ const PettahArticle = {
   breadcrumbItems: [
     { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Pettah" },
+    { label: "Pettah", to: "/places/colombo/pettah" },
   ],
 
   hero: {

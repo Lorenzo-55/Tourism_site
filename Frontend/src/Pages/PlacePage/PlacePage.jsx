@@ -11,6 +11,7 @@ import PettahArticle from "../../Data/DestinationData/Colombo/en/PettahArticle.j
 import FortAreaArticle from "../../Data/DestinationData/Colombo/en/FortAreaAritcle.js";
 import ColomboHistoryArticle from "../../Data/DestinationData/Colombo/en/ColomboHistory.js";
 import MuseumsArticle from "../../Data/DestinationData/Colombo/en/MuseumsArticle.js";
+import TemplesChurchesMosquesArticle from "../../Data/DestinationData/Colombo/en/TemplesChurchesMosquesArticle.js";
 
 import MataraArticle from "../../Data/DestinationData/Matara/en/MataraArticle.js";
 
@@ -23,6 +24,7 @@ const placeRegistry = {
   "fort": FortAreaArticle,
   "history": ColomboHistoryArticle,
   "museums": MuseumsArticle,
+  "temples-churches-mosques": TemplesChurchesMosquesArticle,
 
   "matara": MataraArticle,
 };

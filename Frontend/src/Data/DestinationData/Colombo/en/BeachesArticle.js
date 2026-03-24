@@ -4,7 +4,7 @@ const BeachesArticle = {
   breadcrumbItems: [
     { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Beaches" },
+    { label: "Beaches", to: "/places/colombo/beaches" },
   ],
 
   hero: {

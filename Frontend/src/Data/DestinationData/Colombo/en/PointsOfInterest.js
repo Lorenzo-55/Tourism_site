@@ -38,6 +38,7 @@ export const pointsOfInterest = [
   },
   {
     title: "Temples, Churches, and Mosques",
+    slug: "temples-churches-mosques",
     image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboTemple1.jpg`,
     imageAlt: "Temples churches and mosques in Colombo",
   },

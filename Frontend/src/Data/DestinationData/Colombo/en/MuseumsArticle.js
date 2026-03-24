@@ -1,7 +1,8 @@
 const MuseumsArticle = {
   breadcrumbItems: [
+    { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Museums", to: "/places/colombo/museums" },
+    { label: "Museums in Colombo", to: "/places/colombo/museums" },
   ],
 
   hero: {

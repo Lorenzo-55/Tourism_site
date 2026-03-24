@@ -4,7 +4,7 @@ const FortAreaArticle = {
   breadcrumbItems: [
     { label: "Home", to: "/" },
     { label: "Colombo", to: "/places/colombo" },
-    { label: "Fort Area" },
+    { label: "Fort Area", to: "/places/colombo/fort-area" },
   ],
 
   hero: {
