@@ -1,8 +1,52 @@
 /* src/Components/MapSection/MapOverlay.css */
+
+.map-overlay-shell {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+}
+
+.map-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.map-controls button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.map-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
 .map-stage {
   position: relative;
   width: 100%;
-  max-width: 520px; /* optional */
+  transition: transform 0.2s ease;
+  transform-origin: center center;
+  will-change: transform;
+  user-select: none;
+}
+
+.map-stage.dragging {
+  cursor: grabbing;
+  transition: none;
 }
 
 .map-image {
@@ -10,5 +54,5 @@
   height: auto;
   display: block;
   user-select: none;
-  pointer-events: none; /* markers handle clicks */
+  pointer-events: none;
 }

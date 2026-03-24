@@ -1,13 +1,37 @@
 // src/Components/MapSection/MapOverlay.jsx
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./MapOverlay.css";
 import MapMarker from "./MapMarker";
 import MapPopup from "./MapPopup";
 
+const ENABLE_ZOOM = false;
+
 export default function MapOverlay({ imageSrc, locations }) {
   const navigate = useNavigate();
+  const viewportRef = useRef(null);
+
   const [activeId, setActiveId] = useState(null);
+  const [zoom, setZoom] = useState(ENABLE_ZOOM ? 1 : 1);
+  const [offset, setOffset] = useState({ x: 0, y: 0 });
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+
+    const wheelBlocker = (e) => {
+      e.preventDefault();
+    };
+
+    viewport.addEventListener("wheel", wheelBlocker, { passive: false });
+
+    return () => {
+      viewport.removeEventListener("wheel", wheelBlocker);
+    };
+  }, []);
 
   const activeLocation = useMemo(
     () => locations.find((l) => l.id === activeId) || null,
@@ -22,33 +46,151 @@ export default function MapOverlay({ imageSrc, locations }) {
     navigate(`/places/${slug}`);
   };
 
+  const zoomIn = () => {
+    if (!ENABLE_ZOOM) return;
+    setZoom((prev) => Math.min(prev + 0.2, 3));
+  };
+
+  const zoomOut = () => {
+    if (!ENABLE_ZOOM) return;
+
+    setZoom((prev) => {
+      const next = Math.max(prev - 0.2, 1);
+
+      if (next === 1) {
+        setOffset({ x: 0, y: 0 });
+      }
+
+      return next;
+    });
+  };
+
+  const handleWheel = (e) => {
+    if (!ENABLE_ZOOM) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const delta = e.deltaY < 0 ? 0.2 : -0.2;
+
+    setZoom((prev) => {
+      const next = Math.min(Math.max(prev + delta, 1), 3);
+
+      if (next === 1) {
+        setOffset({ x: 0, y: 0 });
+      }
+
+      return next;
+    });
+  };
+
+  const handlePointerDown = (e) => {
+    if (!ENABLE_ZOOM || zoom <= 1) return;
+
+    const interactiveTarget = e.target.closest(
+      ".map-marker, .map-popup, .map-popup-close, .map-popup-body"
+    );
+
+    if (interactiveTarget) return;
+
+    setIsDragging(true);
+    setDragStart({
+      x: e.clientX - offset.x,
+      y: e.clientY - offset.y,
+    });
+
+    e.currentTarget.setPointerCapture?.(e.pointerId);
+  };
+
+  const handlePointerMove = (e) => {
+    if (!isDragging) return;
+
+    setOffset({
+      x: e.clientX - dragStart.x,
+      y: e.clientY - dragStart.y,
+    });
+  };
+
+  const handlePointerUp = (e) => {
+    setIsDragging(false);
+    e.currentTarget.releasePointerCapture?.(e.pointerId);
+  };
+
+  const handlePointerLeave = () => {
+    setIsDragging(false);
+  };
+
+  const visibleLocations = useMemo(() => {
+    if (!ENABLE_ZOOM) return locations;
+
+    return locations.filter((loc) => {
+      if (zoom <= 1.2) return loc.importance <= 1;
+      if (zoom <= 1.6) return loc.importance <= 2;
+      if (zoom <= 2.0) return loc.importance <= 3;
+      if (zoom <= 2.4) return loc.importance <= 4;
+      return loc.importance <= 5;
+    });
+  }, [locations, zoom]);
+
+  
+
   return (
-    <div className="map-stage">
-      <img src={imageSrc} alt="Map of Sri Lanka" className="map-image" />
-
-      {/* Markers */}
-      {locations.map((loc) => (
-        <MapMarker
-          key={loc.id}
-          x={loc.x}
-          y={loc.y}
-          label={loc.name}
-          isActive={loc.id === activeId}
-          onClick={() => onMarkerClick(loc.id)}
-        />
-      ))}
-
-      {/* Popup */}
-      {activeLocation && (
-        <MapPopup
-          x={activeLocation.x}
-          y={activeLocation.y}
-          title={activeLocation.name}
-          summary={activeLocation.summary}
-          onClose={() => setActiveId(null)}
-          onOpen={() => onPopupClick(activeLocation.slug)}
-        />
+    <div className="map-overlay-shell">
+      {ENABLE_ZOOM && (
+        <div className="map-controls">
+          <button type="button" onClick={zoomIn} aria-label="Zoom in">
+            +
+          </button>
+          <button type="button" onClick={zoomOut} aria-label="Zoom out">
+            −
+          </button>
+        </div>
       )}
+
+        <div
+          ref={viewportRef}
+          className="map-viewport"
+          onWheel={handleWheel}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerLeave={handlePointerLeave}
+        >
+          <div
+            className={`map-stage ${isDragging ? "dragging" : ""}`}
+            style={{
+              transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
+              transformOrigin: "center center",
+            }}
+            onPointerDown={handlePointerDown}
+          >
+          <img src={imageSrc} alt="Map of Sri Lanka" className="map-image" />
+
+          {visibleLocations.map((loc) => (
+            <MapMarker
+              key={loc.id}
+              x={loc.x}
+              y={loc.y}
+              label={loc.name}
+              zoom={ENABLE_ZOOM ? zoom : 1}
+              isActive={loc.id === activeId}
+              onClick={() => onMarkerClick(loc.id)}
+            />
+          ))}
+
+          {activeLocation &&
+            visibleLocations.some((l) => l.id === activeLocation.id) && (
+              <MapPopup
+                x={activeLocation.x}
+                y={activeLocation.y}
+                zoom={ENABLE_ZOOM ? zoom : 1}
+                title={activeLocation.name}
+                summary={activeLocation.summary}
+                onClose={() => setActiveId(null)}
+                onOpen={() => onPopupClick(activeLocation.slug)}
+              />
+            )}
+        </div>
+      </div>
     </div>
   );
 }

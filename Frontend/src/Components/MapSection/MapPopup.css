@@ -1,7 +1,6 @@
 /* src/Components/MapSection/MapPopup.css */
 .map-popup {
   position: absolute;
-  transform: translate(10px, -100%); /* offset to the right of the pin */
   width: 220px;
   background: rgba(10, 16, 24, 0.92);
   color: #fff;
