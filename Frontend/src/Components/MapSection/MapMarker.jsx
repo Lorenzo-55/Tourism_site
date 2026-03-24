@@ -11,10 +11,12 @@ export default function MapMarker({ x, y, label, isActive, onClick }) {
       style={{ left: `${x}%`, top: `${y}%` }}
       onClick={onClick}
       aria-label={`Open info for ${label}`}
-      title={label}
     >
       <CiLocationOn className="marker-icon default-icon" />
       <FaLocationDot className="marker-icon hover-icon" />
+
+      {/* ALWAYS VISIBLE LABEL */}
+      <span className="marker-label">{label}</span>
     </button>
   );
 }

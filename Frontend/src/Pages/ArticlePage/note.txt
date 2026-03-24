@@ -75,13 +75,6 @@ const articleData = {
         { type: "p", text: "" },
       ],
     },
-
-    // (OPTIONAL — only if QuoteSection exists)
-    {
-      type: "quote",
-      quote: "",
-      author: "",
-    },
   ],
 };
 

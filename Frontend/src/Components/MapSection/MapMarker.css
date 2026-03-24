@@ -36,10 +36,29 @@
 /* when hovered or active */
 .map-marker:hover .default-icon,
 .map-marker.active .default-icon {
-  color: #ffffff; /* turns yellow */
+  color: #000000;
 }
 
 .map-marker:hover .hover-icon,
 .map-marker.active .hover-icon {
-  opacity: 1; /* small icon appears */
+  opacity: 1;
+}
+
+/* ===== LABEL (NEW) ===== */
+.marker-label {
+  position: absolute;
+  left: 5px;              /* pushes text to right of marker */
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+
+  white-space: nowrap;
+  pointer-events: none;
+
+  /* background: rgba(255, 255, 255, 0.85); */
+  padding: 2px 6px;
+  border-radius: 4px;
 }

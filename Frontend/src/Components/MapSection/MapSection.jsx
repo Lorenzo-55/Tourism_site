@@ -1,7 +1,7 @@
 // src/Components/MapSection/MapSection.jsx
 import "./MapSection.css";
 import MapOverlay from "./MapOverlay";
-import { locations } from "../../Data/Location";
+import { locations } from "../../Data/LocationMap/Location";
 import SimpleMapsSriLanka from "../SimpleMapsSriLanka/SimpleMapsSriLanka";
 
 const SHOW_SIMPLEMAPS = false;
