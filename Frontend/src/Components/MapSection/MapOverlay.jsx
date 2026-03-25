@@ -20,9 +20,7 @@ export default function MapOverlay({ imageSrc, locations }) {
 
   useEffect(() => {
     const viewport = viewportRef.current;
-    if (!viewport) return;
-
-    if (!ENABLE_ZOOM) return;
+    if (!viewport || !ENABLE_ZOOM) return;
 
     const wheelHandler = (e) => {
       e.preventDefault();
@@ -147,9 +145,10 @@ export default function MapOverlay({ imageSrc, locations }) {
       <div
         ref={viewportRef}
         className="map-viewport"
-        onPointerMove={handlePointerMove}
-        onPointerUp={handlePointerUp}
-        onPointerLeave={handlePointerLeave}
+        style={{ touchAction: ENABLE_ZOOM ? "none" : "auto" }}
+        onPointerMove={ENABLE_ZOOM ? handlePointerMove : undefined}
+        onPointerUp={ENABLE_ZOOM ? handlePointerUp : undefined}
+        onPointerLeave={ENABLE_ZOOM ? handlePointerLeave : undefined}
       >
         <div
           className={`map-stage ${isDragging ? "dragging" : ""}`}
@@ -157,7 +156,7 @@ export default function MapOverlay({ imageSrc, locations }) {
             transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
             transformOrigin: "center center",
           }}
-          onPointerDown={handlePointerDown}
+          onPointerDown={ENABLE_ZOOM ? handlePointerDown : undefined}
         >
           <img src={imageSrc} alt="Map of Sri Lanka" className="map-image" />
 
