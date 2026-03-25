@@ -12,7 +12,7 @@ export default function MapOverlay({ imageSrc, locations }) {
   const viewportRef = useRef(null);
 
   const [activeId, setActiveId] = useState(null);
-  const [zoom, setZoom] = useState(ENABLE_ZOOM ? 1 : 1);
+  const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
 
   const [isDragging, setIsDragging] = useState(false);
@@ -22,14 +22,29 @@ export default function MapOverlay({ imageSrc, locations }) {
     const viewport = viewportRef.current;
     if (!viewport) return;
 
-    const wheelBlocker = (e) => {
+    if (!ENABLE_ZOOM) return;
+
+    const wheelHandler = (e) => {
       e.preventDefault();
+      e.stopPropagation();
+
+      const delta = e.deltaY < 0 ? 0.2 : -0.2;
+
+      setZoom((prev) => {
+        const next = Math.min(Math.max(prev + delta, 1), 3);
+
+        if (next === 1) {
+          setOffset({ x: 0, y: 0 });
+        }
+
+        return next;
+      });
     };
 
-    viewport.addEventListener("wheel", wheelBlocker, { passive: false });
+    viewport.addEventListener("wheel", wheelHandler, { passive: false });
 
     return () => {
-      viewport.removeEventListener("wheel", wheelBlocker);
+      viewport.removeEventListener("wheel", wheelHandler);
     };
   }, []);
 
@@ -65,25 +80,6 @@ export default function MapOverlay({ imageSrc, locations }) {
     });
   };
 
-  const handleWheel = (e) => {
-    if (!ENABLE_ZOOM) return;
-
-    e.preventDefault();
-    e.stopPropagation();
-
-    const delta = e.deltaY < 0 ? 0.2 : -0.2;
-
-    setZoom((prev) => {
-      const next = Math.min(Math.max(prev + delta, 1), 3);
-
-      if (next === 1) {
-        setOffset({ x: 0, y: 0 });
-      }
-
-      return next;
-    });
-  };
-
   const handlePointerDown = (e) => {
     if (!ENABLE_ZOOM || zoom <= 1) return;
 
@@ -103,7 +99,7 @@ export default function MapOverlay({ imageSrc, locations }) {
   };
 
   const handlePointerMove = (e) => {
-    if (!isDragging) return;
+    if (!ENABLE_ZOOM || !isDragging) return;
 
     setOffset({
       x: e.clientX - dragStart.x,
@@ -112,11 +108,14 @@ export default function MapOverlay({ imageSrc, locations }) {
   };
 
   const handlePointerUp = (e) => {
+    if (!ENABLE_ZOOM) return;
+
     setIsDragging(false);
     e.currentTarget.releasePointerCapture?.(e.pointerId);
   };
 
   const handlePointerLeave = () => {
+    if (!ENABLE_ZOOM) return;
     setIsDragging(false);
   };
 
@@ -132,8 +131,6 @@ export default function MapOverlay({ imageSrc, locations }) {
     });
   }, [locations, zoom]);
 
-  
-
   return (
     <div className="map-overlay-shell">
       {ENABLE_ZOOM && (
@@ -147,22 +144,21 @@ export default function MapOverlay({ imageSrc, locations }) {
         </div>
       )}
 
+      <div
+        ref={viewportRef}
+        className="map-viewport"
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerLeave={handlePointerLeave}
+      >
         <div
-          ref={viewportRef}
-          className="map-viewport"
-          onWheel={handleWheel}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerLeave={handlePointerLeave}
+          className={`map-stage ${isDragging ? "dragging" : ""}`}
+          style={{
+            transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
+            transformOrigin: "center center",
+          }}
+          onPointerDown={handlePointerDown}
         >
-          <div
-            className={`map-stage ${isDragging ? "dragging" : ""}`}
-            style={{
-              transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
-              transformOrigin: "center center",
-            }}
-            onPointerDown={handlePointerDown}
-          >
           <img src={imageSrc} alt="Map of Sri Lanka" className="map-image" />
 
           {visibleLocations.map((loc) => (

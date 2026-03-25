@@ -1,5 +1,3 @@
-/* src/Components/MapSection/MapMarker.css */
-
 .map-marker {
   position: absolute;
   transform: translate(-50%, -100%);
@@ -9,45 +7,28 @@
   padding: 0;
 }
 
-/* both icons sit on top of each other */
 .marker-icon {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  transition: color 0.35s ease, opacity 0.35s ease;
+  font-size: 26px;
+
+  color: #e53935; /* default red */
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
-/* large default icon */
-.default-icon {
-  font-size: 28px;
-  opacity: 1;
-  z-index: 1;
+/* hover + active state (slightly darker red + subtle scale) */
+.map-marker:hover .marker-icon,
+.map-marker.active .marker-icon {
+  color: #b71c1c;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* smaller icon that appears on hover */
-.hover-icon {
-  font-size: 22px;
-  opacity: 0;
-  z-index: 2;
-}
-
-/* when hovered or active */
-.map-marker:hover .default-icon,
-.map-marker.active .default-icon {
-  color: #000000;
-}
-
-.map-marker:hover .hover-icon,
-.map-marker.active .hover-icon {
-  opacity: 1;
-}
-
-/* ===== LABEL (NEW) ===== */
+/* label */
 .marker-label {
   position: absolute;
-  left: 5px;              /* pushes text to right of marker */
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
 
@@ -58,7 +39,6 @@
   white-space: nowrap;
   pointer-events: none;
 
-  /* background: rgba(255, 255, 255, 0.85); */
   padding: 2px 6px;
   border-radius: 4px;
 }
