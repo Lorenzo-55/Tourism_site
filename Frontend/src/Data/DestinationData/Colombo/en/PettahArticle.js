@@ -12,7 +12,7 @@ const PettahArticle = {
     title: "Pettah",
     subtitle:
       "A dense, energetic trading hub where Colombo’s commercial life unfolds in full intensity.",
-    backgroundImage: "/images/pettah-hero.jpg",
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Colombo/ColomboPettah1x.webp`,
   },
 
   overview: {

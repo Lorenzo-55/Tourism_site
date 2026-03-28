@@ -29,7 +29,7 @@ function RichText({ paragraphs = [], content = [] }) {
         ? content.map((block, index) => {
             if (block.type === "h3") {
               return (
-                <h3 key={index} className="article-subTitle">
+                <h3 key={index} className="article-subTitle" id={block.id}>
                   {block.text}
                 </h3>
               );
@@ -56,7 +56,7 @@ function CardsSection({ section }) {
           {section.items?.map((item, index) => (
             <ContentCard
               key={item.title || index}
-              // to={item.to || "#"}
+              to={item.to }
               image={item.image}
               imageAlt={item.imageAlt || item.title || "Card image"}
               title={item.title}
@@ -71,7 +71,7 @@ function CardsSection({ section }) {
 
 function TextSection({ section }) {
   return (
-    <section className="section">
+    <section className="section" id={section.id}>
       <div className="container article-narrow">
         <SectionHeader
           kicker={section.kicker}

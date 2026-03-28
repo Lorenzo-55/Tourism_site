@@ -9,7 +9,7 @@ const TemplesChurchesMosquesArticle = {
     kicker: "Sacred Colombo",
     title: "Temples and Churches and Mosque",
     subtitle: "",
-    backgroundImage: "",
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Colombo/ColomboTemple1.jpg`,
   },
 
   overview: {
@@ -29,63 +29,72 @@ const TemplesChurchesMosquesArticle = {
         align: "center",
         items: [
             {
-            image: "",
+            to: "#gangaramaya-temple-seema-malaka",
+            image: "t1.jpg",
             imageAlt: "Gangaramaya Temple and Seema Malaka",
             title: "Gangaramaya Temple & Seema Malaka",
             description:
                 "A major Buddhist complex combining cultural learning, a vast museum, and a serene floating meditation sanctuary on Beira Lake.",
             },
             {
-            image: "",
+              to: "#kelaniya-raja-maha-vihara",
+            image: "t2.jpg",
             imageAlt: "Kelaniya Raja Maha Vihara",
             title: "Kelaniya Raja Maha Vihara",
             description:
                 "One of Sri Lanka’s most sacred Buddhist temples, believed to have been visited by the Buddha and famous for its murals and stupa.",
             },
             {
-            image: "",
+              to: "#isipathanaramaya-temple",
+            image: "t3.jpg",
             imageAlt: "Isipathanaramaya Temple",
             title: "Isipathanaramaya Temple",
             description:
                 "Historic temple tied to Sri Lanka’s independence movement, known for vivid murals and its symbolic origins.",
             },
             {
-            image: "",
+              to: "#kailawasanathan-swami-kovil",
+            image: "t4.jpg",
             imageAlt: "Sri Kailawasanathan Swami Devasthanam Kovil",
             title: "Kailawasanathan Swami Kovil",
             description:
                 "Colombo’s oldest Hindu temple, featuring a towering Dravidian gopuram and rich Tamil religious heritage.",
             },
             {
-            image: "",
+              to: "#ponnambalam-vanesar-kovil",
+            image: "t5.jpg",
             imageAlt: "Sri Ponnambalam Vanesar Kovil",
             title: "Ponnambalam Vanesar Kovil",
             description:
                 "A rare granite-built Hindu temple with intricate carvings and a deeply atmospheric interior.",
             },
             {
-            image: "",
+              to: "#wolvendaal-church",
+            image: "t6.jpg",
             imageAlt: "Wolvendaal Church",
             title: "Wolvendaal Church",
             description:
                 "An 18th-century Dutch colonial church with tombstone floors, historic artifacts, and enduring architectural significance.",
             },
             {
-            image: "",
+              to: "#st-anthonys-shrine-kochchikade",
+            image: "t7.jpg",
             imageAlt: "St Anthony's Shrine Kochchikade",
             title: "St. Anthony’s Shrine",
             description:
                 "A major Catholic pilgrimage site known for miracles, relics, and its role as a symbol of unity after the 2019 attacks.",
             },
             {
-            image: "",
+              to: "#st-lucias-cathedral",
+            image: "t8.jpg",
             imageAlt: "St Lucia's Cathedral",
             title: "St. Lucia’s Cathedral",
             description:
                 "Sri Lanka’s largest Catholic cathedral, inspired by European Renaissance design and rich in relics and history.",
             },
             {
-            image: "",
+              to: "#jami-ul-alfar-mosque",
+            image: "t9.jpg",
             imageAlt: "Jami Ul-Alfar Mosque",
             title: "Jami Ul-Alfar Mosque",
             description:
@@ -96,13 +105,14 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "gangaramaya-temple-seema-malaka",
       kicker: "Buddhist Landmark",
       title: "Gangaramaya Temple & Seema Malaka",
       align: "left",
       content: [
         { type: "p", text: "The Gangaramaya Temple and its associated floating meditation hall, the Seema Malaka, form one of the most important and visually distinctive religious complexes in Colombo. Together they represent a unique blend of historical significance, eclectic cultural display, and modern architectural genius." },
 
-        { type: "h3", text: "Gangaramaya Temple (The Cultural Hub)" },
+        { type: "h3", text: "Gangaramaya Temple & Seema Malaka" },
         { type: "p", text: "Gangaramaya is one of the oldest and most influential Buddhist temples in Colombo, established in the late 19th century." },
         { type: "p", text: "The main temple complex is notable for its highly eclectic architectural styles, combining Sinhalese, Thai, Indian, and Chinese influences." },
         { type: "p", text: "It is more than just a place of worship; it functions as a major cultural and learning center, encompassing a vocational school, a residential hall for monks (Pirivena), a library, and halls for alms." },
@@ -122,6 +132,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "kelaniya-raja-maha-vihara",
       kicker: "Pilgrimage Site",
       title: "Kelaniya Raja Maha Vihara",
       align: "left",
@@ -152,6 +163,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "isipathanaramaya-temple",
       kicker: "Historic Temple",
       title: "Isipathanaramaya Temple",
       align: "left",
@@ -177,6 +189,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "kailawasanathan-swami-kovil",
       kicker: "Hindu Heritage",
       title: "Sri Kailawasanathan Swami Devasthanam Kovil",
       align: "left",
@@ -207,6 +220,7 @@ const TemplesChurchesMosquesArticle = {
       kicker: "Granite Temple",
       title: "Sri Ponnambalam Vanesar Kovil",
       align: "left",
+      id: "ponnambalam-vanesar-kovil",
       content: [
         { type: "p", text: "The Sri Ponnambalam Vanesar Kovil, also known as Shri Ponnambalawaneswaram Kovil or simply the Stone Kovil, is a majestic and deeply spiritual Hindu temple in Colombo, renowned for its unusual and impressive architecture. It stands as a testament to religious devotion and exceptional craftsmanship during the colonial era." },
 
@@ -230,6 +244,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+        id: "wolvendaal-church",
       kicker: "Dutch Colombo",
       title: "Wolvendaal Church",
       align: "left",
@@ -254,6 +269,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "st-anthonys-shrine-kochchikade",
       kicker: "Catholic Pilgrimage",
       title: "St. Anthony’s Shrine, Kochchikade",
       align: "left",
@@ -280,6 +296,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "st-lucias-cathedral",
       kicker: "Major Cathedral",
       title: "St. Lucia's Cathedral",
       align: "left",
@@ -305,6 +322,7 @@ const TemplesChurchesMosquesArticle = {
 
     {
       type: "text",
+      id: "jami-ul-alfar-mosque",
       kicker: "Iconic Landmark",
       title: "Jami Ul-Alfar Mosque",
       align: "left",

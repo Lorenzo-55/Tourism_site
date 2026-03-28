@@ -12,7 +12,7 @@ const NightLifeArticle = {
     title: "Nightlife in Colombo",
     subtitle:
       "From rooftop sunsets to dance floors, Colombo offers a polished, energetic nightlife scene with something for every mood.",
-    backgroundImage: "/images/colombo-nightlife-hero.jpg",
+    backgroundImage: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboNight1x.jpg`,
   },
 
   overview: {

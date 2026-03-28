@@ -12,7 +12,7 @@ const FortAreaArticle = {
     title: "Colombo Fort Area",
     subtitle:
       "The historic and financial heart of Colombo, where colonial legacy meets modern commerce.",
-    backgroundImage: "/images/colombo-fort-hero.jpg",
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Colombo/ColomboFort1x.jpg`,
   },
 
   overview: {

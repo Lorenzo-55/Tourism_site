@@ -15,9 +15,10 @@ export default function ContentCard({
   buttonLabel,
   className = "",
 }) {
+  const isHashLink = !!to && to.startsWith("#");
   const isExternalLink = external && !!href;
-  const isInternalLink = !external && !!to;
-  const isClickable = isExternalLink || isInternalLink;
+  const isInternalLink = !external && !!to && !isHashLink;
+  const isClickable = isExternalLink || isInternalLink || isHashLink;
 
   const cardClassName = `content-card ${
     isClickable ? "content-card--clickable" : "content-card--static"
@@ -37,9 +38,7 @@ export default function ContentCard({
 
       <div className={`content-card__body ${!image ? "content-card__body--noImage" : ""}`}>
         {kicker && <div className="content-card__kicker">{kicker}</div>}
-
         {title && <h3 className="content-card__title">{title}</h3>}
-
         {description && <p className="content-card__description">{description}</p>}
 
         {tags.length > 0 && (
@@ -57,19 +56,25 @@ export default function ContentCard({
     </>
   );
 
+  // external
   if (isExternalLink) {
     return (
-      <a
-        href={href}
-        className={cardClassName}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href={href} className={cardClassName} target="_blank" rel="noreferrer">
         {content}
       </a>
     );
   }
 
+  // same-page anchor (#section)
+  if (isHashLink) {
+    return (
+      <a href={to} className={cardClassName}>
+        {content}
+      </a>
+    );
+  }
+
+  // normal internal route
   if (isInternalLink) {
     return (
       <Link to={to} className={cardClassName}>

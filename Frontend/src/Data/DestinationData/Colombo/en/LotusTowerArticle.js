@@ -1,8 +1,8 @@
 const lotusTowerArticle = {
   breadcrumbItems: [
     { label: "Home", to: "/" },
-    { label: "Colombo", to: "/colombo" },
-    { label: "Lotus Tower", to: "/colombo/lotus-tower" },
+    { label: "Colombo", to: "/places/colombo" },
+    { label: "Lotus Tower", to: "/places/colombo/lotus-tower" },
   ],
 
   hero: {
@@ -10,7 +10,7 @@ const lotusTowerArticle = {
     title: "Colombo Lotus Tower",
     subtitle:
       "A modern icon of Colombo and one of the city’s most striking attractions, known for panoramic views, dining, and entertainment.",
-    backgroundImage: "/images/lotus-tower-hero.jpg",
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Colombo/lotustower1.jpg`,
   },
 
   overview: {

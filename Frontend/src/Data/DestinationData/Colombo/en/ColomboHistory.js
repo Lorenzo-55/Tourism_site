@@ -10,7 +10,7 @@ const colomboHistoryArticle = {
     title: "History",
     subtitle:
       "Colombo’s history stretches back more than 2,000 years, shaped by trade, empire, and its role as Sri Lanka’s main port city.",
-    backgroundImage: `${import.meta.env.BASE_URL}/Destinations/Colombo/History/colombo-history-hero.webp`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Colombo/ColomboHistory1x.jpg`,
   },
 
     overview: {
