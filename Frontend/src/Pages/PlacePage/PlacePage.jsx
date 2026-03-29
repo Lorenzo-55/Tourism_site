@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 import ArticlePage from "../ArticlePage/ArticlePage.jsx";
 
 import lotusTowerArticle from "../../Data/DestinationData/Colombo/en/LotusTowerArticle.js";
-import  NightLifeArticle  from "../../Data/DestinationData/Colombo/en/NightLifeArticle.js";
-import  BeachesArticle  from "../../Data/DestinationData/Colombo/en/BeachesArticle.js";
+import NightLifeArticle  from "../../Data/DestinationData/Colombo/en/NightLifeArticle.js";
+import BeachesArticle  from "../../Data/DestinationData/Colombo/en/BeachesArticle.js";
 import EconomyArticle  from "../../Data/DestinationData/Colombo/en/EconomyArticle.js";  
 import PettahArticle from "../../Data/DestinationData/Colombo/en/PettahArticle.js"; 
 import FortAreaArticle from "../../Data/DestinationData/Colombo/en/FortAreaAritcle.js";
@@ -26,6 +26,15 @@ import KandeViharayaData from "../../Data/DestinationData/Aluthgama/en/KandeViha
 import AluthgamaBeachesData from "../../Data/DestinationData/Aluthgama/en/AluthgamaBeaches.js";
 import AluthgamaBentotaRiverMouthData from "../../Data/DestinationData/Aluthgama/en/AluthgamaBentotaRiverMouth.js";
 import BriefGardenData from "../../Data/DestinationData/Aluthgama/en/AluthgamaBriefGarden.js";
+
+import AnuradhapuraData from "../../Data/DestinationData/Anuradhapura/en/_AnuradhapuraArticle.js";
+import JayaSriMahaBodhiData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraJayaSriMahaBhodi.js";
+import RuwanweliseyaData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraRuwanweliseya.js";
+import ThuparamayaData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraThuparamayaDagoba.js";
+import IsurumuniyaData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraIsurumuniyaTemple.js";
+import MihintaleData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraMihintale.js";
+import AbhayagiriData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraAbhayagiriVihara.js";
+import MoonstoneData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraMoonstone.js";
 
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
@@ -51,6 +60,15 @@ const placeRegistry = {
   "aluthgama-beaches": AluthgamaBeachesData,
   "aluthgama-bentota-river-mouth": AluthgamaBentotaRiverMouthData,
   "aluthgama-brief-garden": BriefGardenData,
+
+  "anuradhapura": AnuradhapuraData,
+  "anuradhapura-jaya-sri-maha-bodhi": JayaSriMahaBodhiData,
+  "anuradhapura-ruwanweliseya": RuwanweliseyaData,
+  "anuradhapura-thuparamaya": ThuparamayaData,
+  "anuradhapura-isurumuniya": IsurumuniyaData,
+  "anuradhapura-mihintale": MihintaleData,
+  "anuradhapura-abhayagiri": AbhayagiriData,
+  "anuradhapura-moonstone": MoonstoneData,
 
 };
 

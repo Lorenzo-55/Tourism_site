@@ -150,9 +150,9 @@
 
 .article-splitGrid {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 42px;
-  align-items: center;
+  align-items: start; /* this moves image up */
 }
 
 .article-splitMedia img {
