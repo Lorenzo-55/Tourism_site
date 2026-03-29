@@ -76,6 +76,10 @@ function HorizontalScrollSection({ section }) {
       items={section.items}
       kicker={section.kicker}
       title={section.title}
+      text={section.text} 
+      collapsible={section.collapsible} 
+      toggleLabelOpen={section.toggleLabelOpen}
+      toggleLabelClose={section.toggleLabelClose}
       sectionClassName={section.className}
     />
   );

@@ -1,13 +1,20 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./HorizontalScrollCards.css";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 export default function HorizontalScrollCards({
   items,
   kicker,
   title,
+  text, // regular text between title and cards
   sectionClassName = "",
+  collapsible = false, // enable/disable show-hide button
+  toggleLabelOpen = "Click here for more details",
+  toggleLabelClose = "Hide details",
 }) {
+  const [isOpen, setIsOpen] = useState(!collapsible);
+
   const areaRef = useRef(null);
   const listRef = useRef(null);
   const dragState = useRef({
@@ -71,116 +78,132 @@ export default function HorizontalScrollCards({
           {kicker && (
             <div className="horizontal-scroll-cards__kicker">{kicker}</div>
           )}
+
           {title && <h2 className="horizontal-scroll-cards__title">{title}</h2>}
+
+          {text && <p className="horizontal-scroll-cards__text">{text}</p>}
+
+          {collapsible && (
+            <button
+              type="button"
+              className="horizontal-scroll-cards__toggle"
+              onClick={() => setIsOpen((prev) => !prev)}
+            >
+              {isOpen ? "Hide details" : "Click to see details"}
+              {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </button>
+          )}
         </div>
 
-        <div
-          ref={areaRef}
-          className="horizontal-scroll-cards__area"
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div ref={listRef} className="horizontal-scroll-cards__list">
-            {items.map((item, index) => (
-              <div
-                key={item.name || item.title || index}
-                className="horizontal-scroll-cards__item"
-              >
-                {item.image && (
-                  <div className="horizontal-scroll-cards__imageWrap">
-                    <img
-                      src={item.image}
-                      alt={item.imageAlt || item.name || item.title || "Card image"}
-                      className="horizontal-scroll-cards__image"
-                      draggable="false"
-                    />
-                  </div>
-                )}
-
-                <div className="horizontal-scroll-cards__summary">
-                  <div className="horizontal-scroll-cards__left">
-                    <strong className="horizontal-scroll-cards__name">
-                      {item.name || item.title}
-                    </strong>
-                  </div>
-
-                  {item.character && (
-                    <span className="horizontal-scroll-cards__type">
-                      {item.character}
-                    </span>
-                  )}
-                </div>
-
-                <div className="horizontal-scroll-cards__body">
-                  {item.bestKnownFor && (
-                    <p className="horizontal-scroll-cards__best">
-                      <strong>Best known for:</strong> {item.bestKnownFor}
-                    </p>
-                  )}
-
-                  {item.description && <p>{item.description}</p>}
-
-                  {item.tags && (
-                    <div className="horizontal-scroll-cards__tags">
-                      {item.tags.map((tag, i) => (
-                        <span key={i} className="horizontal-scroll-cards__tag">
-                          {tag}
-                        </span>
-                      ))}
+        {isOpen && (
+          <div
+            ref={areaRef}
+            className="horizontal-scroll-cards__area"
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div ref={listRef} className="horizontal-scroll-cards__list">
+              {items.map((item, index) => (
+                <div
+                  key={item.name || item.title || index}
+                  className="horizontal-scroll-cards__item"
+                >
+                  {item.image && (
+                    <div className="horizontal-scroll-cards__imageWrap">
+                      <img
+                        src={item.image}
+                        alt={item.imageAlt || item.name || item.title || "Card image"}
+                        className="horizontal-scroll-cards__image"
+                        draggable="false"
+                      />
                     </div>
                   )}
 
-                  {item.button?.label && (
-                    <>
-                      {item.button.slug && (
-                        <Link
-                          to={`/places/${item.button.slug}`}
-                          className="horizontal-scroll-cards__button"
-                          onMouseDown={(e) => e.stopPropagation()}
-                        >
-                          {item.button.label}
-                        </Link>
-                      )}
+                  <div className="horizontal-scroll-cards__summary">
+                    <div className="horizontal-scroll-cards__left">
+                      <strong className="horizontal-scroll-cards__name">
+                        {item.name || item.title}
+                      </strong>
+                    </div>
 
-                      {item.button.to?.startsWith("#") && (
-                        <a
-                          href={item.button.to}
-                          className="horizontal-scroll-cards__button"
-                          onMouseDown={(e) => e.stopPropagation()}
-                        >
-                          {item.button.label}
-                        </a>
-                      )}
+                    {item.character && (
+                      <span className="horizontal-scroll-cards__type">
+                        {item.character}
+                      </span>
+                    )}
+                  </div>
 
-                      {item.button.to && !item.button.to.startsWith("#") && (
-                        <Link
-                          to={item.button.to}
-                          className="horizontal-scroll-cards__button"
-                          onMouseDown={(e) => e.stopPropagation()}
-                        >
-                          {item.button.label}
-                        </Link>
-                      )}
+                  <div className="horizontal-scroll-cards__body">
+                    {item.bestKnownFor && (
+                      <p className="horizontal-scroll-cards__best">
+                        <strong>Best known for:</strong> {item.bestKnownFor}
+                      </p>
+                    )}
 
-                      {item.button.href && (
-                        <a
-                          href={item.button.href}
-                          className="horizontal-scroll-cards__button"
-                          target="_blank"
-                          rel="noreferrer"
-                          onMouseDown={(e) => e.stopPropagation()}
-                        >
-                          {item.button.label}
-                        </a>
-                      )}
-                    </>
-                  )}
+                    {item.description && <p>{item.description}</p>}
+
+                    {item.tags && (
+                      <div className="horizontal-scroll-cards__tags">
+                        {item.tags.map((tag, i) => (
+                          <span key={i} className="horizontal-scroll-cards__tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    {item.button?.label && (
+                      <>
+                        {item.button.slug && (
+                          <Link
+                            to={`/places/${item.button.slug}`}
+                            className="horizontal-scroll-cards__button"
+                            onMouseDown={(e) => e.stopPropagation()}
+                          >
+                            {item.button.label}
+                          </Link>
+                        )}
+
+                        {item.button.to?.startsWith("#") && (
+                          <a
+                            href={item.button.to}
+                            className="horizontal-scroll-cards__button"
+                            onMouseDown={(e) => e.stopPropagation()}
+                          >
+                            {item.button.label}
+                          </a>
+                        )}
+
+                        {item.button.to && !item.button.to.startsWith("#") && (
+                          <Link
+                            to={item.button.to}
+                            className="horizontal-scroll-cards__button"
+                            onMouseDown={(e) => e.stopPropagation()}
+                          >
+                            {item.button.label}
+                          </Link>
+                        )}
+
+                        {item.button.href && (
+                          <a
+                            href={item.button.href}
+                            className="horizontal-scroll-cards__button"
+                            target="_blank"
+                            rel="noreferrer"
+                            onMouseDown={(e) => e.stopPropagation()}
+                          >
+                            {item.button.label}
+                          </a>
+                        )}
+                      </>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

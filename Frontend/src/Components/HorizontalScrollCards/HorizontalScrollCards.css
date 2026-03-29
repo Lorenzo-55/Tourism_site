@@ -22,6 +22,40 @@
   letter-spacing: -0.02em;
 }
 
+.horizontal-scroll-cards__text {
+  margin: 12px auto 0;
+  max-width: 800px;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.78);
+  line-height: 1.7;
+}
+
+.horizontal-scroll-cards__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: rgba(17, 17, 17, 0.52);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.horizontal-scroll-cards__toggle:hover {
+  color: rgba(17, 17, 17, 0.72);
+}
+
+.horizontal-scroll-cards__toggle svg {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
 .horizontal-scroll-cards__area {
   width: 100%;
   overflow: hidden;
@@ -151,7 +185,6 @@
   }
 }
 
-
 .horizontal-scroll-cards__imageWrap {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -171,25 +204,19 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   margin: 18px auto 0;
-
   min-width: 130px;
-  padding: 10px 22px; 
-
+  padding: 10px 22px;
   border-radius: 999px;
   background: #0d0d0d;
   color: #ffffff;
   text-decoration: none;
-
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
 
 .horizontal-scroll-cards__button:hover {
   opacity: 0.92;

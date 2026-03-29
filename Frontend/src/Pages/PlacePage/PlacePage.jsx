@@ -35,6 +35,7 @@ import IsurumuniyaData from "../../Data/DestinationData/Anuradhapura/en/Anuradha
 import MihintaleData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraMihintale.js";
 import AbhayagiriData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraAbhayagiriVihara.js";
 import MoonstoneData from "../../Data/DestinationData/Anuradhapura/en/AnuradhapuraMoonstone.js";
+import ArugamBayArticle from "../../Data/DestinationData/Arugambay/en/_ArugambayArticle.js";
 
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
@@ -70,6 +71,7 @@ const placeRegistry = {
   "anuradhapura-abhayagiri": AbhayagiriData,
   "anuradhapura-moonstone": MoonstoneData,
 
+  "arugam-bay": ArugamBayArticle,
 };
 
 export default function PlacePage() {
