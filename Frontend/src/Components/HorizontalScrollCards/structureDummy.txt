@@ -1,0 +1,83 @@
+// exampleHorizontalScrollData.js
+
+const horizontalScrollSection = {
+  type: "horizontal-scroll",
+  kicker: "Example Section",
+  title: "Sample Cards Layout",
+  text: "This is a short intro text explaining the section.",
+  collapsible: true,
+  toggleLabelOpen: "Click to see details",
+  toggleLabelClose: "Hide details",
+  align: "left", // "left" or "center"
+
+  items: [
+    {
+      title: "Card One",
+      character: "Category Type",
+      bestKnownFor: "Short highlight text",
+
+      description: [
+        "First paragraph of content.",
+        "Second paragraph for more detail.",
+      ],
+
+      info: {
+        label: "Extra",
+        text: "Additional short info here.",
+      },
+
+      image: `${import.meta.env.BASE_URL}images/sample1.jpg`,
+      imageAlt: "Sample image",
+
+      tags: ["Tag1", "Tag2"],
+
+      button: {
+        label: "View More",
+        to: "#section-one", // internal section link
+        // OR use one of the below instead:
+        // slug: "colombo/nightlife",
+        // href: "https://example.com"
+      },
+    },
+
+    {
+      title: "Card Two",
+      character: "Another Type",
+
+      description: "Single paragraph also works.",
+
+      info: {
+        label: "Note",
+        text: [
+          "Supports multiple lines.",
+          "Each line becomes a paragraph.",
+        ],
+      },
+
+      image: `${import.meta.env.BASE_URL}images/sample2.jpg`,
+
+      tags: ["Urban"],
+
+      button: {
+        label: "Explore",
+        slug: "colombo/sample-page",
+      },
+    },
+
+    {
+      title: "Card Three",
+
+      description: [
+        "Cards can work without optional fields.",
+        "No image, no tags, still fine.",
+      ],
+
+      button: {
+        label: "External",
+        href: "https://example.com",
+      },
+    },
+  ],
+};
+
+export default horizontalScrollSection;

@@ -12,6 +12,8 @@ export default function HorizontalScrollCards({
   collapsible = false, // enable/disable show-hide button
   toggleLabelOpen = "Click here for more details",
   toggleLabelClose = "Hide details",
+  align = "left",
+  titleStyle = "default" 
 }) {
   const [isOpen, setIsOpen] = useState(!collapsible);
 
@@ -107,7 +109,7 @@ export default function HorizontalScrollCards({
               {items.map((item, index) => (
                 <div
                   key={item.name || item.title || index}
-                  className="horizontal-scroll-cards__item"
+                  className={`horizontal-scroll-cards__item horizontal-scroll-cards__item--${align}`}
                 >
                   {item.image && (
                     <div className="horizontal-scroll-cards__imageWrap">
@@ -122,7 +124,9 @@ export default function HorizontalScrollCards({
 
                   <div className="horizontal-scroll-cards__summary">
                     <div className="horizontal-scroll-cards__left">
-                      <strong className="horizontal-scroll-cards__name">
+                      <strong
+                        className={`horizontal-scroll-cards__name horizontal-scroll-cards__name--${titleStyle}`}
+                      >
                         {item.name || item.title}
                       </strong>
                     </div>
@@ -141,7 +145,20 @@ export default function HorizontalScrollCards({
                       </p>
                     )}
 
-                    {item.description && <p>{item.description}</p>}
+                    {item.description &&
+                      (Array.isArray(item.description) ? (
+                        item.description.map((para, i) => <p key={i}>{para}</p>)
+                      ) : (
+                        <p>{item.description}</p>
+                      ))}
+
+                    
+                    {item.info?.text && (
+                      <p className="horizontal-scroll-cards__info">
+                        {item.info.label && <strong>{item.info.label}: </strong>}
+                        {item.info.text}
+                      </p>
+                    )}
 
                     {item.tags && (
                       <div className="horizontal-scroll-cards__tags">

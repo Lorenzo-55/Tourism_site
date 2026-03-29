@@ -80,7 +80,9 @@ function HorizontalScrollSection({ section }) {
       collapsible={section.collapsible} 
       toggleLabelOpen={section.toggleLabelOpen}
       toggleLabelClose={section.toggleLabelClose}
+      align={section.align}
       sectionClassName={section.className}
+      titleStyle={section.titleStyle} 
     />
   );
 }

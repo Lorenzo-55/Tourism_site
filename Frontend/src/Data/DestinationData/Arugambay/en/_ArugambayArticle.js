@@ -43,7 +43,7 @@ const ArugamBayArticle = {
     title: "Beginner & Intermediate Waves",
     className: "with-images",
 
-    // new
+    align: "center",
     collapsible: true,
     toggleLabelOpen: "Click here to see them all",
     toggleLabelClose: "Hide surf spots",
@@ -80,90 +80,124 @@ const ArugamBayArticle = {
     },
 
     {
-      type: "horizontal-scroll",
-      kicker: "Surf Spots",
-      title: "Intermediate & Advanced Waves",
-      className: "with-images",
-      items: [
-        {
-          title: "Main Point",
-          description:
-            "Iconic right-hand point break with long, powerful rides and occasional barrels.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/MainPoint.jpg`,
-        },
-        {
-          title: "Pottuvil Point",
-          description:
-            "Long, clean rides in a less crowded setting north of Arugam Bay.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PottuvilPoint.jpg`,
-        },
-        {
-          title: "Okanda",
-          description:
-            "Remote, powerful waves near Kumana National Park for advanced surfers.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Okanda.jpg`,
-        },
-        {
-          title: "Lighthouse",
-          description:
-            "Inconsistent but rewarding spot with powerful long rides when conditions align.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Lighthouse.jpg`,
-        },
-      ],
-    },
+    type: "horizontal-scroll",
+    kicker: "Surf Spots",
+    title: "Intermediate & Advanced Waves",
+    className: "with-images",
 
-    // HS → horizontal scroll (no images required)
-    {
-      type: "horizontal-scroll",
-      kicker: "Rentals",
-      title: "Where to Rent a Surfboard",
-      items: [
+    align: "center",
+    collapsible: true,
+    toggleLabelOpen: "Click here to see them all",
+    toggleLabelClose: "Hide surf spots",
+
+    text:
+        "These breaks are better suited to surfers who already feel confident reading waves, handling faster takeoffs, and riding with more control. They offer longer walls, more power, and a bigger step up from the beginner-friendly spots around the bay.",
+
+    items: [
         {
-          title: "Surf Shops",
-          description:
-            "Shops like Banana Surf Camp and Dylan’s Surf Company offer a wide range of boards and gear.",
+        title: "Main Point",
+        description:
+            "Arugam Bay’s most famous wave, Main Point is a long right-hand point break known for fast sections, powerful rides, and occasional barrels. It attracts experienced surfers looking for one of Sri Lanka’s most iconic surf experiences.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/MainPoint.jpg`,
         },
         {
-          title: "Surf Camps",
-          description:
-            "Lessons and rentals often included in surf camp packages.",
+        title: "Pottuvil Point",
+        description:
+            "Located north of Arugam Bay, this point offers long, clean right-hand rides in a more open and less crowded setting. It is a great option for intermediate and advanced surfers who want quality waves with a little more space.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PottuvilPoint.jpg`,
         },
         {
-          title: "Guesthouses",
-          description:
-            "Many accommodations provide boards for guests.",
+        title: "Okanda",
+        description:
+            "This remote break near Kumana National Park delivers stronger, more powerful waves for advanced surfers seeking a wilder surf session. Its isolated setting adds to the adventure, but it is best tackled by those comfortable in more demanding conditions.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Okanda.jpg`,
         },
         {
-          title: "Beach Vendors",
-          description:
-            "Local vendors rent boards directly at popular surf spots.",
+        title: "Lighthouse",
+        description:
+            "An inconsistent but rewarding wave, Lighthouse can produce long, powerful rides when the swell and wind line up properly. When it works, it offers a more raw and less crowded experience for surfers chasing stronger conditions.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Lighthouse.jpg`,
         },
-      ],
+    ],
     },
 
     {
-      type: "horizontal-scroll",
-      kicker: "Equipment",
-      title: "Types of Boards Available",
-      items: [
+    type: "horizontal-scroll",
+    kicker: "Rentals",
+    title: "Where to Rent a Surfboard",
+    className: "with-images",
+
+    align: "center",
+    collapsible: true,
+    toggleLabelOpen: "Click here to see them all",
+    toggleLabelClose: "Hide rental options",
+
+    text:
+        "Surfboard rentals are easy to find around Arugam Bay, whether you are staying in town, learning through a camp, or heading straight to the beach. Different rental options suit different budgets, levels of convenience, and board preferences.",
+
+    items: [
         {
-          title: "Soft-Tops",
-          description:
-            "Best for beginners—stable, buoyant, and safe.",
+        title: "Surf Shops",
+        description:
+            "Dedicated surf shops such as Banana Surf Camp and Dylan’s Surf Company usually offer the widest range of boards, from beginner soft-tops to performance shapes. They are often the best choice if you want more variety, better equipment, and advice on which board suits the day’s conditions.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfShops.jpg`,
         },
         {
-          title: "Longboards",
-          description:
-            "Great for intermediates and mellow waves.",
+        title: "Surf Camps",
+        description:
+            "Many surf camps include board rentals as part of their lesson packages or accommodation deals, making them convenient for travelers who want everything arranged in one place. This can be especially useful for beginners who also want coaching and local guidance.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfCamps.jpg`,
         },
         {
-          title: "Shortboards",
-          description:
-            "Designed for advanced surfers and high-performance waves.",
+        title: "Guesthouses",
+        description:
+            "A number of guesthouses and small hotels keep a few boards available for guests, offering a simple and flexible option without needing to visit a separate rental shop. The selection is usually smaller, but it can be perfect for casual sessions close to where you stay.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Guesthouses.jpg`,
         },
-      ],
+        {
+        title: "Beach Vendors",
+        description:
+            "At some popular surf spots, local vendors rent boards directly near the beach, which can be handy for quick and spontaneous sessions. It is a practical option when you want to get in the water fast, though board quality and choice can vary.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BeachVendors.jpg`,
+        },
+    ],
     },
 
+    {
+    type: "horizontal-scroll",
+    kicker: "Equipment",
+    title: "Types of Boards Available",
+    className: "with-images",
+
+    align: "center",
+    collapsible: true,
+    toggleLabelOpen: "Click here to see them all",
+    toggleLabelClose: "Hide board types",
+
+    text:
+        "Rental places in Arugam Bay usually carry a mix of boards for different skill levels and wave conditions. Choosing the right type makes a big difference in how comfortable, safe, and enjoyable your session feels.",
+
+    items: [
+        {
+        title: "Soft-Tops",
+        description:
+            "Soft-top boards are the most beginner-friendly option, offering extra stability, buoyancy, and a softer surface that feels safer during wipeouts. They are ideal for first lessons and early practice sessions when balance and confidence matter most.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SoftTops.jpg`,
+        },
+        {
+        title: "Longboards",
+        description:
+            "Longboards are great for mellow waves and surfers who want smooth takeoffs, easier paddling, and longer rides. They work well for intermediates, but they can also be enjoyable for relaxed cruising sessions at friendly breaks.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Longboards.jpg`,
+        },
+        {
+        title: "Shortboards",
+        description:
+            "Shortboards are designed for more advanced surfers looking for speed, sharper turns, and higher-performance surfing in steeper waves. They require more skill and control, but they are the preferred choice for stronger, faster breaks.",
+        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Shortboards.jpg`,
+        },
+    ],
+    },
     {
     type: "text",
     kicker: "Costs",
@@ -178,6 +212,7 @@ const ArugamBayArticle = {
     type: "horizontal-scroll",
     kicker: "Tips",
     title: "Surfboard Rental Tips",
+    align: "center",
     className: "with-images",
     items: [
         {
@@ -208,50 +243,106 @@ const ArugamBayArticle = {
     },
 
     // HS,i → horizontal scroll with images
+{
+  type: "horizontal-scroll",
+  kicker: "Surf Schools",
+  title: "Popular Surf Schools & Camps",
+  titleStyle: "styleblue",
+  className: "with-images",
+
+  align: "left",
+  collapsible: false,
+
+  text:
+    "Arugam Bay has a wide range of surf schools and camps, from small local operations to more established setups offering full packages. Many combine lessons, rentals, and a relaxed beach-town vibe, making it easy to find something that fits your level and style.",
+
+  items: [
     {
-      type: "horizontal-scroll",
-      kicker: "Surf Schools",
-      title: "Popular Surf Schools & Camps",
-      className: "with-images",
-      items: [
-        {
-          title: "Dylan's Surf Company",
-          description:
-            "Highly regarded school with ISA-certified instructors and structured lessons.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/DylansSurf.jpg`,
-        },
-        {
-          title: "Banana Surf Camp",
-          description:
-            "Offers lessons, rentals, and repairs for all levels.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BananaSurf.jpg`,
-        },
-        {
-          title: "Pappy's Surf",
-          description:
-            "Friendly local instructors known for fast progression.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PappysSurf.jpg`,
-        },
-        {
-          title: "Safa Surf Camp",
-          description:
-            "All-in-one surf experience with coaching, yoga, and accommodation.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SafaSurf.jpg`,
-        },
-        {
-          title: "Arugam Bay Surf Center",
-          description:
-            "Centrally located with packages for all skill levels.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfCenter.jpg`,
-        },
-        {
-          title: "Surf Soul Co",
-          description:
-            "Focuses on a holistic surf experience and connection with the ocean.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfSoul.jpg`,
-        },
-      ],
+      title: "Dylan’s Surf Company",
+      description:
+        "This is a well-known and highly-regarded surf school, often mentioned as a top choice for beginners and intermediates. They offer lessons, surf packages, and even have their own shop. Their instructors are known for their professional approach and many are certified by the International Surfing Association (ISA).",
+      info: {
+        label: "Google Maps",
+        text: "P/05 Main street, Arugam Bay, Pottuvil 32500, Sri Lanka",
+      },
+      image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/dylan-surf-company-x.webp`,
+      button: {
+        label: "Google Maps",
+        href: "https://www.google.com/maps/place/Dylan's+Surf+Company/@6.845151,81.830646,17z/data=!4m6!3m5!1s0x3ae5bd2e62768e8f:0xd33b08d443a42f05!8m2!3d6.845151!4d81.830646!16s%2Fg%2F11cp5zcvgs?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+      },
     },
+    {
+      title: "Banana Surf Camp",
+      description:
+        "This is both a surf camp and a shop that offers lessons, equipment rentals, and board repair. They cater to all levels, from beginners who have never touched a board to intermediates looking to refine their skills. They pride themselves on having ISA-certified instructors and a variety of boards to choose from.",
+      info: {
+        label: "Google Maps",
+        text: "Panama Road Arugam Bay, P/05 Main Street, Pottuvil 32500, Sri Lanka",
+      },
+      image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BananaSurf.jpg`,
+      button: {
+        label: "Google Maps",
+        href: "https://google.com",
+      },
+    },
+    {
+      title: "Pappy's Surf",
+      description:
+        "A popular local surf school with excellent reviews, known for its friendly and fun instructors. They offer lessons and equipment rentals and are praised for their patience and ability to help students progress quickly.",
+      info: {
+        label: "Google Maps",
+        text: "pappy's surf school, Arugam Bay, Sri Lanka",
+      },
+      image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PappysSurf.jpg`,
+      button: {
+        label: "Google Maps",
+        href: "https://google.com",
+      },
+    },
+    {
+      title: "Safa Surf Camp",
+      description:
+        "A locally owned and operated surf camp and school located in the main town. They offer comprehensive surf coaching sessions, theory lessons, yoga, and accommodation, making it a great all-in-one option for a surf-focused trip.",
+      info: {
+        label: "Google Maps",
+        text: "Galaxy Rd, Arugam Bay, Sri Lanka",
+      },
+      image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SafaSurf.jpg`,
+      button: {
+        label: "Google Maps",
+        href: "https://google.com",
+      },
+    },
+    {
+      title: "Arugam Bay Surf Center",
+      description:
+        "This surf camp and school is centrally located and offers packages for all skill levels, from beginner to advanced. They highlight their ISA-accredited instructors and the convenience of being close to both Main Point and the main street.",
+      info: {
+        label: "Google Maps",
+        text: "Al Aksha School Rd, Arugam Bay 32500, Sri Lanka",
+      },
+      image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfCenter.jpg`,
+      button: {
+        label: "Google Maps",
+        href: "https://google.com",
+      },
+    },
+    {
+      title: "Surf Soul Co",
+      description:
+        'This is another option that emphasizes a holistic approach, offering not just lessons and rentals but also a "soulful" experience that connects you with the ocean.',
+      info: {
+        label: "Google Maps",
+        text: "Panama Rd, Arugam Bay 32500, Sri Lanka",
+      },
+      image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfSoul.jpg`,
+      button: {
+        label: "Google Maps",
+        href: "https://google.com",
+      },
+    },
+  ],
+},
 
     {
       type: "text",
