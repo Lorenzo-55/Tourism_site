@@ -85,15 +85,33 @@ function TextSection({ section }) {
 }
 
 function SplitSection({ section }) {
+  const mediaRight = section.mediaPosition === "right";
+
   return (
     <section className="section article-splitSection">
-      <div className="container article-splitGrid">
+      <div
+        className={`container article-splitGrid ${
+          mediaRight ? "article-splitGrid--mediaRight" : ""
+        }`}
+      >
         <div className="article-splitMedia">
-          {section.image && (
-            <img
-              src={section.image}
-              alt={section.imageAlt || section.title || "Section image"}
-            />
+          {section.images?.length > 0 ? (
+            <div className="article-splitMediaStack">
+              {section.images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img.src}
+                  alt={img.alt || section.title || `Section image ${index + 1}`}
+                />
+              ))}
+            </div>
+          ) : (
+            section.image && (
+              <img
+                src={section.image}
+                alt={section.imageAlt || section.title || "Section image"}
+              />
+            )
           )}
         </div>
 
