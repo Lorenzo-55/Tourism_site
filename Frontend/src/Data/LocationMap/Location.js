@@ -45,4 +45,22 @@ export const locations = [
     summary: "Temple caves and central access point.",
     importance: 2,
   },
+    {
+    id: "ahungalla",
+    name: "Ahungalla",
+    slug: "ahungalla",
+    x: 27,
+    y: 82,
+    summary: "Quiet coastal town with beaches, river safaris, and turtle conservation.",
+    importance: 1,
+  },
+      {
+    id: "aluthgama",
+    name: "Aluthgama",
+    slug: "aluthgama",
+    x: 25,
+    y: 80,
+    summary: "Coastal town by Bentota River known for beaches, water sports, and cultural sites.",
+    importance: 1,
+  },
 ];

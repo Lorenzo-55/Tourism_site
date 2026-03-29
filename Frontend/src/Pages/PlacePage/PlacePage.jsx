@@ -15,6 +15,18 @@ import TemplesChurchesMosquesArticle from "../../Data/DestinationData/Colombo/en
 
 import MataraArticle from "../../Data/DestinationData/Matara/en/MataraArticle.js";
 
+import AhungallaArticle from "../../Data/DestinationData/Ahungalla/en/AhungallaArticle.js";
+import KothduwaTempleData from "../../Data/DestinationData/Ahungalla/en/KothduwaTemple.js";
+import MaduRiverSafariData from "../../Data/DestinationData/Ahungalla/en/SafariArticle.js";
+import TurtleConservationData from "../../Data/DestinationData/Ahungalla/en/TurtleConservationArticle.js";
+import AhungallaBeachData from "../../Data/DestinationData/Ahungalla/en/AhungallaBeachArticle.js";
+
+import AluthgamaData from "../../Data/DestinationData/Aluthgama/en/AluthgamaArticle.js";
+import KandeViharayaData from "../../Data/DestinationData/Aluthgama/en/KandeViharayaTemple.js";
+import AluthgamaBeachesData from "../../Data/DestinationData/Aluthgama/en/AluthgamaBeaches.js";
+import AluthgamaBentotaRiverMouthData from "../../Data/DestinationData/Aluthgama/en/AluthgamaBentotaRiverMouth.js";
+import BriefGardenData from "../../Data/DestinationData/Aluthgama/en/AluthgamaBriefGarden.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -27,6 +39,19 @@ const placeRegistry = {
   "temples-churches-mosques": TemplesChurchesMosquesArticle,
 
   "matara": MataraArticle,
+
+  "ahungalla": AhungallaArticle,
+  "ahungalla-kothduwa-temple": KothduwaTempleData,
+  "ahungalla-madu-river-safari": MaduRiverSafariData,
+  "ahungalla-turtle-conservation": TurtleConservationData,
+  "ahungalla-beach": AhungallaBeachData,
+
+  "aluthgama": AluthgamaData,
+  "aluthgama-kande-viharaya-temple": KandeViharayaData,
+  "aluthgama-beaches": AluthgamaBeachesData,
+  "aluthgama-bentota-river-mouth": AluthgamaBentotaRiverMouthData,
+  "aluthgama-brief-garden": BriefGardenData,
+
 };
 
 export default function PlacePage() {
