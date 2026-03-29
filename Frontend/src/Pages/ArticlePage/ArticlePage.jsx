@@ -4,6 +4,7 @@ import NavBar from "../../Components/Navbar/Navbar.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 import Breadcrumbs from "../../Components/Breadcrumbs/Breadcrumbs.jsx";
 import ContentCard from "../../Components/ContentCard/ContentCard.jsx";
+import HorizontalScrollCards from "../../Components/HorizontalScrollCards/HorizontalScrollCards.jsx";
 
 import "./ArticlePage.css";
 
@@ -66,6 +67,17 @@ function CardsSection({ section }) {
         </div>
       </div>
     </section>
+  );
+}
+
+function HorizontalScrollSection({ section }) {
+  return (
+    <HorizontalScrollCards
+      items={section.items}
+      kicker={section.kicker}
+      title={section.title}
+      sectionClassName={section.className}
+    />
   );
 }
 
@@ -139,6 +151,9 @@ function renderSection(section, index) {
 
     case "split":
       return <SplitSection key={index} section={section} />;
+
+    case "horizontal-scroll":
+      return <HorizontalScrollSection key={index} section={section} />;
 
     default:
       return null;
