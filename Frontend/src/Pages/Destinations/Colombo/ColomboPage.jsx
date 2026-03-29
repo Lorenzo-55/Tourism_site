@@ -7,6 +7,7 @@ import NavBar from "../../../Components/Navbar/Navbar.jsx";
 import Footer from "../../../Components/Footer/Footer.jsx";
 import ContentCard from "../../../Components/ContentCard/ContentCard.jsx";
 import Breadcrumbs from "../../../Components/Breadcrumbs/Breadcrumbs";
+import HorizontalScrollCards from "../../../Components/HorizontalScrollCards/HorizontalScrollCards.jsx";
 
 import { useLanguage } from "../../../Context/LanguageContext.jsx";
 import { getColomboData } from "../../../Data/DestinationData/Colombo/index.js";
@@ -158,7 +159,12 @@ export default function ColomboPage() {
           </div>
         </section>
 
-        <DistrictsSection districts={districts} />
+        <HorizontalScrollCards
+          items={districts}
+          kicker="DISTRICTS"
+          title="District & Neighborhood Guide"
+          sectionClassName="colombo-districts"
+        />
 
         <section className="section colombo-poi">
           <div className="container">

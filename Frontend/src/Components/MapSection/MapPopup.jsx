@@ -1,4 +1,3 @@
-// src/Components/MapSection/MapPopup.jsx
 import "./MapPopup.css";
 
 export default function MapPopup({
@@ -9,16 +8,21 @@ export default function MapPopup({
   summary,
   onClose,
   onOpen,
+  side = "left",
 }) {
+  const isRightSide = side === "right";
+
   return (
     <div
-      className="map-popup"
+      className={`map-popup ${isRightSide ? "right-side" : "left-side"}`}
       onPointerDown={(e) => e.stopPropagation()}
       style={{
         left: `${x}%`,
         top: `${y}%`,
-        transform: `translate(10px, -100%) scale(${1 / zoom})`,
-        transformOrigin: "bottom left",
+        transform: isRightSide
+          ? `translate(10px, -100%) scale(${1 / zoom})`
+          : `translate(calc(-100% - 10px), -100%) scale(${1 / zoom})`,
+        transformOrigin: isRightSide ? "bottom left" : "bottom right",
       }}
     >
       <button
@@ -31,13 +35,13 @@ export default function MapPopup({
         ×
       </button>
 
-        <div
-          className="map-popup-body"
-          role="button"
-          tabIndex={0}
-          onPointerDown={(e) => e.stopPropagation()}
-          onClick={onOpen}
-        >
+      <div
+        className="map-popup-body"
+        role="button"
+        tabIndex={0}
+        onPointerDown={(e) => e.stopPropagation()}
+        onClick={onOpen}
+      >
         <h4 className="map-popup-title">{title}</h4>
         <p className="map-popup-summary">{summary}</p>
         <span className="map-popup-cta">View details →</span>

@@ -63,13 +63,22 @@ export const locations = [
     summary: "Coastal town by Bentota River known for beaches, water sports, and cultural sites.",
     importance: 1,
   },
-        {
+  {
     id: "anuradhapura",
     name: "Anuradhapura",
     slug: "anuradhapura",
     x: 38,
     y: 39,
     summary: "Ancient capital with ruins, stupas, and Buddhist heritage.",
+    importance: 1,
+  },
+  {
+    id: "arugam-bay",
+    name: "Arugam Bay",
+    slug: "arugam-bay",
+    x: 84,
+    y: 71,
+    summary: "Quiet coastal town with beaches, river safaris, and turtle conservation.",
     importance: 1,
   },
 ];

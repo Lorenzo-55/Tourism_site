@@ -1,3 +1,5 @@
+//src/Components/MapSection/MapMarker.jsx
+
 import { FaLocationDot } from "react-icons/fa6";
 import "./MapMarker.css";
 

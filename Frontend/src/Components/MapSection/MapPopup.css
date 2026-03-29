@@ -1,15 +1,26 @@
 /* src/Components/MapSection/MapPopup.css */
+
 .map-popup {
   position: absolute;
   width: 220px;
+  max-width: min(220px, 80vw); /* prevent screen overflow */
   background: rgba(10, 16, 24, 0.92);
   color: #fff;
   border-radius: 12px;
   padding: 12px 12px 10px;
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
-  z-index: 5;
+  z-index: 20;
+  pointer-events: auto;
 }
 
+/* side modifiers (used by JSX)
+.map-popup.left-side {
+}
+
+.map-popup.right-side {
+} */
+
+/* close button */
 .map-popup-close {
   position: absolute;
   top: 6px;
@@ -19,8 +30,10 @@
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+  line-height: 1;
 }
 
+/* content */
 .map-popup-body {
   cursor: pointer;
   padding-right: 18px;
@@ -39,8 +52,23 @@
   line-height: 1.35;
 }
 
+/* prevent long text breaking layout */
+.map-popup-summary,
+.map-popup-title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* CTA */
 .map-popup-cta {
   font-size: 12px;
   opacity: 0.95;
   text-decoration: underline;
+}
+
+/* optional: small screens tweak */
+@media (max-width: 480px) {
+  .map-popup {
+    width: 180px;
+  }
 }

@@ -180,6 +180,13 @@ export default function MapOverlay({ imageSrc, locations }) {
                 zoom={ENABLE_ZOOM ? zoom : 1}
                 title={activeLocation.name}
                 summary={activeLocation.summary}
+                side={
+                  activeLocation.x > 50
+                    ? "left"
+                    : activeLocation.x < 50
+                    ? "right"
+                    : "left"
+                }
                 onClose={() => setActiveId(null)}
                 onOpen={() => onPopupClick(activeLocation.slug)}
               />
