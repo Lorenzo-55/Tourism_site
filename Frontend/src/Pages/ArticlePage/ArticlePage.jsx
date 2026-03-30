@@ -28,11 +28,43 @@ function RichText({ paragraphs = [], content = [] }) {
     <div className="article-copy">
       {hasStructured
         ? content.map((block, index) => {
+            if (block.type === "h2") {
+              return (
+                <h2 key={index} className="article-h2">
+                  {block.text}
+                </h2>
+              );
+            }
+
             if (block.type === "h3") {
               return (
-                <h3 key={index} className="article-subTitle" id={block.id}>
+                <h3 key={index} className="article-h3" id={block.id}>
                   {block.text}
                 </h3>
+              );
+            }
+
+            if (block.type === "h4") {
+              return (
+                <h4 key={index} className="article-h4">
+                  {block.text}
+                </h4>
+              );
+            }   
+
+            if (block.type === "h5") {
+              return (
+                <h5 key={index} className="article-h5">
+                  {block.text}
+                </h5>
+              );
+            }
+
+            if (block.type === "h6") {
+              return (
+                <h6 key={index} className="article-h6">
+                  {block.text}
+                </h6>
               );
             }
 
@@ -78,6 +110,7 @@ function HorizontalScrollSection({ section }) {
       title={section.title}
       text={section.text} 
       collapsible={section.collapsible} 
+      defaultOpen={section.defaultOpen}
       toggleLabelOpen={section.toggleLabelOpen}
       toggleLabelClose={section.toggleLabelClose}
       align={section.align}

@@ -10,12 +10,13 @@ export default function HorizontalScrollCards({
   text, // regular text between title and cards
   sectionClassName = "",
   collapsible = false, // enable/disable show-hide button
+  defaultOpen = false,
   toggleLabelOpen = "Click here for more details",
   toggleLabelClose = "Hide details",
   align = "left",
   titleStyle = "default" 
 }) {
-  const [isOpen, setIsOpen] = useState(!collapsible);
+  const [isOpen, setIsOpen] = useState(collapsible ? defaultOpen : true);
 
   const areaRef = useRef(null);
   const listRef = useRef(null);
