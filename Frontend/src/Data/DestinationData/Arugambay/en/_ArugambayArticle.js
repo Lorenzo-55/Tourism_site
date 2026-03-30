@@ -56,25 +56,25 @@ const ArugamBayArticle = {
         title: "Baby Point",
         description:
             "Located right in Arugam Bay town, this is the inside section of Main Point with small, gentle waves and a sandy bottom—ideal for beginners. It’s the safest place to learn, though it can get crowded with surf schools.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BabyPoint.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/BabyPoint.jpg`,
         },
         {
         title: "Elephant Rock",
         description:
             "A scenic right-hand wave just south of town with soft, forgiving conditions—great for beginners and intermediates. The surrounding landscape and sunsets make it one of the most visually rewarding spots to surf.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/ElephantRock.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/ElephantRock.webp`,
         },
         {
         title: "Peanut Farm",
         description:
             "A relaxed spot about 20 minutes south offering two breaks: one mellow for learners and one more powerful for progression. The laid-back, slightly remote vibe makes it a favorite for longer, chilled surf sessions.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PeanutFarm.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/PeanutFarm.webp`,
         },
         {
         title: "Whisky Point",
         description:
             "Located north of Arugam Bay, this break offers long, mellow right-hand waves ideal for intermediates practicing turns. It’s generally less crowded than the main bay, with a calmer and more relaxed atmosphere.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/WhiskyPoint.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/WhiskyPoint.jpg`,
         },
     ],
     },
@@ -99,25 +99,25 @@ const ArugamBayArticle = {
         title: "Main Point",
         description:
             "Arugam Bay’s most famous wave, Main Point is a long right-hand point break known for fast sections, powerful rides, and occasional barrels. It attracts experienced surfers looking for one of Sri Lanka’s most iconic surf experiences.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/MainPoint.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/MainPointx.webp`,
         },
         {
         title: "Pottuvil Point",
         description:
             "Located north of Arugam Bay, this point offers long, clean right-hand rides in a more open and less crowded setting. It is a great option for intermediate and advanced surfers who want quality waves with a little more space.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PottuvilPoint.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/PottuvilPointx.webp`,
         },
         {
         title: "Okanda",
         description:
             "This remote break near Kumana National Park delivers stronger, more powerful waves for advanced surfers seeking a wilder surf session. Its isolated setting adds to the adventure, but it is best tackled by those comfortable in more demanding conditions.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Okanda.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/Okandax.webp`,
         },
         {
         title: "Lighthouse",
         description:
             "An inconsistent but rewarding wave, Lighthouse can produce long, powerful rides when the swell and wind line up properly. When it works, it offers a more raw and less crowded experience for surfers chasing stronger conditions.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Lighthouse.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/Lighthouse.jpg`,
         },
     ],
     },
@@ -142,25 +142,25 @@ const ArugamBayArticle = {
         title: "Surf Shops",
         description:
             "Dedicated surf shops such as Banana Surf Camp and Dylan’s Surf Company usually offer the widest range of boards, from beginner soft-tops to performance shapes. They are often the best choice if you want more variety, better equipment, and advice on which board suits the day’s conditions.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfShops.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SurfShop.jpg`,
         },
         {
         title: "Surf Camps",
         description:
             "Many surf camps include board rentals as part of their lesson packages or accommodation deals, making them convenient for travelers who want everything arranged in one place. This can be especially useful for beginners who also want coaching and local guidance.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfCamps.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SurfCamp.jpg`,
         },
         {
         title: "Guesthouses",
         description:
             "A number of guesthouses and small hotels keep a few boards available for guests, offering a simple and flexible option without needing to visit a separate rental shop. The selection is usually smaller, but it can be perfect for casual sessions close to where you stay.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Guesthouses.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/Guesthouses.jpg`,
         },
         {
         title: "Beach Vendors",
         description:
             "At some popular surf spots, local vendors rent boards directly near the beach, which can be handy for quick and spontaneous sessions. It is a practical option when you want to get in the water fast, though board quality and choice can vary.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BeachVendors.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/BeachVendors.jpg`,
         },
     ],
     },
@@ -185,19 +185,19 @@ const ArugamBayArticle = {
         title: "Soft-Tops",
         description:
             "Soft-top boards are the most beginner-friendly option, offering extra stability, buoyancy, and a softer surface that feels safer during wipeouts. They are ideal for first lessons and early practice sessions when balance and confidence matter most.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SoftTops.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SoftTopSurfBoard.jpg`,
         },
         {
         title: "Longboards",
         description:
             "Longboards are great for mellow waves and surfers who want smooth takeoffs, easier paddling, and longer rides. They work well for intermediates, but they can also be enjoyable for relaxed cruising sessions at friendly breaks.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Longboards.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/LongBoard.jpg`,
         },
         {
         title: "Shortboards",
         description:
             "Shortboards are designed for more advanced surfers looking for speed, sharper turns, and higher-performance surfing in steeper waves. They require more skill and control, but they are the preferred choice for stronger, faster breaks.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/Shortboards.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/shorboard.jpg`,
         },
     ],
     },
@@ -222,25 +222,25 @@ const ArugamBayArticle = {
         title: "Inspect the Board",
         description:
             "Thoroughly check for any dings or damage before renting. Take photos or videos to avoid being charged for pre-existing issues. Even small cracks can worsen in the water, so it’s worth checking carefully.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BoardInspect.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/BoardInspect.jpg`,
         },
         {
         title: "Check Fins & Leash",
         description:
             "Ensure fins are secure and the leash is in good condition to avoid accidents or losing the board. A damaged leash can snap unexpectedly in stronger waves.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/FinsLeash.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/FinsLeash.jpg`,
         },
         {
         title: "Ask for Advice",
         description:
             "Rental staff can recommend the best board and surf spots based on your skill level and conditions. Local knowledge can significantly improve your surf session.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfAdvice.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SurfAdvice.jpg`,
         },
         {
         title: "Repairs",
         description:
             "If the board gets damaged, expect to pay for repairs. Most shops handle quick and affordable fixes, so issues can usually be resolved without much delay.",
-        image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BoardRepair.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/BoardRepair.jpg`,
         },
     ],
     },
@@ -282,10 +282,10 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Panama Road Arugam Bay, P/05 Main Street, Pottuvil 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/BananaSurf.jpg`,
+          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/BananaSurfShop.webp`,
           button: {
             label: "Google Maps",
-            href: "https://google.com",
+            href: "https://www.google.com/maps/place/Banana+Surf+Camp/@6.847405,81.8300683,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae5bd302eba5c2d:0x2f8f961d66711411!8m2!3d6.847405!4d81.8300683!16s%2Fg%2F11f5h7grlx?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
           },
         },
         {
@@ -296,10 +296,10 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "pappy's surf school, Arugam Bay, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/PappysSurf.jpg`,
+          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/PappysSurf.webp`,
           button: {
             label: "Google Maps",
-            href: "https://google.com",
+            href: "https://www.google.com/maps/place/Pappy%E2%80%99s+Surf+School+-+Arugam+Bay,+Sri+lanka/@6.8424106,81.8319819,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae5bdaf0f708153:0x481c1755f34925d9!8m2!3d6.8424106!4d81.8319819!16s%2Fg%2F11h1yvp_xn?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
           },
         },
         {
@@ -310,7 +310,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Galaxy Rd, Arugam Bay, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SafaSurf.jpg`,
+          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/SafaSurf.jpg`,
           button: {
             label: "Google Maps",
             href: "https://google.com",
@@ -324,7 +324,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Al Aksha School Rd, Arugam Bay 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfCenter.jpg`,
+          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/SurfCenter.jpg`,
           button: {
             label: "Google Maps",
             href: "https://google.com",
@@ -338,7 +338,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Panama Rd, Arugam Bay 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/SurfSoul.jpg`,
+          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/SurfSoul.jpg`,
           button: {
             label: "Google Maps",
             href: "https://google.com",

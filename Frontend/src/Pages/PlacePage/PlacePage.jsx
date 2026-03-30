@@ -41,6 +41,13 @@ import ElephantRockArticleSection from "../../Data/DestinationData/Arugambay/en/
 import MuhuduMahaViharayaArticle from "../../Data/DestinationData/Arugambay/en/ArugambayMuhuduMahaViharaya.js";
 
 import NegomboArticle from "../../Data/DestinationData/Negombo/en/_NegomboArticle.js";
+import NegomboFishMarketArticle from "../../Data/DestinationData/Negombo/en/NegomboFishMarket.js";
+import NegomboDutchFortArticle from "../../Data/DestinationData/Negombo/en/NegomboDutchFort.js";
+import NegomboHamiltonCanalArticle from "../../Data/DestinationData/Negombo/en/NegomboDutchCanal.js";
+import NegomboStMarysChurchArticle from "../../Data/DestinationData/Negombo/en/NegomboStMarysChurch.js";
+import NegomboAngurukaramullaTempleArticle from "../../Data/DestinationData/Negombo/en/NegomboAngurukaramullaTemple.js";
+import NegomboMuthurajawelaMarshArticle from "../../Data/DestinationData/Negombo/en/NegomboMuthurajawelaMarsh.js";
+import NegomboCityArticle from "../../Data/DestinationData/Negombo/en/NegomboCity.js";
 
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
@@ -81,6 +88,13 @@ const placeRegistry = {
   "arugam-bay-muhudu-maha-viharaya": MuhuduMahaViharayaArticle,
 
   "negombo": NegomboArticle,
+  "negombo-fish-market": NegomboFishMarketArticle,
+  "negombo-dutch-fort": NegomboDutchFortArticle,
+  "negombo-hamilton-canal": NegomboHamiltonCanalArticle,
+  "negombo-st-marys-church": NegomboStMarysChurchArticle,
+  "negombo-angurukaramulla-temple": NegomboAngurukaramullaTempleArticle,
+  "negombo-muthurajawela-marsh": NegomboMuthurajawelaMarshArticle,
+  "negombo-city": NegomboCityArticle,
 };
 
 export default function PlacePage() {

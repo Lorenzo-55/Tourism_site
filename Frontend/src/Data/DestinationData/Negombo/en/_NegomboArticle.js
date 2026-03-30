@@ -110,20 +110,16 @@ const NegomboArticle = {
     },
 
     {
-    type: "text",
+    type: "split",
     kicker: "Dutch Period",
     title: "Dutch (VOC) Influence: Trade and Infrastructure",
-    // mediaPosition: "left",
-    // images: [
-    //     {
-    //     src: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboDutchCanal.jpg`,
-    //     alt: "Dutch Canal in Negombo",
-    //     },
-    //     {
-    //     src: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboFort.jpg`,
-    //     alt: "Remains of Negombo Fort",
-    //     },
-    // ],
+    mediaPosition: "right",
+    images: [
+        {
+        src: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboDutchCanal.jpg`,
+        alt: "Dutch Canal in Negombo",
+        },
+    ],
     content: [
         {
         type: "p",
@@ -137,6 +133,26 @@ const NegomboArticle = {
         type: "p",
         text: "The VOC expelled the Portuguese from Negombo and subsequently used the city as a vital logistical hub for a century and a half (1640–1796). The legacy of the VOC is still visible in Negombo's infrastructure today. Their long presence ensured lasting economic and structural changes. These systems continued to be used even after their rule ended.",
         },
+    ],
+    },
+
+    {
+    type: "text",
+    kicker: "",
+    title: "",
+    content: [
+        // {
+        // type: "p",
+        // text: "The Dutch conquered the fort, fortified it, and built canals (such as the Dutch Canal and later the Hamilton Canal) for the transport of spices, particularly cinnamon, for which the region was famous. The original fort was enlarged by them and later demolished by the British to build a prison. These developments reshaped the physical and economic landscape of Negombo. Their infrastructure projects were designed to maximize efficiency and control over trade.",
+        // },
+        // {
+        // type: "p",
+        // text: "The Dutch East India Company (VOC) profoundly influenced Negombo, then part of Ceylon. The city was of great strategic importance to the Dutch due to the lucrative cinnamon trade. This importance made Negombo a key administrative and logistical center. Much of this influence can still be seen in the city’s layout today.",
+        // },
+        // {
+        // type: "p",
+        // text: "The VOC expelled the Portuguese from Negombo and subsequently used the city as a vital logistical hub for a century and a half (1640–1796). The legacy of the VOC is still visible in Negombo's infrastructure today. Their long presence ensured lasting economic and structural changes. These systems continued to be used even after their rule ended.",
+        // },
 
         { type: "h3", text: "The Conquest and the Fort" },
         {
@@ -336,49 +352,49 @@ const NegomboArticle = {
         title: "Visit the Fish Market (Lellama)",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/FishMarket.jpg`,
         imageAlt: "Negombo Fish Market",
-        to: "/places/negombo/fish-market",
+        to: "/places/negombo-fish-market",
         },
         {
         title: "Dutch Fort (Fort Negombo)",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/DutchFort.jpg`,
         imageAlt: "Dutch Fort Negombo",
-        to: "/places/negombo/dutch-fort",
+        to: "/places/negombo-dutch-fort",
         },
         {
         title: "Dutch/Hamilton Canal",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/HamiltonCanal.jpg`,
         imageAlt: "Dutch Hamilton Canal",
-        to: "/places/negombo/hamilton-canal",
+        to: "/places/negombo-hamilton-canal",
         },
         {
         title: "St. Mary’s Church",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/StMarysChurch.jpg`,
         imageAlt: "St Mary's Church",
-        to: "/places/negombo/st-marys-church",
+        to: "/places/negombo-st-marys-church",
         },
         {
         title: "Angurukaramulla Temple",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/AngurukaramullaTemple.jpg`,
         imageAlt: "Angurukaramulla Temple",
-        to: "/places/negombo/angurukaramulla-temple",
+        to: "/places/negombo-angurukaramulla-temple",
         },
         {
         title: "Muthurajawela Marsh",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/MuthurajawelaBoatTour.jpg`,
         imageAlt: "Muthurajawela Boat Tour",
-        to: "/places/negombo/muthurajawela-marsh",
+        to: "/places/negombo-muthurajawela-marsh",
         },
         {
         title: "Explore the city",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/City.jpg`,
         imageAlt: "Explore Negombo city",
-        to: "/places/negombo/city",
+        to: "/places/negombo-city",
         },
         {
         title: "Relax on the Beach",
         image: `${import.meta.env.BASE_URL}Destinations/Negombo/Beach.jpg`,
         imageAlt: "Negombo Beach",
-        to: "/places/negombo/beach",
+        to: "/places/negombo-beach",
         },
     ],
     }
