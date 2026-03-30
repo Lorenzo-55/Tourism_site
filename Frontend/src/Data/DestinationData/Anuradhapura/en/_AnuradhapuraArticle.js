@@ -8,7 +8,7 @@ const AnuradhapuraData = {
     kicker: "Ancient Capital",
     title: "Anuradhapura",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Anuradhapura/Anuradhapura.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Anuradhapura/AnuradhapuraHero.jpg`,
   },
 
   overview: {

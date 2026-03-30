@@ -8,7 +8,7 @@ const AluthgamaData = {
     kicker: "Southwest Coast",
     title: "Aluthgama",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/Aluthgama.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/AluthgamaHero.jpg`,
   },
 
   overview: {

@@ -72,19 +72,19 @@ export const pointsOfInterest = [
     image: `${import.meta.env.BASE_URL}/Destinations/Colombo/ColomboHistory1x.jpg`,
     imageAlt: "Historic Colombo",
   },
-  {
-    title: "Restaurants",
-    image: "/images/colombo-restaurants.jpg",
-    imageAlt: "Restaurants in Colombo",
-  },
-  {
-    title: "Shops",
-    image: "/images/colombo-shops.jpg",
-    imageAlt: "Shopping in Colombo",
-  },
-  {
-    title: "Hotels",
-    image: "/images/colombo-hotels.jpg",
-    imageAlt: "Hotels in Colombo",
-  },
+  // {
+  //   title: "Restaurants",
+  //   image: "/images/colombo-restaurants.jpg",
+  //   imageAlt: "Restaurants in Colombo",
+  // },
+  // {
+  //   title: "Shops",
+  //   image: "/images/colombo-shops.jpg",
+  //   imageAlt: "Shopping in Colombo",
+  // },
+  // {
+  //   title: "Hotels",
+  //   image: "/images/colombo-hotels.jpg",
+  //   imageAlt: "Hotels in Colombo",
+  // },
 ];

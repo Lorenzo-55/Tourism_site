@@ -40,6 +40,8 @@ import ArugamBayArticle from "../../Data/DestinationData/Arugambay/en/_Arugambay
 import ElephantRockArticleSection from "../../Data/DestinationData/Arugambay/en/ArugambayElephantRock.js";
 import MuhuduMahaViharayaArticle from "../../Data/DestinationData/Arugambay/en/ArugambayMuhuduMahaViharaya.js";
 
+import NegomboArticle from "../../Data/DestinationData/Negombo/en/_NegomboArticle.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -77,6 +79,8 @@ const placeRegistry = {
   "arugam-bay": ArugamBayArticle,
   "arugam-bay-elephant-rock": ElephantRockArticleSection,
   "arugam-bay-muhudu-maha-viharaya": MuhuduMahaViharayaArticle,
+
+  "negombo": NegomboArticle,
 };
 
 export default function PlacePage() {

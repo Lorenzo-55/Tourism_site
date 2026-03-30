@@ -8,7 +8,7 @@ const AhungallaArticle = {
     kicker: "Southern Coast",
     title: "Ahungalla",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/Ahungalla.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/AhungallaHero.jpg`,
   },
 
   overview: {

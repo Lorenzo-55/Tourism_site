@@ -10,7 +10,7 @@ const ArugamBayArticle = {
     kicker: "East Coast Sri Lanka",
     title: "Arugam Bay",
     subtitle: "Sri Lanka’s most iconic surf destination",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/ArugamBay/ArugamBayHero.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Arugambay/ArugambayHero.webp`,
   },
 
   overview: {
