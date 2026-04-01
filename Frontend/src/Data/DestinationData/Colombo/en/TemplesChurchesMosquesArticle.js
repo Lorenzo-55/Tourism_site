@@ -23,84 +23,112 @@ const TemplesChurchesMosquesArticle = {
 
   sections: [
     {
-        type: "cards",
-        kicker: "Quick Guide",
-        title: "Main temples, churches, and mosques covered on this page",
-        align: "center",
-        items: [
-            {
+      type: "horizontal-scroll",
+      kicker: "Quick Guide",
+      title: "Main temples, churches, and mosques in Colombo",
+      align: "center",
+      titleStyle: "default",
+      items: [
+        {
+          title: "Gangaramaya Temple & Seema Malaka",
+          description:
+            "A major Buddhist complex combining cultural learning, a vast museum, and a serene floating meditation sanctuary on Beira Lake.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/GangaramayaTemple.webp`,
+          imageAlt: "Gangaramaya Temple and Seema Malaka",
+          button: {
+            label: "View",
             to: "#gangaramaya-temple-seema-malaka",
-            image: "t1.jpg",
-            imageAlt: "Gangaramaya Temple and Seema Malaka",
-            title: "Gangaramaya Temple & Seema Malaka",
-            description:
-                "A major Buddhist complex combining cultural learning, a vast museum, and a serene floating meditation sanctuary on Beira Lake.",
-            },
-            {
-              to: "#kelaniya-raja-maha-vihara",
-            image: "t2.jpg",
-            imageAlt: "Kelaniya Raja Maha Vihara",
-            title: "Kelaniya Raja Maha Vihara",
-            description:
-                "One of Sri Lanka’s most sacred Buddhist temples, believed to have been visited by the Buddha and famous for its murals and stupa.",
-            },
-            {
-              to: "#isipathanaramaya-temple",
-            image: "t3.jpg",
-            imageAlt: "Isipathanaramaya Temple",
-            title: "Isipathanaramaya Temple",
-            description:
-                "Historic temple tied to Sri Lanka’s independence movement, known for vivid murals and its symbolic origins.",
-            },
-            {
-              to: "#kailawasanathan-swami-kovil",
-            image: "t4.jpg",
-            imageAlt: "Sri Kailawasanathan Swami Devasthanam Kovil",
-            title: "Kailawasanathan Swami Kovil",
-            description:
-                "Colombo’s oldest Hindu temple, featuring a towering Dravidian gopuram and rich Tamil religious heritage.",
-            },
-            {
-              to: "#ponnambalam-vanesar-kovil",
-            image: "t5.jpg",
-            imageAlt: "Sri Ponnambalam Vanesar Kovil",
-            title: "Ponnambalam Vanesar Kovil",
-            description:
-                "A rare granite-built Hindu temple with intricate carvings and a deeply atmospheric interior.",
-            },
-            {
-              to: "#wolvendaal-church",
-            image: "t6.jpg",
-            imageAlt: "Wolvendaal Church",
-            title: "Wolvendaal Church",
-            description:
-                "An 18th-century Dutch colonial church with tombstone floors, historic artifacts, and enduring architectural significance.",
-            },
-            {
-              to: "#st-anthonys-shrine-kochchikade",
-            image: "t7.jpg",
-            imageAlt: "St Anthony's Shrine Kochchikade",
-            title: "St. Anthony’s Shrine",
-            description:
-                "A major Catholic pilgrimage site known for miracles, relics, and its role as a symbol of unity after the 2019 attacks.",
-            },
-            {
-              to: "#st-lucias-cathedral",
-            image: "t8.jpg",
-            imageAlt: "St Lucia's Cathedral",
-            title: "St. Lucia’s Cathedral",
-            description:
-                "Sri Lanka’s largest Catholic cathedral, inspired by European Renaissance design and rich in relics and history.",
-            },
-            {
-              to: "#jami-ul-alfar-mosque",
-            image: "t9.jpg",
-            imageAlt: "Jami Ul-Alfar Mosque",
-            title: "Jami Ul-Alfar Mosque",
-            description:
-                "The iconic Red Mosque of Pettah, known for its striking red-and-white architecture and Indo-Saracenic design.",
-            },
-        ],
+          },
+        },
+        {
+          title: "Kelaniya Raja Maha Vihara",
+          description:
+            "One of Sri Lanka’s most sacred Buddhist temples, believed to have been visited by the Buddha and famous for its murals and stupa.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/KelaniaRajaMahaVihara.webp`,
+          imageAlt: "Kelaniya Raja Maha Vihara",
+          button: {
+            label: "View",
+            to: "#kelaniya-raja-maha-vihara",
+          },
+        },
+        {
+          title: "Isipathanaramaya Temple",
+          description:
+            "Historic temple tied to Sri Lanka’s independence movement, known for vivid murals and its symbolic origins.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/IsipathanaramayaTemple.webp`,
+          imageAlt: "Isipathanaramaya Temple",
+          button: {
+            label: "View",
+            to: "#isipathanaramaya-temple",
+          },
+        },
+        {
+          title: "Kailawasanathan Swami Kovil",
+          description:
+            "Colombo’s oldest Hindu temple, featuring a towering Dravidian gopuram and rich Tamil religious heritage.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/KailawasanathanKovil.webp`,
+          imageAlt: "Sri Kailawasanathan Swami Devasthanam Kovil",
+          button: {
+            label: "View",
+            to: "#kailawasanathan-swami-kovil",
+          },
+        },
+        {
+          title: "Ponnambalam Vanesar Kovil",
+          description:
+            "A rare granite-built Hindu temple with intricate carvings and a deeply atmospheric interior.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/PonnambalamKovil.webp`,
+          imageAlt: "Sri Ponnambalam Vanesar Kovil",
+          button: {
+            label: "View",
+            to: "#ponnambalam-vanesar-kovil",
+          },
+        },
+        {
+          title: "Wolvendaal Church",
+          description:
+            "An 18th-century Dutch colonial church with tombstone floors, historic artifacts, and enduring architectural significance.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/WolvendaalChurch.webp`,
+          imageAlt: "Wolvendaal Church",
+          button: {
+            label: "View",
+            to: "#wolvendaal-church",
+          },
+        },
+        {
+          title: "St. Anthony’s Shrine",
+          description:
+            "A major Catholic pilgrimage site known for miracles, relics, and its role as a symbol of unity after the 2019 attacks.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/StAnthonyShrine.webp`,
+          imageAlt: "St Anthony's Shrine Kochchikade",
+          button: {
+            label: "View",
+            to: "#st-anthonys-shrine-kochchikade",
+          },
+        },
+        {
+          title: "St. Lucia’s Cathedral",
+          description:
+            "Sri Lanka’s largest Catholic cathedral, inspired by European Renaissance design and rich in relics and history.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/StLuciaCathedral.webp`,
+          imageAlt: "St Lucia's Cathedral",
+          button: {
+            label: "View",
+            to: "#st-lucias-cathedral",
+          },
+        },
+        {
+          title: "Jami Ul-Alfar Mosque",
+          description:
+            "The iconic Red Mosque of Pettah, known for its striking red-and-white architecture and Indo-Saracenic design.",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/TCM/JamiUlAlfarMosque.webp`,
+          imageAlt: "Jami Ul-Alfar Mosque",
+          button: {
+            label: "View",
+            to: "#jami-ul-alfar-mosque",
+          },
+        },
+      ],
     },
 
     {

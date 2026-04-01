@@ -33,7 +33,7 @@ const FortAreaArticle = {
       title: "Commercial and Administrative Center",
       subtitle:
         "The operational heart of Sri Lanka’s economy and governance.",
-      image: "/images/colombo-wtc.jpg",
+      image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/WTC.webp`,
       imageAlt: "World Trade Center Colombo",
       paragraphs: [
         "Today, Colombo Fort functions as the country’s primary financial hub. It is home to major banking headquarters, including the Central Bank of Sri Lanka, the Bank of Ceylon, and the Colombo Stock Exchange.",
@@ -50,42 +50,42 @@ const FortAreaArticle = {
         "A walk through Fort reveals a blend of colonial architecture and modern structures.",
       items: [
         {
-          image: "/images/dutch-hospital.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/DutchHospital.webp`,
           imageAlt: "Old Dutch Hospital Colombo",
           title: "Old Dutch Hospital",
           description:
             "A beautifully restored 17th-century Dutch colonial building, now home to restaurants, cafes, and boutique shops. It is a popular spot for dining and evening visits.",
         },
         {
-          image: "/images/old-parliament.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/OldParliment.webp`,
           imageAlt: "Old Parliament Building Colombo",
           title: "Old Parliament Building",
           description:
             "A grand Neo-Baroque structure from the British era, now housing the Presidential Secretariat. It stands as a major symbol of Sri Lanka’s political history.",
         },
         {
-          image: "/images/colombo-clock-tower.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/LighthouseClocktower.webp`,
           imageAlt: "Colombo Lighthouse Clock Tower",
           title: "Lighthouse Clock Tower",
           description:
             "Built in 1857, this historic clock tower once functioned as a lighthouse before being overshadowed by modern buildings.",
         },
         {
-          image: "/images/cargills-building.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/CargillsColombo.jpg`,
           imageAlt: "Cargills Building Colombo",
           title: "Cargills Building",
           description:
             "A striking red-and-white colonial structure on York Street, known for its distinctive British architectural style.",
         },
         {
-          image: "/images/galle-face-green.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/GalleFaceGreen.webp`,
           imageAlt: "Galle Face Green Colombo",
           title: "Galle Face Green",
           description:
             "A large seaside urban park bordering the Fort area, popular for sunset views, evening walks, and local street food.",
         },
         {
-          image: "/images/sambodhi-chaithya.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Fort/SambodhiChaithya.webp`,
           imageAlt: "Sambodhi Chaithya",
           title: "Sambodhi Chaithya",
           description:

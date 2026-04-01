@@ -38,28 +38,28 @@ const NightLifeArticle = {
       items: [
         {
           title: "Sky Lounge",
-          image: "/images/colombo-sky-lounge.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Nightlife/SkyLounge.webp`,
           imageAlt: "Sky Lounge rooftop bar in Colombo",
           description:
             "An elegant rooftop setting at The Kingsbury Hotel, known for sweeping city views, ocean-facing evenings, and a polished atmosphere.",
         },
         {
           title: "Vistas Bar",
-          image: "/images/colombo-vistas-bar.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Nightlife/VistasBar.webp`,
           imageAlt: "Vistas Bar rooftop setting",
           description:
             "Located at Mövenpick Hotel Colombo, this rooftop venue is popular for skyline views, cocktails, and a modern city-night feel.",
         },
         {
           title: "ON14 Rooftop Lounge & Bar",
-          image: "/images/colombo-on14.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Nightlife/ON14RooftopLounge.webp`,
           imageAlt: "ON14 rooftop lounge in Colombo",
           description:
             "A stylish rooftop at Radisson Hotel Colombo, combining sea views, music, and a more relaxed lounge-style setting.",
         },
         {
           title: "Cloud Red",
-          image: "/images/colombo-cloud-red.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Nightlife/CloudRed.webp`,
           imageAlt: "Cloud Red rooftop bar",
           description:
             "A well-known rooftop venue at Cinnamon Red Hotel with dramatic views and a vibrant evening crowd.",
@@ -87,7 +87,7 @@ const NightLifeArticle = {
       title: "Classic Pubs & Live Music",
       subtitle:
         "Not every night out in Colombo needs to be high-energy. The city also does relaxed drinking spots very well.",
-      image: "/images/colombo-pubs.jpg",
+      image: `${import.meta.env.BASE_URL}Destinations/Colombo/Nightlife/Taphouse.webp`,
       imageAlt: "Pub atmosphere in Colombo at night",
       paragraphs: [
         "For a slower-paced evening, Colombo’s pubs and casual bars provide a more social atmosphere focused on drinks, comfort food, and conversation.",

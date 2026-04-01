@@ -39,61 +39,78 @@ const PettahArticle = {
       ],
     },
 
-    {
-      type: "cards",
+      {
+      type: "text",
       kicker: "MARKET STREETS",
       title: "What to Find Where",
-      subtitle:
-        "Each street focuses on a specific type of trade or product.",
-      items: [
+      align: "left",
+      content: [
         {
-          image: "/images/pettah-main-street.jpg",
-          imageAlt: "Main Street Pettah",
-          title: "Main Street",
-          description:
-            "The main artery of Pettah, filled with wholesale goods, shoes, bags, clothing, and large showrooms. It is one of the busiest and most chaotic streets in the area.",
+          type: "p",
+          text: "Each street focuses on a specific type of trade or product.",
+        },
+
+        {
+          type: "h4",
+          text: "Main Street",
         },
         {
-          image: "/images/pettah-sea-street.jpg",
-          imageAlt: "Sea Street gold shops",
-          title: "Sea Street",
-          description:
-            "Sri Lanka’s primary gold and jewelry market, lined with hundreds of small shops. Traditionally dominated by Tamil traders, it is the center of the country’s gold trade.",
+          type: "p",
+          text: "The main artery of Pettah, filled with wholesale goods, shoes, bags, clothing, and large showrooms. It is one of the busiest and most chaotic streets in the area. The street stays active from morning to evening with a constant flow of shoppers, porters, and delivery vehicles. It gives a strong first impression of Pettah’s fast-moving commercial energy.",
+        },
+
+        {
+          type: "h4",
+          text: "Sea Street",
         },
         {
-          image: "/images/pettah-cross-street.jpg",
-          imageAlt: "Electronics street Pettah",
-          title: "1st Cross Street",
-          description:
-            "The go-to area for mobile phones, electronics, and accessories such as cables, covers, and batteries.",
+          type: "p",
+          text: "Sri Lanka’s primary gold and jewelry market, lined with hundreds of small shops. Traditionally dominated by Tamil traders, it is the center of the country’s gold trade. Many visitors come here to compare designs, prices, and craftsmanship across multiple stores. The street has long been associated with Colombo’s jewelry business and remains one of its most specialized trading areas.",
+        },
+
+        {
+          type: "h4",
+          text: "1st Cross Street",
         },
         {
-          image: "/images/red-mosque-pettah.jpg",
-          imageAlt: "Red Mosque Pettah",
-          title: "2nd Cross Street",
-          description:
-            "Known for textiles, sarees, and fabrics. It is also home to the iconic Jami Ul-Alfar Mosque, one of Colombo’s most recognizable landmarks.",
+          type: "p",
+          text: "The go-to area for mobile phones, electronics, and accessories such as cables, covers, and batteries. Small stalls and compact shops are packed closely together, creating a dense retail strip. It is especially popular for quick purchases, repairs, and low-cost electronic items. The pace here is fast, with buyers moving quickly between competing sellers.",
+        },
+
+        {
+          type: "h4",
+          text: "2nd Cross Street",
         },
         {
-          image: "/images/pettah-produce.jpg",
-          imageAlt: "Wholesale produce Pettah",
-          title: "4th Cross Street",
-          description:
-            "A busy wholesale zone for produce such as onions, potatoes, spices, and grains. Expect heavy traffic and porters moving large loads.",
+          type: "p",
+          text: "Known for textiles, sarees, and fabrics. It is also home to the iconic Jami Ul-Alfar Mosque, one of Colombo’s most recognizable landmarks. Rolls of fabric and colorful garments give the street a distinct visual character. It attracts both wholesale buyers and visitors interested in its mix of commerce and architecture.",
+        },
+
+        {
+          type: "h4",
+          text: "4th Cross Street",
         },
         {
-          image: "/images/pettah-prince-street.jpg",
-          imageAlt: "Prince Street Pettah",
-          title: "Prince Street",
-          description:
-            "A mix of toys, plastic goods, lighting, and home items. It also houses the Colombo Dutch Museum.",
+          type: "p",
+          text: "A busy wholesale zone for produce such as onions, potatoes, spices, and grains. Expect heavy traffic and porters moving large loads. The atmosphere is practical and intense, with trade focused on quantity and speed. This street plays an important role in supplying everyday goods to businesses and markets across the city.",
+        },
+
+        {
+          type: "h4",
+          text: "Prince Street",
         },
         {
-          image: "/images/pettah-china-street.jpg",
-          imageAlt: "China Street Pettah",
-          title: "China Street",
-          description:
-            "Specializes in party supplies, decorations, candles, wrapping paper, and chinaware—ideal for events and celebrations.",
+          type: "p",
+          text: "A mix of toys, plastic goods, lighting, and home items. It also houses the Colombo Dutch Museum. The range of products makes it useful for shoppers looking for varied household and novelty items in one area. Its combination of everyday trade and nearby heritage gives it a slightly different feel from the more specialized streets.",
+        },
+
+        {
+          type: "h4",
+          text: "China Street",
+        },
+        {
+          type: "p",
+          text: "Specializes in party supplies, decorations, candles, wrapping paper, and chinaware—ideal for events and celebrations. The shops are often bright and densely stocked with colorful goods for weddings, birthdays, and seasonal occasions. It is a practical stop for event-related shopping in bulk or in small quantities. The street stands out for its festive and decorative focus within Pettah.",
         },
       ],
     },
@@ -104,7 +121,7 @@ const PettahArticle = {
       title: "Architectural and Cultural Sites",
       subtitle:
         "Historic structures scattered within the market streets.",
-      image: "/images/red-mosque-close.jpg",
+      image: `${import.meta.env.BASE_URL}Destinations/Colombo/Pettah/JamiUlAlfarMosque2x.jpg`,
       imageAlt: "Jami Ul-Alfar Mosque close view",
       paragraphs: [
         "Amid the dense commercial streets, Pettah also features several important landmarks. The Jami Ul-Alfar Mosque, known for its striking red-and-white pattern, stands out as one of the city’s most iconic buildings.",

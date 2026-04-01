@@ -47,41 +47,36 @@ const lotusTowerArticle = {
           title: "Observation Deck",
           description:
             "Located on the 29th floor at about 244 meters, with sweeping 360-degree views of Colombo, the Indian Ocean, Fort, and Port City.",
-          image: "/images/lotus-tower-observation-deck.jpg",
+          image:  `${import.meta.env.BASE_URL}Destinations/Colombo/Lotustower/ObservationDeck.jpg`,
           imageAlt: "Observation deck at Colombo Lotus Tower",
-          to: "#",
         },
         {
           title: "Blue Orbit Revolving Restaurant",
           description:
             "Located on the 27th floor, this revolving restaurant completes a full rotation in about 90 minutes while offering changing views during dining.",
-          image: "/images/lotus-tower-restaurant.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Lotustower/BlueOrbit.webp`,
           imageAlt: "Blue Orbit Revolving Restaurant",
-          to: "#",
         },
         {
           title: "Pixel Bloom Digital Art Museum",
           description:
             "An immersive digital art experience on the ground floor featuring interactive and layered 3D visuals related to Sri Lankan culture and the tower’s history.",
-          image: "/images/lotus-tower-pixel-bloom.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Lotustower/PixelBloom.webp`,
           imageAlt: "Pixel Bloom Digital Art Museum",
-          to: "#",
         },
         {
           title: "Ground Floor Facilities",
           description:
             "Includes a food court, ice cream lab, and souvenir shop called Celebrate Lotus Colombo with locally made items and themed merchandise.",
-          image: "/images/lotus-tower-ground-floor.jpg",
+          image:  `${import.meta.env.BASE_URL}Destinations/Colombo/Lotustower/GroundFloor.webp`,
           imageAlt: "Ground floor facilities at Lotus Tower",
-          to: "#",
         },
         {
           title: "Rooftop Promenade",
           description:
             "An open-air space on the 3rd floor that is suitable for photos, short walks, and relaxed views around the complex.",
-          image: "/images/lotus-tower-promenade.jpg",
+          image: `${import.meta.env.BASE_URL}Destinations/Colombo/Lotustower/Promenade.jpg`,
           imageAlt: "Rooftop promenade at Lotus Tower",
-          to: "#",
         },
       ],
     },
@@ -114,7 +109,7 @@ const lotusTowerArticle = {
       kicker: "LOCATION",
       title: "Where it is",
       subtitle: "Easy to reach from central Colombo.",
-      image: "/images/lotus-tower-location.jpg",
+      image: `${import.meta.env.BASE_URL}Destinations/Colombo/Lotustower/Lotustower1x.jpg`,
       imageAlt: "Colombo Lotus Tower near Beira Lake",
       paragraphs: [
         "The Lotus Tower is located on the banks of Beira Lake, in a central part of Colombo that is easy to reach by taxi or tuk-tuk.",
