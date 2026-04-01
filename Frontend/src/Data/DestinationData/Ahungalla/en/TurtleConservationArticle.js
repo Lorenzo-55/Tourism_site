@@ -9,7 +9,7 @@ const TurtleConservationData = {
     kicker: "Wildlife Conservation",
     title: "Kosgoda Sea Turtle Conservation Project",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/TurtleConservation.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/Seaturtle2.webp`,
   },
 
   sections: [

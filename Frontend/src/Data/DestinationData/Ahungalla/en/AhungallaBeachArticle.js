@@ -9,7 +9,7 @@ const AhungallaBeachData = {
     kicker: "Coastal Escape",
     title: "Ahungalla Beach",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/AhungallaBeach.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/AhungallaBeach.webp`,
   },
 
   sections: [

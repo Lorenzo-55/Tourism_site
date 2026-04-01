@@ -9,7 +9,7 @@ const BriefGardenData = {
     kicker: "Art and Landscape",
     title: "Brief Garden",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BriefGarden.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BriefGarden.webp`,
   },
 
   sections: [

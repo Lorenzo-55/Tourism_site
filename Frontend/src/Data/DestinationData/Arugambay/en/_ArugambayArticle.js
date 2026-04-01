@@ -56,7 +56,7 @@ const ArugamBayArticle = {
         title: "Baby Point",
         description:
             "Located right in Arugam Bay town, this is the inside section of Main Point with small, gentle waves and a sandy bottom—ideal for beginners. It’s the safest place to learn, though it can get crowded with surf schools.",
-        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/BabyPoint.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/Babypointx.jpg`,
         },
         {
         title: "Elephant Rock",
@@ -68,7 +68,7 @@ const ArugamBayArticle = {
         title: "Peanut Farm",
         description:
             "A relaxed spot about 20 minutes south offering two breaks: one mellow for learners and one more powerful for progression. The laid-back, slightly remote vibe makes it a favorite for longer, chilled surf sessions.",
-        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/PeanutFarm.webp`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/PenutFarm.webp`,
         },
         {
         title: "Whisky Point",
@@ -111,7 +111,7 @@ const ArugamBayArticle = {
         title: "Okanda",
         description:
             "This remote break near Kumana National Park delivers stronger, more powerful waves for advanced surfers seeking a wilder surf session. Its isolated setting adds to the adventure, but it is best tackled by those comfortable in more demanding conditions.",
-        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/Okandax.webp`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/Okandax.jpg`,
         },
         {
         title: "Lighthouse",
@@ -197,7 +197,7 @@ const ArugamBayArticle = {
         title: "Shortboards",
         description:
             "Shortboards are designed for more advanced surfers looking for speed, sharper turns, and higher-performance surfing in steeper waves. They require more skill and control, but they are the preferred choice for stronger, faster breaks.",
-        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/shorboard.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/shortboard.jpg`,
         },
     ],
     },
@@ -271,7 +271,7 @@ const ArugamBayArticle = {
           image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/dylan-surf-company-x.webp`,
           button: {
             label: "Google Maps",
-            href: "https://www.google.com/maps/place/Dylan's+Surf+Company/@6.845151,81.830646,17z/data=!4m6!3m5!1s0x3ae5bd2e62768e8f:0xd33b08d443a42f05!8m2!3d6.845151!4d81.830646!16s%2Fg%2F11cp5zcvgs?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+            href: "https://maps.app.goo.gl/FVPreVFur9scGbVg7",
           },
         },
         {
@@ -285,7 +285,7 @@ const ArugamBayArticle = {
           image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/BananaSurfShop.webp`,
           button: {
             label: "Google Maps",
-            href: "https://www.google.com/maps/place/Banana+Surf+Camp/@6.847405,81.8300683,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae5bd302eba5c2d:0x2f8f961d66711411!8m2!3d6.847405!4d81.8300683!16s%2Fg%2F11f5h7grlx?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+            href: "https://maps.app.goo.gl/VTtHsfrXcRQ5K41b6",
           },
         },
         {
@@ -299,7 +299,7 @@ const ArugamBayArticle = {
           image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/PappysSurf.webp`,
           button: {
             label: "Google Maps",
-            href: "https://www.google.com/maps/place/Pappy%E2%80%99s+Surf+School+-+Arugam+Bay,+Sri+lanka/@6.8424106,81.8319819,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae5bdaf0f708153:0x481c1755f34925d9!8m2!3d6.8424106!4d81.8319819!16s%2Fg%2F11h1yvp_xn?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D",
+            href: "https://maps.app.goo.gl/yT5imKci3MHSQF5x5",
           },
         },
         {
@@ -526,7 +526,7 @@ const ArugamBayArticle = {
         {
           title: "Elephant Rock",
           description: "Scenic rock viewpoint with surf and sunset views.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/ElephantRock.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/ElephantRock.webp`,
           imageAlt: "Elephant Rock Arugam Bay",
           to: "/places/arugam-bay-elephant-rock",
 
@@ -534,7 +534,7 @@ const ArugamBayArticle = {
         {
           title: "Muhudu Maha Viharaya",
           description: "Ancient coastal Buddhist temple near Pottuvil.",
-          image: `${import.meta.env.BASE_URL}Destinations/ArugamBay/MuhuduMahaViharaya.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/MuhuduMahaViharaya.webp`,
           imageAlt: "Muhudu Maha Viharaya temple",
           to: "/places/arugam-bay-muhudu-maha-viharaya",
         },

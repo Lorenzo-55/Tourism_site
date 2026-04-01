@@ -54,7 +54,7 @@ const AluthgamaData = {
       items: [
         {
           to: "/places/aluthgama-kande-viharaya-temple",
-          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/KandeViharaya.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/AluthgamaKandeVihara.webp`,
           imageAlt: "Kande Viharaya Temple",
           title: "Kande Viharaya Temple",
           description:
@@ -62,7 +62,7 @@ const AluthgamaData = {
         },
         {
           to: "/places/aluthgama-beaches",
-          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/Beaches.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BentotaBeach.jpg`,
           imageAlt: "Beaches near Aluthgama",
           title: "Beaches",
           description:
@@ -70,7 +70,7 @@ const AluthgamaData = {
         },
         {
           to: "/places/aluthgama-bentota-river-mouth",
-          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BentotaRiver.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BentotaRiver.webp`,
           imageAlt: "Bentota River",
           title: "Bentota River & Lagoon",
           description:
@@ -78,7 +78,7 @@ const AluthgamaData = {
         },
         {
           to: "/places/aluthgama-brief-garden",
-          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BriefGarden.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BriefGarden2.webp`,
           imageAlt: "Brief Garden",
           title: "Brief Garden",
           description:

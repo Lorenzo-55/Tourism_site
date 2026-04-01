@@ -9,7 +9,7 @@ const MaduRiverSafariData = {
     kicker: "Madu Ganga",
     title: "Madu River Safari",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/MaduRiver.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/MaduRiverSafari.webp`,
   },
 
   sections: [

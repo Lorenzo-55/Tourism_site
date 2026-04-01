@@ -9,7 +9,7 @@ const KothduwaTempleData = {
     kicker: "Madu River",
     title: "Kothduwa Temple",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/KothduwaTemple.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Ahungalla/kothduwaTemple.webp`,
   },
 
   sections: [

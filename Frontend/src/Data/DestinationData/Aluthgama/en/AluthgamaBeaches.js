@@ -9,7 +9,7 @@ const AluthgamaBeachesData = {
     kicker: "Coastal Belt",
     title: "Beaches of Aluthgama",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/AluthgamaBeach.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BentotaBeach.jpg`,
   },
 
   sections: [

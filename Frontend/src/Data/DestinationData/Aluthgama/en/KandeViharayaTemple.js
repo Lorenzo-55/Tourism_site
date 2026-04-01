@@ -9,7 +9,7 @@ const KandeViharayaData = {
     kicker: "Aluthgama / Bentota",
     title: "Kande Viharaya Temple",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Bentota/KandeViharaya.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Bentota/AluthgamaKandeViharayaHero.webp`,
   },
 
   sections: [

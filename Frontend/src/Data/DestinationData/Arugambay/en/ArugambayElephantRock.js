@@ -10,7 +10,7 @@ const ElephantRockArticle = {
     title: "Elephant Rock",
     subtitle:
       "A scenic coastal escape known for surf, sunsets, wild landscapes, and one of the best viewpoints near Arugam Bay.",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/ArugamBay/ElephantRock/ElephantRockHero.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/ElephantRock.webp`,
   },
 
   sections: [

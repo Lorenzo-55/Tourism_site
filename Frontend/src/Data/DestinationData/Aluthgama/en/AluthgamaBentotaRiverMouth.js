@@ -9,7 +9,7 @@ const AluthgamaBentotaRiverMouthData = {
     kicker: "River and Lagoon",
     title: "Bentota River Mouth and Lagoon",
     subtitle: "",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BentotaRiverMouthLagoon.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Aluthgama/BentotaRiver.webp`,
   },
 
   sections: [

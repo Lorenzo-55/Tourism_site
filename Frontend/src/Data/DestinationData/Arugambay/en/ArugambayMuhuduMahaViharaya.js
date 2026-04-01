@@ -10,7 +10,7 @@ const MuhuduMahaViharayaArticle = {
     title: "Muhudu Maha Viharaya",
     subtitle:
       "An ancient Buddhist temple near Arugam Bay, shaped by legend, history, archaeology, and a quiet setting by the sea.",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/ArugamBay/MuhuduMahaViharaya/MuhuduMahaViharayaHero.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/MuhuduMahaViharaya.webp`,
   },
 
   sections: [

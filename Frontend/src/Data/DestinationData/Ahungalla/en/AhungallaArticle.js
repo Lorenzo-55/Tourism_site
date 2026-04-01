@@ -53,7 +53,7 @@ const AhungallaArticle = {
       items: [
         {
           to: "/places/ahungalla-kothduwa-temple",
-          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/KothduwaTemple.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/kothduwaTemple.webp`,
           imageAlt: "Kothduwa Temple",
           title: "Kothduwa Temple",
           description:
@@ -61,7 +61,7 @@ const AhungallaArticle = {
         },
         {
           to: "/places/ahungalla-madu-river-safari",
-          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/MaduRiver.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/MaduRiverSafari.webp`,
           imageAlt: "Madu River Safari",
           title: "Madu River Safari",
           description:
@@ -69,7 +69,7 @@ const AhungallaArticle = {
         },
         {
           to: "/places/ahungalla-turtle-conservation",
-          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/TurtleConservation.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/Seaturtle.webp`,
           imageAlt: "Kosgoda Sea Turtle Conservation Project",
           title: "Kosgoda Sea Turtle Conservation Project",
           description:
@@ -77,7 +77,7 @@ const AhungallaArticle = {
         },
         {
           to: "/places/ahungalla-beach",
-          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/AhungallaBeach.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Ahungalla/AhungallaBeach.webp`,
           imageAlt: "Ahungalla Beach",
           title: "Ahungalla Beach",
           description:
