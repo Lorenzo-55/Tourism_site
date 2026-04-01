@@ -23,6 +23,99 @@ const NegomboArticle = {
 
   sections: [
 
+       {
+      type: "text",
+      kicker: "Introduction",
+      title: "Negombo: A Coastal Gateway for Travelers",
+      paragraphs: [
+        "Negombo is one of Sri Lanka’s best-known tourist destinations, largely because of its convenient location close to Bandaranaike International Airport. For many visitors, it is the first or last stop of a journey, making it a popular place to rest, explore, and enjoy the coast without traveling far from Colombo or the airport.",
+        "The town has a long-established tourism scene with a wide range of hotels, restaurants, pubs, guesthouses, and beachside stays. Visitors can find everything from larger resort-style properties to smaller boutique hotels, along with many casual dining spots and more refined restaurants that cater to both international travelers and locals.",
+        "Negombo’s beach area is one of its main attractions, offering a lively tourist atmosphere with seaside views, sunset walks, cafes, bars, and easy access to the town’s hospitality areas. Its combination of beach life, convenience, and visitor-friendly facilities has made Negombo a major tourism hub on Sri Lanka’s west coast.",
+      ],
+    },
+
+    {
+      type: "horizontal-scroll",
+      kicker: "Dining",
+      title: "Restaurants in Negombo",
+      align: "left",
+      titleStyle: "styleblue",
+      collapsible: false,
+      items: [
+        {
+          title: "Dolce Vita",
+          description:
+            "A popular restaurant choice for visitors looking for a relaxed setting and a tourist-friendly dining experience.",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/RandH/DolceVitaNegombo.webp`,
+          button: {
+            label: "View More",
+            to: "https://maps.app.goo.gl/GPXaJnkBGoXdqEh8A",
+          },
+        },
+        {
+          title: "Ulivo Pizza Bar",
+          description:
+            "A stylish dining spot in Negombo known for its modern atmosphere and polished presentation.",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/RandH/ulivo.webp`,
+          button: {
+            label: "View More",
+            to: "https://maps.app.goo.gl/3VwEEn6n49H44mNT6",
+          },
+        },
+        {
+          title: "Lords Restaurant",
+          description:
+            "One of Negombo’s best-known restaurants, often chosen for its lively atmosphere and strong reputation among travelers.",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/RandH/LordsRestaurant.webp`,
+          button: {
+            label: "View More",
+            to: "https://maps.app.goo.gl/96kBs5NCehe9z2ud6",
+          },
+        },
+      ],
+    },
+
+    {
+      type: "horizontal-scroll",
+      kicker: "Stay",
+      title: "Hotels in Negombo",
+      align: "left",
+      titleStyle: "styleblue",
+      collapsible: false,
+      items: [
+        {
+          title: "Jetwing Blue",
+          description:
+            "A well-known hotel name in Negombo, offering a more upscale stay close to the beach and tourist area.",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/RandH/JetwingBlue.webp`,
+          button: {
+            label: "View More",
+            to: "https://maps.app.goo.gl/FURfcK2CDb39jjwBA",
+          },
+        },
+        {
+          title: "Heritance",
+          description:
+            "A recognized luxury hotel option in the area, known for a comfortable resort-style experience by the coast.",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/RandH/HeritanceNegombo.webp`,
+          button: {
+            label: "View More",
+            to: "https://maps.app.goo.gl/YojGy3ZvGHDDuhK5A",
+          },
+        },
+        {
+          title: "Villa Dominikku",
+          description:
+            "A smaller and more intimate accommodation choice for visitors who want a quieter stay in Negombo.",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/RandH/VillaDominikku.webp`,
+          button: {
+            label: "View More",
+            to: "https://maps.app.goo.gl/3H6uTRLr21ZzLXmBA",
+          },
+        },
+      ],
+    },
+
     {
     type: "text",
     kicker: "History",
@@ -350,51 +443,45 @@ const NegomboArticle = {
     items: [
         {
         title: "Visit the Fish Market (Lellama)",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/FishMarket.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboFishMarket.jpg`,
         imageAlt: "Negombo Fish Market",
         to: "/places/negombo-fish-market",
         },
         {
         title: "Dutch Fort (Fort Negombo)",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/DutchFort.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboFort2.jpg`,
         imageAlt: "Dutch Fort Negombo",
         to: "/places/negombo-dutch-fort",
         },
         {
         title: "Dutch/Hamilton Canal",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/HamiltonCanal.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboCanal2.jpg`,
         imageAlt: "Dutch Hamilton Canal",
         to: "/places/negombo-hamilton-canal",
         },
         {
         title: "St. Mary’s Church",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/StMarysChurch.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboStMaryChurch.jpg`,
         imageAlt: "St Mary's Church",
         to: "/places/negombo-st-marys-church",
         },
         {
         title: "Angurukaramulla Temple",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/AngurukaramullaTemple.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboBuddhistTemple.jpg`,
         imageAlt: "Angurukaramulla Temple",
         to: "/places/negombo-angurukaramulla-temple",
         },
         {
         title: "Muthurajawela Marsh",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/MuthurajawelaBoatTour.jpg`,
-        imageAlt: "Muthurajawela Boat Tour",
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboMuthurajawelaMarsh.jpg`,
+        imageAlt: "Muthurajawela Marsh",
         to: "/places/negombo-muthurajawela-marsh",
         },
         {
         title: "Explore the city",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/City.jpg`,
+        image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboCity.jpg`,
         imageAlt: "Explore Negombo city",
         to: "/places/negombo-city",
-        },
-        {
-        title: "Relax on the Beach",
-        image: `${import.meta.env.BASE_URL}Destinations/Negombo/Beach.jpg`,
-        imageAlt: "Negombo Beach",
-        to: "/places/negombo-beach",
         },
     ],
     }

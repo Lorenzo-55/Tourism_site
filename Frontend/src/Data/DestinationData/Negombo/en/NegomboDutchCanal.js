@@ -7,7 +7,7 @@ const NegomboDutchCanalArticle = {
 
   hero: {
     title: "Dutch / Hamilton Canal",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/DutchCanal.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboCanal2.jpg`,
   },
 
   sections: [

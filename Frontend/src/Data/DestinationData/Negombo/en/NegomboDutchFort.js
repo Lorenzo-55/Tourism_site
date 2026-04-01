@@ -7,7 +7,7 @@ const NegomboDutchFortArticle = {
 
   hero: {
     title: "Dutch Fort (Fort Negombo)",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/DutchFort.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboFort2.jpg`,
   },
 
   sections: [

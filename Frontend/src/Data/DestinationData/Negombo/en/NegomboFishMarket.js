@@ -8,7 +8,7 @@ const NegomboFishMarketArticle = {
   hero: {
     kicker: "Points of Interest",
     title: "Negombo Fish Market",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/FishMarket/LellamaHero.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboFishMarket2.jpg`,
   },
 
   sections: [

@@ -7,7 +7,7 @@ const NegomboMuthurajawelaMarshArticle = {
 
   hero: {
     title: "Muthurajawela Marsh & Lagoon",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/MuthurajawelaMarsh.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboMuthurajawelaMarsh.jpg`,
   },
 
   sections: [

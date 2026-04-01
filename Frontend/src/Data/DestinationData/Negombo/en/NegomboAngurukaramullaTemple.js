@@ -7,7 +7,7 @@ const NegomboAngurukaramullaTempleArticle = {
 
   hero: {
     title: "Angurukaramulla Temple",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/AngurukaramullaTemple.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboBuddhistTemple.jpg`,
   },
 
   sections: [

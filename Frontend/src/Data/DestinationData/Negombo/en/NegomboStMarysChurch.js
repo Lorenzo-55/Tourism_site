@@ -7,7 +7,7 @@ const NegomboStMarysChurchArticle = {
 
   hero: {
     title: "St. Mary’s Church",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/StMarysChurch.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboStMaryChurch.jpg`,
   },
 
   sections: [

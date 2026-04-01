@@ -7,7 +7,7 @@ const NegomboExploreCityArticle = {
 
   hero: {
     title: "Explore the City",
-    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/ExploreCity.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboCity.jpg`,
   },
 
   sections: [
