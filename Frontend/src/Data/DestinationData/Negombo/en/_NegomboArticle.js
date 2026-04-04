@@ -202,150 +202,128 @@ const NegomboArticle = {
     ],
     },
 
-    {
-    type: "split",
-    kicker: "Dutch Period",
-    title: "Dutch (VOC) Influence: Trade and Infrastructure",
-    mediaPosition: "right",
-    images: [
+   {
+      type: "text",
+      kicker: "Dutch Period",
+      title: "Dutch (VOC) Influence: Trade and Infrastructure",
+      content: [
         {
-        src: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboDutchCanal.jpg`,
-        alt: "Dutch Canal in Negombo",
+          type: "split-paragraph",
+          mediaPosition: "right",
+          image: `${import.meta.env.BASE_URL}Destinations/Negombo/NegomboDutchCanal.jpg`,
+          imageAlt: "Dutch Canal in Negombo",
+          paragraphs: [
+            "The Dutch conquered the fort, fortified it, and built canals (such as the Dutch Canal and later the Hamilton Canal) for the transport of spices, particularly cinnamon, for which the region was famous. The original fort was enlarged by them and later demolished by the British to build a prison. These developments reshaped the physical and economic landscape of Negombo. Their infrastructure projects were designed to maximize efficiency and control over trade.",
+            "The Dutch East India Company (VOC) profoundly influenced Negombo, then part of Ceylon. The city was of great strategic importance to the Dutch due to the lucrative cinnamon trade. This importance made Negombo a key administrative and logistical center. Much of this influence can still be seen in the city’s layout today."
+          ]
         },
-    ],
-    content: [
-        {
-        type: "p",
-        text: "The Dutch conquered the fort, fortified it, and built canals (such as the Dutch Canal and later the Hamilton Canal) for the transport of spices, particularly cinnamon, for which the region was famous. The original fort was enlarged by them and later demolished by the British to build a prison. These developments reshaped the physical and economic landscape of Negombo. Their infrastructure projects were designed to maximize efficiency and control over trade.",
-        },
-        {
-        type: "p",
-        text: "The Dutch East India Company (VOC) profoundly influenced Negombo, then part of Ceylon. The city was of great strategic importance to the Dutch due to the lucrative cinnamon trade. This importance made Negombo a key administrative and logistical center. Much of this influence can still be seen in the city’s layout today.",
-        },
-        {
-        type: "p",
-        text: "The VOC expelled the Portuguese from Negombo and subsequently used the city as a vital logistical hub for a century and a half (1640–1796). The legacy of the VOC is still visible in Negombo's infrastructure today. Their long presence ensured lasting economic and structural changes. These systems continued to be used even after their rule ended.",
-        },
-    ],
-    },
 
-    {
-    type: "text",
-    kicker: "",
-    title: "",
-    content: [
-        // {
-        // type: "p",
-        // text: "The Dutch conquered the fort, fortified it, and built canals (such as the Dutch Canal and later the Hamilton Canal) for the transport of spices, particularly cinnamon, for which the region was famous. The original fort was enlarged by them and later demolished by the British to build a prison. These developments reshaped the physical and economic landscape of Negombo. Their infrastructure projects were designed to maximize efficiency and control over trade.",
-        // },
-        // {
-        // type: "p",
-        // text: "The Dutch East India Company (VOC) profoundly influenced Negombo, then part of Ceylon. The city was of great strategic importance to the Dutch due to the lucrative cinnamon trade. This importance made Negombo a key administrative and logistical center. Much of this influence can still be seen in the city’s layout today.",
-        // },
-        // {
-        // type: "p",
-        // text: "The VOC expelled the Portuguese from Negombo and subsequently used the city as a vital logistical hub for a century and a half (1640–1796). The legacy of the VOC is still visible in Negombo's infrastructure today. Their long presence ensured lasting economic and structural changes. These systems continued to be used even after their rule ended.",
-        // },
+        {
+          type: "p",
+          text: "The VOC expelled the Portuguese from Negombo and subsequently used the city as a vital logistical hub for a century and a half (1640–1796). The legacy of the VOC is still visible in Negombo's infrastructure today. Their long presence ensured lasting economic and structural changes. These systems continued to be used even after their rule ended."
+        },
 
         { type: "h3", text: "The Conquest and the Fort" },
         {
-        type: "p",
-        text: "Negombo was a crucial link in the struggle between the Portuguese and the VOC. Control over the fort meant control over trade routes and regional power. This made the city a strategic priority for both sides.",
+          type: "p",
+          text: "Negombo was a crucial link in the struggle between the Portuguese and the VOC. Control over the fort meant control over trade routes and regional power. This made the city a strategic priority for both sides."
         },
 
         { type: "h5", text: "Conquest:" },
         {
-        type: "p",
-        text: "The VOC captured the Negombo fort from the Portuguese in 1640. After a Portuguese reconquest, the VOC finally captured the fort in 1644. These repeated conflicts highlight the importance of the location. Each capture strengthened Dutch control over the region.",
+          type: "p",
+          text: "The VOC captured the Negombo fort from the Portuguese in 1640. After a Portuguese reconquest, the VOC finally captured the fort in 1644. These repeated conflicts highlight the importance of the location. Each capture strengthened Dutch control over the region."
         },
 
         { type: "h5", text: "Fortification:" },
         {
-        type: "p",
-        text: "The Dutch rebuilt and reinforced the original Portuguese structure into a more robust fort. They rebuilt it on a smaller, more defensible site, with an eye toward European fortifications. This redesign improved both defense and efficiency. It reflected advanced military architecture of the time.",
+          type: "p",
+          text: "The Dutch rebuilt and reinforced the original Portuguese structure into a more robust fort. They rebuilt it on a smaller, more defensible site, with an eye toward European fortifications. This redesign improved both defense and efficiency. It reflected advanced military architecture of the time."
         },
 
         { type: "h5", text: "Current Condition:" },
         {
-        type: "p",
-        text: "Of the original Dutch Fort, only a section of the wall and the monumental gateway from 1678 remain today. This remnant is located on the site of what is now Negombo Prison. Despite limited remains, it still represents a key part of the city’s history. It serves as a visible reminder of colonial conflict and control.",
+          type: "p",
+          text: "Of the original Dutch Fort, only a section of the wall and the monumental gateway from 1678 remain today. This remnant is located on the site of what is now Negombo Prison. Despite limited remains, it still represents a key part of the city’s history. It serves as a visible reminder of colonial conflict and control."
         },
 
-        { type: "h4", text: "The Waterways: The \"Dutch Canal\"" },
+        { type: "h4", text: 'The Waterways: The "Dutch Canal"' },
         {
-        type: "p",
-        text: "One of the most functional and visible remnants of the Dutch East India Company (VOC) in Negombo is the extensive canal system. These waterways were essential for trade and transport. They also played a role in shaping the surrounding settlements.",
+          type: "p",
+          text: "One of the most functional and visible remnants of the Dutch East India Company (VOC) in Negombo is the extensive canal system. These waterways were essential for trade and transport. They also played a role in shaping the surrounding settlements."
         },
 
         { type: "h3", text: "Purpose:" },
         {
-        type: "p",
-        text: "The VOC constructed a network of canals to efficiently and safely transport cinnamon and other spices from the interior to the port of Colombo. This helped them monopolize the trade. It allowed for faster and more secure movement of goods. This system gave the Dutch a strong economic advantage.",
+          type: "p",
+          text: "The VOC constructed a network of canals to efficiently and safely transport cinnamon and other spices from the interior to the port of Colombo. This helped them monopolize the trade. It allowed for faster and more secure movement of goods. This system gave the Dutch a strong economic advantage."
         },
 
         {
-        type: "p",
-        text: "The name Dutch Canal refers to the entire network of waterways that the VOC constructed or improved along the west coast (between Colombo and Puttalam). The section running through Negombo was later improved by the British and is also known as the Hamilton Canal. This network connected multiple trading points efficiently. It became a backbone of coastal transport.",
+          type: "p",
+          text: "The name Dutch Canal refers to the entire network of waterways that the VOC constructed or improved along the west coast (between Colombo and Puttalam). The section running through Negombo was later improved by the British and is also known as the Hamilton Canal. This network connected multiple trading points efficiently. It became a backbone of coastal transport."
         },
 
         {
-        type: "p",
-        text: "The canals are still used today for both fishing and local transport, and are a popular spot for boat trips. They remain an active part of daily life in Negombo. Their continued use highlights their lasting practicality.",
+          type: "p",
+          text: "The canals are still used today for both fishing and local transport, and are a popular spot for boat trips. They remain an active part of daily life in Negombo. Their continued use highlights their lasting practicality."
         },
 
         { type: "h3", text: "The Economic Focus: Cinnamon" },
         {
-        type: "p",
-        text: "The Dutch East India Company (VOC) presence in Negombo was entirely focused on the cinnamon trade, Ceylon's most important export. The fertile coastal strip around Negombo and Colombo was the primary area for growing this extremely valuable spice. This focus shaped the entire regional economy. It made Negombo central to global trade networks.",
+          type: "p",
+          text: "The Dutch East India Company (VOC) presence in Negombo was entirely focused on the cinnamon trade, Ceylon's most important export. The fertile coastal strip around Negombo and Colombo was the primary area for growing this extremely valuable spice. This focus shaped the entire regional economy. It made Negombo central to global trade networks."
         },
 
         { type: "h3", text: "Economic Monopoly for the VOC" },
 
         { type: "h4", text: "Top Quality:" },
         {
-        type: "p",
-        text: "Ceylon cinnamon (Cinnamomum verum or 'true' cinnamon) was known worldwide as the finest quality, and the island was the leading producer in the 17th and 18th centuries. Its reputation made it highly valuable in international markets. This demand drove colonial competition.",
+          type: "p",
+          text: "Ceylon cinnamon (Cinnamomum verum or 'true' cinnamon) was known worldwide as the finest quality, and the island was the leading producer in the 17th and 18th centuries. Its reputation made it highly valuable in international markets. This demand drove colonial competition."
         },
 
         {
-        type: "p",
-        text: "The Dutch East India Company (VOC) entered into an alliance with the king of Kandy with the promise to drive out the Portuguese in exchange for a monopoly on the cinnamon trade. Once the Portuguese were expelled (around 1658), the VOC took control of the cinnamon-growing areas and forts along the coast, including Negombo. This agreement secured their dominance over trade. It allowed them to control both production and distribution.",
+          type: "p",
+          text: "The Dutch East India Company (VOC) entered into an alliance with the king of Kandy with the promise to drive out the Portuguese in exchange for a monopoly on the cinnamon trade. Once the Portuguese were expelled (around 1658), the VOC took control of the cinnamon-growing areas and forts along the coast, including Negombo. This agreement secured their dominance over trade. It allowed them to control both production and distribution."
         },
 
         { type: "h4", text: "Coat of Arms of Negombo:" },
         {
-        type: "p",
-        text: "Negombo was located on the fertile coastal strip between Colombo and Puttalam, the main cinnamon-growing area. The fort in Negombo served as an important trading post for the procurement and storage of cinnamon and elephants. Its location made it highly strategic for trade operations. This further increased its importance under Dutch rule.",
+          type: "p",
+          text: "Negombo was located on the fertile coastal strip between Colombo and Puttalam, the main cinnamon-growing area. The fort in Negombo served as an important trading post for the procurement and storage of cinnamon and elephants. Its location made it highly strategic for trade operations. This further increased its importance under Dutch rule."
         },
 
         { type: "h3", text: "Harvest and Logistics" },
 
         { type: "h4", text: "Labor:" },
         {
-        type: "p",
-        text: "For the extraction of cinnamon, local, often caste-specific, laborers were employed to peel and roll the outer bark of the cinnamon tree. The VOC introduced strict registrations to monitor labor and production. This system ensured consistent supply. It also allowed tight control over the workforce.",
+          type: "p",
+          text: "For the extraction of cinnamon, local, often caste-specific, laborers were employed to peel and roll the outer bark of the cinnamon tree. The VOC introduced strict registrations to monitor labor and production. This system ensured consistent supply. It also allowed tight control over the workforce."
         },
 
         {
-        type: "p",
-        text: "Within the walls of Negombo Fort (later known as the \"Dutch Fort\") were cinnamon warehouses where the precious spice was stored before being shipped to major ports. These storage systems were essential for export. They ensured the protection and organization of valuable goods.",
+          type: "p",
+          text: "Within the walls of Negombo Fort (later known as the \"Dutch Fort\") were cinnamon warehouses where the precious spice was stored before being shipped to major ports. These storage systems were essential for export. They ensured the protection and organization of valuable goods."
         },
 
         {
-        type: "p",
-        text: "The construction and improvement of the Dutch Canal (which runs through Negombo) was directly linked to the cinnamon trade. The canal served as an efficient waterway for transporting large shipments of cinnamon from the harvesting areas to the forts and ports (such as Colombo). This integration of infrastructure supported large-scale trade. It made transport faster and more reliable.",
+          type: "p",
+          text: "The construction and improvement of the Dutch Canal (which runs through Negombo) was directly linked to the cinnamon trade. The canal served as an efficient waterway for transporting large shipments of cinnamon from the harvesting areas to the forts and ports (such as Colombo). This integration of infrastructure supported large-scale trade. It made transport faster and more reliable."
         },
 
+        { type: "h3", text: "Later Period (British)" },
         {
-        type: "h3",
-        text: "Later Period (British)",
-        },
-        {
-        type: "p",
-        text: "Under the British, who took over Ceylon in 1796, cinnamon initially remained important, but they later diversified the economy by focusing on tea and rubber inland. The British continued the Dutch's practice of establishing cinnamon gardens and modernized the plantations. This transition marked a shift in economic priorities. It expanded the island’s overall agricultural output.",
-        },
-    ],
+          type: "p",
+          text: "Under the British, who took over Ceylon in 1796, cinnamon initially remained important, but they later diversified the economy by focusing on tea and rubber inland. The British continued the Dutch's practice of establishing cinnamon gardens and modernized the plantations. This transition marked a shift in economic priorities. It expanded the island’s overall agricultural output."
+        }
+      ]
     },
+
+
+
+
+
     {
     type: "text",
     kicker: "British Period",
