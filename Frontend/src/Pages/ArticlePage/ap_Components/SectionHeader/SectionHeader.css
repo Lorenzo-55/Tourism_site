@@ -1,0 +1,46 @@
+.article-sectionHead {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-sectionHead--center {
+  align-items: center;
+  text-align: center;
+}
+
+.article-sectionHead--left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.article-sectionKicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: rgba(17, 17, 17, 0.5);
+  text-transform: uppercase;
+}
+
+.article-sectionTitle {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 54px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+}
+
+.article-sectionSubtitle {
+  margin: 0;
+  max-width: 720px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(17, 17, 17, 0.62);
+}
+
+@media (max-width: 640px) {
+  .article-sectionSubtitle {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
