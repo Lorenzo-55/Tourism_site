@@ -49,6 +49,24 @@ import NegomboAngurukaramullaTempleArticle from "../../Data/DestinationData/Nego
 import NegomboMuthurajawelaMarshArticle from "../../Data/DestinationData/Negombo/en/NegomboMuthurajawelaMarsh.js";
 import NegomboCityArticle from "../../Data/DestinationData/Negombo/en/NegomboCity.js";
 
+import BadullaArticle from "../../Data/DestinationData/Badulla/en/_BadullaArticle.js";
+
+import BatticaloaArticle from "../../Data/DestinationData/Batticaloa/en/_BatticaloaArticle.js";
+
+import DambullaArticle from "../../Data/DestinationData/Dambulla/en/_DambullaArticle.js";
+
+import DickwellaArticle from "../../Data/DestinationData/Dickwella/en/Dickwella.js";
+
+import EllaArticle from "../../Data/DestinationData/Ella/en/_EllaArticle.js";
+
+import GalleArticle from "../../Data/DestinationData/Galle/en/_GalleArticle.js";
+
+import GampahaArticle from "../../Data/DestinationData/Gampaha/en/_GampahaArticle.js";
+
+import HambantotaArticle from "../../Data/DestinationData/Hambantota/en/_HambantotaArticle.js";
+
+import HaputaleArticle from "../../Data/DestinationData/Haputale/en/_HaputaleArticle.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -95,6 +113,24 @@ const placeRegistry = {
   "negombo-angurukaramulla-temple": NegomboAngurukaramullaTempleArticle,
   "negombo-muthurajawela-marsh": NegomboMuthurajawelaMarshArticle,
   "negombo-city": NegomboCityArticle,
+
+  "badulla": BadullaArticle,
+
+  "batticaloa": BatticaloaArticle,
+
+  "dambulla": DambullaArticle,
+
+  "dickwella": DickwellaArticle,
+
+  "ella": EllaArticle,
+
+  "galle": GalleArticle,
+
+  "gampaha": GampahaArticle,
+
+  "hambantota": HambantotaArticle,
+
+  "haputale": HaputaleArticle,
 };
 
 export default function PlacePage() {
