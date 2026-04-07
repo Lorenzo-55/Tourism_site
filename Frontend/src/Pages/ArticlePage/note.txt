@@ -24,19 +24,35 @@ const articleData = {
     // TEXT SECTION
     {
       type: "text",
+      id: "", // optional (for anchor links)
       kicker: "",
       title: "",
-      align: "left", // optional: "left" | "center"
+      align: "left", // "left" | "center"
+
       paragraphs: [
         "",
         "",
       ],
 
-      // OPTIONAL: structured content (overrides paragraphs)
+      // STRUCTURED CONTENT (overrides paragraphs)
       content: [
-        { type: "h3", text: "" },
+        { type: "h2", text: "" },
+        { type: "h3", text: "", id: "" }, // supports anchor linking
+        { type: "h4", text: "" },
+        { type: "h5", text: "" },
+        { type: "h6", text: "" },
         { type: "p", text: "" },
-        { type: "p", text: "" },
+
+        // INLINE SPLIT (inside text flow)
+        {
+          type: "split-paragraph",
+          heading: "",
+          headingLevel: "h4", // h3 | h4 | h5 | h6
+          paragraphs: ["", ""],
+          image: "",
+          imageAlt: "",
+          mediaPosition: "right", // optional
+        },
       ],
     },
 
@@ -45,34 +61,82 @@ const articleData = {
       type: "cards",
       kicker: "",
       title: "",
-      align: "center", // optional
+      align: "center",
+
       items: [
         {
           image: "",
           imageAlt: "",
           title: "",
           description: "",
-          // to: "" // optional link (currently disabled in component)
+          to: "", // link enabled in your component
         },
       ],
     },
 
-    // SPLIT SECTION (image + text side by side)
+    // SPLIT SECTION (standalone section)
     {
       type: "split",
       kicker: "",
       title: "",
+      mediaPosition: "right", // optional
+
+      // SINGLE IMAGE
       image: "",
       imageAlt: "",
+
+      // OR MULTIPLE IMAGES
+      images: [
+        { src: "", alt: "" },
+      ],
+
       paragraphs: [
         "",
         "",
       ],
 
-      // OPTIONAL structured content
       content: [
         { type: "h3", text: "" },
         { type: "p", text: "" },
+      ],
+    },
+
+    // HORIZONTAL SCROLL SECTION
+    {
+      type: "horizontal-scroll",
+      kicker: "",
+      title: "",
+      text: "",
+
+      align: "left", // or "center"
+      collapsible: true,
+      defaultOpen: true,
+      toggleLabelOpen: "",
+      toggleLabelClose: "",
+      className: "",
+      titleStyle: "",
+
+      items: [
+        {
+          title: "",
+          description: "", // string OR array
+
+          image: "",
+          imageAlt: "",
+
+          info: {
+            label: "",
+            text: "",
+          },
+
+          tags: ["", ""],
+
+          button: {
+            label: "",
+            to: "",   // internal
+            href: "", // external
+          },
+        },
       ],
     },
   ],

@@ -1,3 +1,5 @@
+/* src/Pages/ArticlePage/ap_Components/RichText/RichText.css */
+
 .article-copy {
   max-width: 760px;
 }
@@ -7,6 +9,10 @@
   font-size: 16px;
   line-height: 1.9;
   color: rgba(17, 17, 17, 0.76);
+}
+
+.article-copy > *:first-child {
+  margin-top: 0;
 }
 
 .article-h2 {
@@ -130,4 +136,24 @@
     font-size: 15px;
     line-height: 1.8;
   }
+}
+
+
+.article-buttonWrap {
+  margin: 16px 0;
+}
+
+.article-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.article-button:hover {
+  background: #333;
 }

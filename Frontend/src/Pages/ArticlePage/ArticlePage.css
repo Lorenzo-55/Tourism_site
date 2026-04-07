@@ -42,8 +42,12 @@
   z-index: 2;
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 56px;
+  padding-bottom: 52px;
   color: #ffffff;
+}
+
+.article-heroInner {
+  transform: translateY(-30px);
 }
 
 .article-heroKicker {
@@ -68,6 +72,10 @@
   font-size: 17px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.article-intro {
+  padding-top: 32px;
 }
 
 .article-introGrid {
@@ -136,4 +144,8 @@
     padding: 24px 20px;
     border-radius: 18px;
   }
+}
+
+.article-breadcrumbOnly {
+  padding: 24px 0 8px;
 }

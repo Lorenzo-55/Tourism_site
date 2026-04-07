@@ -88,6 +88,27 @@ export default function RichText({ paragraphs = [], content = [] }) {
               );
             }
 
+            if (block.type === "button") {
+              return (
+                <div key={index} className="article-buttonWrap">
+                  {block.to ? (
+                    <a href={block.to} className="article-button">
+                      {block.label}
+                    </a>
+                  ) : (
+                    <a
+                      href={block.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="article-button"
+                    >
+                      {block.label}
+                    </a>
+                  )}
+                </div>
+              );
+            }
+
             return <p key={index}>{block.text}</p>;
           })
         : paragraphs.map((text, index) => <p key={index}>{text}</p>)}

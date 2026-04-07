@@ -68,21 +68,33 @@ export default function ArticlePage({ data }) {
       </header>
 
       <main>
-        <section className="section article-intro">
-          <div className="container article-introGrid">
-            <div className="article-introHead">
-              {!!breadcrumbItems.length && <Breadcrumbs items={breadcrumbItems} />}
+        {(overview?.kicker ||
+          overview?.title ||
+          (overview?.paragraphs && overview.paragraphs.length > 0)) ? (
+          <section className="section article-intro">
+            <div className="container article-introGrid">
+              <div className="article-introHead">
+                {!!breadcrumbItems.length && <Breadcrumbs items={breadcrumbItems} />}
 
-              <SectionHeader
-                kicker={overview.kicker}
-                title={overview.title}
-                align="left"
-              />
+                <SectionHeader
+                  kicker={overview?.kicker}
+                  title={overview?.title}
+                  align="left"
+                />
+              </div>
+
+              <RichText paragraphs={overview?.paragraphs || []} />
             </div>
-
-            <RichText paragraphs={overview.paragraphs} />
-          </div>
-        </section>
+          </section>
+        ) : (
+          !!breadcrumbItems.length && (
+            <section className="article-breadcrumbOnly">
+              <div className="container">
+                <Breadcrumbs items={breadcrumbItems} />
+              </div>
+            </section>
+          )
+        )}
 
         {sections.map((section, index) => renderSection(section, index))}
       </main>
