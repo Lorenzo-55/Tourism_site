@@ -166,6 +166,7 @@ export default function MapOverlay({ imageSrc, locations }) {
               x={loc.x}
               y={loc.y}
               label={loc.name}
+              type={loc.type} 
               zoom={ENABLE_ZOOM ? zoom : 1}
               isActive={loc.id === activeId}
               onClick={() => onMarkerClick(loc.id)}

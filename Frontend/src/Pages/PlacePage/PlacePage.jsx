@@ -67,6 +67,12 @@ import HambantotaArticle from "../../Data/DestinationData/Hambantota/en/_Hambant
 
 import HaputaleArticle from "../../Data/DestinationData/Haputale/en/_HaputaleArticle.js";
 
+
+//================================== Parks ==================================
+
+
+import AdamsPeakArticle from "../../Data/Parks/AdamsPeak/en/_AdamsPeakArticle.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -131,6 +137,8 @@ const placeRegistry = {
   "hambantota": HambantotaArticle,
 
   "haputale": HaputaleArticle,
+
+  "adams-peak": AdamsPeakArticle,
 };
 
 export default function PlacePage() {

@@ -6,11 +6,19 @@ import "./MapMarker.css";
 // toggle here
 const SHOW_LABEL = false;
 
-export default function MapMarker({ x, y, label, isActive, onClick, zoom }) {
+export default function MapMarker({
+  x,
+  y,
+  label,
+  type = "city", // or park
+  isActive,
+  onClick,
+  zoom,
+}) {
   return (
     <button
       type="button"
-      className={`map-marker ${isActive ? "active" : ""}`}
+      className={`map-marker ${type} ${isActive ? "active" : ""}`}
       style={{
         left: `${x}%`,
         top: `${y}%`,

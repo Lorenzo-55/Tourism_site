@@ -162,4 +162,15 @@ export const locations = [
     summary: "Hill country town known for tea plantations, waterfalls, and scenic train rides.",
     importance: 1,
   },
+
+    {
+    id: "adams-peak",
+    name: "Adams Peak",
+    slug: "adams-peak",
+    type: "park",
+    x: 45,
+    y: 70,
+    summary: "Highest mountain in Sri Lanka, known for its religious significance and sunrise views.",
+    importance: 1,
+  },
 ];

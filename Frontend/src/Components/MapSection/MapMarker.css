@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+/* base icon */
 .marker-icon {
   position: absolute;
   left: 50%;
@@ -14,18 +15,40 @@
   transform: translate(-50%, -50%);
   font-size: 26px;
 
-  color: #e53935; /* default red */
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
-/* hover + active state (slightly darker red + subtle scale) */
-.map-marker:hover .marker-icon,
-.map-marker.active .marker-icon {
+/* ===== TYPES ===== */
+
+/* default fallback (city = red) */
+.map-marker.city .marker-icon,
+.map-marker:not(.park) .marker-icon {
+  color: #e53935;
+}
+
+/* park = green */
+.map-marker.park .marker-icon {
+  color: #2e7d32;
+}
+
+/* ===== HOVER + ACTIVE ===== */
+
+/* city hover */
+.map-marker.city:hover .marker-icon,
+.map-marker.city.active .marker-icon {
   color: #b71c1c;
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* label */
+/* park hover */
+.map-marker.park:hover .marker-icon,
+.map-marker.park.active .marker-icon {
+  color: #1b5e20;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ===== LABEL ===== */
+
 .marker-label {
   position: absolute;
   left: 5px;
