@@ -67,6 +67,16 @@ import HambantotaArticle from "../../Data/DestinationData/Hambantota/en/_Hambant
 
 import HaputaleArticle from "../../Data/DestinationData/Haputale/en/_HaputaleArticle.js";
 
+import HattonArticle from "../../Data/DestinationData/Hatton/en/_HattonArticle.js";
+
+import HikkaduwaArticle from "../../Data/DestinationData/Hikkaduwa/en/_HikkaduwaArticle.js";
+
+import JaffnaArticle from "../../Data/DestinationData/Jaffna/en/_JaffnaArticle.js";
+
+import KalpitiyaArticle from "../../Data/DestinationData/Kalpitiya/en/_KalpitiyaArticle.js";
+
+import KandyArticle from "../../Data/DestinationData/Kandy/en/_KandyArticle.js";
+
 
 //================================== Parks ==================================
 
@@ -139,6 +149,16 @@ const placeRegistry = {
   "haputale": HaputaleArticle,
 
   "adams-peak": AdamsPeakArticle,
+
+  "hatton": HattonArticle,
+
+  "hikkaduwa": HikkaduwaArticle,
+
+  "jaffna": JaffnaArticle,
+
+  "kalpitiya": KalpitiyaArticle,
+
+  "kandy": KandyArticle,
 };
 
 export default function PlacePage() {
