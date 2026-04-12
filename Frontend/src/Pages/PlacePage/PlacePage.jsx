@@ -77,6 +77,15 @@ import KalpitiyaArticle from "../../Data/DestinationData/Kalpitiya/en/_Kalpitiya
 
 import KandyArticle from "../../Data/DestinationData/Kandy/en/_KandyArticle.js";
 
+import KataragamaArticle from "../../Data/DestinationData/Kataragama/en/_KataragamaArticle.js";
+
+import KitulgalaArticle from "../../Data/DestinationData/Kitulgala/en/_KitulgalaArticle.js";
+
+import KoggalaArticle from "../../Data/DestinationData/Koggala/en/_KoggalaArticle.js";  
+
+import MadampellaArticle from "../../Data/DestinationData/Madampalla/en/_MadampellaArticle.js";
+
+import MannarArticle from "../../Data/DestinationData/Mannar/en/_MannarArticle.js";
 
 //================================== Parks ==================================
 
@@ -148,8 +157,6 @@ const placeRegistry = {
 
   "haputale": HaputaleArticle,
 
-  "adams-peak": AdamsPeakArticle,
-
   "hatton": HattonArticle,
 
   "hikkaduwa": HikkaduwaArticle,
@@ -159,6 +166,21 @@ const placeRegistry = {
   "kalpitiya": KalpitiyaArticle,
 
   "kandy": KandyArticle,
+
+  "kataragama": KataragamaArticle,
+
+  "kitulgala": KitulgalaArticle,
+
+  "koggala": KoggalaArticle,
+
+  "madampella": MadampellaArticle,
+
+  "mannar": MannarArticle,
+
+  //======================= Parks =======================
+
+  "adams-peak": AdamsPeakArticle,
+
 };
 
 export default function PlacePage() {

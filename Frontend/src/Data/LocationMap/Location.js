@@ -91,6 +91,15 @@ export const locations = [
     importance: 1,
   },
   {
+    id: "madampella",
+    name: "Madampella",
+    slug: "madampella",
+    x: 25,
+    y: 63,
+    summary: "A rural community near Negombo known for its handloom heritage and coconut landscapes",
+    importance: 1,
+  },
+  {
     id: "badulla",
     name: "Badulla",
     slug: "badulla",
@@ -207,7 +216,42 @@ export const locations = [
     summary: "Hill country gateway, Temple of the Tooth, lakeside walks.",
     importance: 1,
   },
-
+  {
+    id: "kataragama",
+    name: "Kataragama",
+    slug: "kataragama",
+    x: 65,
+    y: 79,
+    summary: "Sacred site known for its Hindu and Buddhist temples, natural springs, and cultural festivals.",
+    importance: 1,
+  },
+  {
+    id: "kitulgala",
+    name: "Kitulgala",
+    slug: "kitulgala",
+    x: 40,
+    y: 66,
+    summary: "Adventure town known for white-water rafting, jungle treks, and natural beauty.",
+    importance: 1,
+  },
+    {
+    id: "koggala",
+    name: "Koggala",
+    slug: "koggala",
+    x: 36,
+    y: 90,
+    summary: "Coastal town with beaches, markets, and a vibrant atmosphere.",
+    importance: 1,
+  },
+  {
+    id: "mannar",
+    name: "Mannar",
+    slug: "mannar",
+    x: 23,
+    y: 22,
+    summary: "Coastal town famous for its bird sanctuary, historical sites, and proximity to Adam's Bridge.",
+    importance: 1,
+  },
 
   //======================= National Parks =======================
     {
