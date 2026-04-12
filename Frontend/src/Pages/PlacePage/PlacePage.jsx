@@ -87,6 +87,16 @@ import MadampellaArticle from "../../Data/DestinationData/Madampalla/en/_Madampe
 
 import MannarArticle from "../../Data/DestinationData/Mannar/en/_MannarArticle.js";
 
+import MataleArticle from "../../Data/DestinationData/Matale/en/_MataleArticle.js";
+
+import MihintaleArticle from "../../Data/DestinationData/Mihintale/en/_MihintaleArticle.js";
+
+import MirissaArticle from "../../Data/DestinationData/Mirissa/en/_MirissaArticle.js";
+
+import NuwaraEliyaArticle from "../../Data/DestinationData/NuwaraEliya/en/_NuwaraEliyaArticle.js";
+
+import TrincomaleeArticle from "../../Data/DestinationData/Trincomalee/en/_TrincomaleeArticle.js";
+
 //================================== Parks ==================================
 
 
@@ -176,6 +186,16 @@ const placeRegistry = {
   "madampella": MadampellaArticle,
 
   "mannar": MannarArticle,
+
+  "matale": MataleArticle,
+
+  "mihintale": MihintaleArticle,
+
+  "mirissa": MirissaArticle,
+
+  "nuwara-eliya": NuwaraEliyaArticle,
+
+  "trincomalee": TrincomaleeArticle,
 
   //======================= Parks =======================
 

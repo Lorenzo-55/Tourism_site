@@ -252,6 +252,52 @@ export const locations = [
     summary: "Coastal town famous for its bird sanctuary, historical sites, and proximity to Adam's Bridge.",
     importance: 1,
   },
+    {
+    id: "matale",
+    name: "Matale",
+    slug: "matale",
+    x: 46,
+    y: 55,
+    summary: "Hill country town known for tea plantations, waterfalls, and scenic train rides.",
+    importance: 1,
+  },
+    {
+    id: "mihintale",
+    name: "Mihintale",
+    slug: "mihintale",
+    x: 45,
+    y: 35,
+    summary: "A sacred hill near Anuradhapura, regarded as the birthplace of Buddhism in Sri Lanka and one of its most important pilgrimage sites.",
+    importance: 1,
+  },
+  {
+    id: "mirissa",
+    name: "Mirissa",
+    slug: "mirissa",
+    x: 38,
+    y: 91,
+    summary: "Coastal town known for its beautiful beaches, whale watching, and water sports.",
+    importance: 1,
+  },
+
+  {
+    id: "nuwara-eliya",
+    name: "Nuwara Eliya",
+    slug: "nuwara-eliya",
+    x: 51,
+    y: 69,
+    summary: "Hill country town known for its tea plantations, colonial architecture, and cool climate.",
+    importance: 1,
+  },
+  {
+    id: "trincomalee",
+    name: "Trincomalee",
+    slug: "trincomalee",
+    x: 63,
+    y: 31,
+    summary: "Coastal town known for its beautiful beaches, coral reefs, and historical sites.",
+    importance: 1,
+  },
 
   //======================= National Parks =======================
     {
