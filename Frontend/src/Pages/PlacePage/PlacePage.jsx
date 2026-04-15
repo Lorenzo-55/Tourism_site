@@ -97,6 +97,12 @@ import NuwaraEliyaArticle from "../../Data/DestinationData/NuwaraEliya/en/_Nuwar
 
 import TrincomaleeArticle from "../../Data/DestinationData/Trincomalee/en/_TrincomaleeArticle.js";
 
+import PassikudahArticle from "../../Data/DestinationData/Pasikudah/en/_PasikudahArticle.js";
+
+import PinnawalaArticle from "../../Data/DestinationData/Pinnawala/en/_PinnawalaArticle.js";
+
+import TangalleArticle from "../../Data/DestinationData/Tangalle/en/_TangalleArticle.js";
+
 //================================== Parks ==================================
 
 
@@ -196,6 +202,12 @@ const placeRegistry = {
   "nuwara-eliya": NuwaraEliyaArticle,
 
   "trincomalee": TrincomaleeArticle,
+
+  "pasikudah": PassikudahArticle,
+
+  "pinnawala": PinnawalaArticle,
+
+  "tangalle": TangalleArticle,
 
   //======================= Parks =======================
 

@@ -298,6 +298,35 @@ export const locations = [
     summary: "Coastal town known for its beautiful beaches, coral reefs, and historical sites.",
     importance: 1,
   },
+  {
+    id: "pasikudah",
+    name: "Pasikudah",
+    slug: "pasikudah",
+    x: 72,
+    y: 46,
+    summary: "Coastal town known for its calm, shallow waters, making it ideal for swimming and snorkeling.",
+    importance: 1,
+  },
+  {
+    id: "pinnawala",
+    name: "Pinnawala",
+    slug: "pinnawala",
+    x: 37,
+    y: 61,
+    summary: "Known for its elephant orphanage and scenic beauty.",
+    importance: 1,
+    importance: 1,
+  },
+  {
+    id: "tangalle",
+    name: "Tangalle",
+    slug: "tangalle",
+    x: 51,
+    y: 88,
+    summary: "Coastal town with beautiful beaches, a relaxed atmosphere, and nearby natural attractions.",
+    importance: 1,
+    importance: 1,
+  },
 
   //======================= National Parks =======================
     {
