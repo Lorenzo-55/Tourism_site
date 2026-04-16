@@ -103,6 +103,12 @@ import PinnawalaArticle from "../../Data/DestinationData/Pinnawala/en/_Pinnawala
 
 import TangalleArticle from "../../Data/DestinationData/Tangalle/en/_TangalleArticle.js";
 
+import TissamaharamaArticle from "../../Data/DestinationData/Tissamaharama/en/_TissamaharamaArticle.js";
+
+import UnawatunaArticle from "../../Data/DestinationData/Unawatuna/en/_UnawatunaArticle.js";
+
+import WeligamaArticle from "../../Data/DestinationData/Weligama/en/_WeligamaArticle.js";
+
 //================================== Parks ==================================
 
 
@@ -208,6 +214,12 @@ const placeRegistry = {
   "pinnawala": PinnawalaArticle,
 
   "tangalle": TangalleArticle,
+
+  "tissamaharama": TissamaharamaArticle,
+
+  "unawatuna": UnawatunaArticle,
+
+  "weligama": WeligamaArticle,
 
   //======================= Parks =======================
 

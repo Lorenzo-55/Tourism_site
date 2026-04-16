@@ -315,7 +315,6 @@ export const locations = [
     y: 61,
     summary: "Known for its elephant orphanage and scenic beauty.",
     importance: 1,
-    importance: 1,
   },
   {
     id: "tangalle",
@@ -325,8 +324,35 @@ export const locations = [
     y: 88,
     summary: "Coastal town with beautiful beaches, a relaxed atmosphere, and nearby natural attractions.",
     importance: 1,
+  },
+  {
+    id: "tissamaharama",
+    name: "Tissamaharama",
+    slug: "tissamaharama",
+    x: 64,
+    y: 82,
+    summary: "Gateway to Yala National Park, known for its wildlife safaris and ancient stupas.",
     importance: 1,
   },
+   {
+    id: "unawatuna",
+    name: "Unawatuna",
+    slug: "unawatuna",
+    x: 33.5,
+    y: 89,
+    summary: "Coastal town with beautiful beaches, a relaxed atmosphere, and nearby natural attractions.",
+    importance: 1,
+  },
+   {
+    id: "weligama",
+    name: "Weligama",
+    slug: "weligama",
+    x: 39.5,
+    y: 89,
+    summary: "Coastal town with beautiful beaches, a relaxed atmosphere, and nearby natural attractions.",
+    importance: 1,
+  },
+
 
   //======================= National Parks =======================
     {
