@@ -109,6 +109,16 @@ import UnawatunaArticle from "../../Data/DestinationData/Unawatuna/en/_Unawatuna
 
 import WeligamaArticle from "../../Data/DestinationData/Weligama/en/_WeligamaArticle.js";
 
+import PolonnaruwaArticle from "../../Data/DestinationData/Polonaruwa/en/_PolonaruwaArticle.js";
+
+import RatnapuraArticle from "../../Data/DestinationData/Ratnapura/en/_RatnapuraArticle.js";
+
+import SigiriyaArticle from "../../Data/DestinationData/Sigiriya/en/_SigiriyaArticle.js";
+
+import MoratuwaArticle from "../../Data/DestinationData/Moratuwa/en/_MoratuwaArticle.js";
+
+import KalutaraArticle from "../../Data/DestinationData/Kalutara/en/_KalutaraArticle.js";
+
 //================================== Parks ==================================
 
 
@@ -220,6 +230,16 @@ const placeRegistry = {
   "unawatuna": UnawatunaArticle,
 
   "weligama": WeligamaArticle,
+
+  "polonnaruwa": PolonnaruwaArticle,
+
+  "ratnapura": RatnapuraArticle,
+
+  "sigiriya": SigiriyaArticle,
+
+  "moratuwa": MoratuwaArticle,
+
+  "kalutara": KalutaraArticle,
 
   //======================= Parks =======================
 

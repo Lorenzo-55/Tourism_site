@@ -352,7 +352,51 @@ export const locations = [
     summary: "Coastal town with beautiful beaches, a relaxed atmosphere, and nearby natural attractions.",
     importance: 1,
   },
-
+  {
+    id: "polonnaruwa",
+    name: "Polonnaruwa",
+    slug: "polonnaruwa",
+    x: 58,
+    y: 46,
+    summary: "Ancient capital of Sri Lanka, known for its well-preserved ruins and historical significance.",
+    importance: 1,
+  },
+  {
+    id: "ratnapura",
+    name: "Ratnapura",
+    slug: "ratnapura",
+    x: 38,
+    y: 73,
+    summary: "Known for its gemstone mining and the famous Ratnapura Stupa.",
+    importance: 1,
+  },
+    {
+    id: "sigiriya",
+    name: "Sigiriya",
+    slug: "sigiriya",
+    x: 48,
+    y: 45,
+    summary: "Ancient rock fortress and UNESCO World Heritage site, known for its frescoes and historical significance.",
+    importance: 1,
+  },
+    {
+    id: "moratuwa",
+    name: "Moratuwa",
+    slug: "moratuwa",
+    x: 23,
+    y: 74,
+    summary: "A suburban area in the Western Province of Sri Lanka, known for its residential neighborhoods and proximity to Colombo.",
+    importance: 1,
+  },
+     {
+    id: "kalutara",
+    name: "Kalutara",
+    slug: "kalutara",
+    x: 23,
+    y: 78,
+    summary: "A coastal city in the Western Province of Sri Lanka, known for its beaches and historical sites.",
+    importance: 1,
+  },
 
   //======================= National Parks =======================
     {
