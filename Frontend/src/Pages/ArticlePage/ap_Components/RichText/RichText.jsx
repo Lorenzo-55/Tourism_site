@@ -1,3 +1,5 @@
+//src/Pages/ArticlePage/ap_Components/RichText/RichText.jsx
+
 import "./RichText.css";
 
 export default function RichText({ paragraphs = [], content = [] }) {
@@ -5,13 +7,17 @@ export default function RichText({ paragraphs = [], content = [] }) {
 
   if (!hasStructured && !paragraphs.length) return null;
 
+  const renderHtmlParagraph = (text, key) => (
+    <p key={key} dangerouslySetInnerHTML={{ __html: text }} />
+  );
+
   return (
     <div className="article-copy">
       {hasStructured
         ? content.map((block, index) => {
             if (block.type === "h2") {
               return (
-                <h2 key={index} className="article-h2">
+                <h2 key={index} className="article-h2" id={block.id}>
                   {block.text}
                 </h2>
               );
@@ -27,7 +33,7 @@ export default function RichText({ paragraphs = [], content = [] }) {
 
             if (block.type === "h4") {
               return (
-                <h4 key={index} className="article-h4">
+                <h4 key={index} className="article-h4" id={block.id}>
                   {block.text}
                 </h4>
               );
@@ -35,7 +41,7 @@ export default function RichText({ paragraphs = [], content = [] }) {
 
             if (block.type === "h5") {
               return (
-                <h5 key={index} className="article-h5">
+                <h5 key={index} className="article-h5" id={block.id}>
                   {block.text}
                 </h5>
               );
@@ -43,7 +49,7 @@ export default function RichText({ paragraphs = [], content = [] }) {
 
             if (block.type === "h6") {
               return (
-                <h6 key={index} className="article-h6">
+                <h6 key={index} className="article-h6" id={block.id}>
                   {block.text}
                 </h6>
               );
@@ -72,10 +78,11 @@ export default function RichText({ paragraphs = [], content = [] }) {
                       ))}
 
                     {Array.isArray(block.paragraphs)
-                      ? block.paragraphs.map((text, pIndex) => (
-                          <p key={pIndex}>{text}</p>
-                        ))
-                      : block.paragraph && <p>{block.paragraph}</p>}
+                      ? block.paragraphs.map((text, pIndex) =>
+                          renderHtmlParagraph(text, pIndex)
+                        )
+                      : block.paragraph &&
+                        renderHtmlParagraph(block.paragraph, index)}
                   </div>
 
                   <div className="article-inlineSplit__media">
@@ -109,9 +116,9 @@ export default function RichText({ paragraphs = [], content = [] }) {
               );
             }
 
-            return <p key={index}>{block.text}</p>;
+            return renderHtmlParagraph(block.text, index);
           })
-        : paragraphs.map((text, index) => <p key={index}>{text}</p>)}
+        : paragraphs.map((text, index) => renderHtmlParagraph(text, index))}
     </div>
   );
 }

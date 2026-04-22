@@ -5,7 +5,7 @@ const articleData = {
   ],
 
   hero: {
-    kicker: "",        // small label above title
+    kicker: "", // small label above title
     title: "",
     subtitle: "",
     backgroundImage: "",
@@ -17,6 +17,9 @@ const articleData = {
     paragraphs: [
       "",
       "",
+      // supports inline HTML formatting:
+      // "<strong>Vehicle Fee:</strong> LKR 300–400."
+      // "You can also use <em>italic</em> and <br /> line breaks."
     ],
   },
 
@@ -32,21 +35,26 @@ const articleData = {
       paragraphs: [
         "",
         "",
+        // supports inline HTML formatting:
+        // "<strong>Entry Fee:</strong> LKR 500."
       ],
 
       content: [
-        { type: "h2", text: "" },
+        { type: "h2", text: "", id: "" },
         { type: "h3", text: "", id: "" }, // supports anchor linking
-        { type: "h4", text: "" },
-        { type: "h5", text: "" },
-        { type: "h6", text: "" },
+        { type: "h4", text: "", id: "" },
+        { type: "h5", text: "", id: "" },
+        { type: "h6", text: "", id: "" },
+
+        // paragraph text supports inline HTML formatting
+        // example: { type: "p", text: "<strong>Vehicle Fee:</strong> LKR 300–400." }
         { type: "p", text: "" },
 
         // BUTTON (can be placed anywhere in flow)
         {
           type: "button",
           label: "",
-          to: "",   // internal link (/page or #section)
+          to: "", // internal link (/page or #section)
           // href: "", // external link (https://...)
         },
 
@@ -55,7 +63,17 @@ const articleData = {
           type: "split-paragraph",
           heading: "",
           headingLevel: "h4", // "h3" | "h4" | "h5" | "h6"
-          paragraphs: ["", ""],
+
+          // paragraphs support inline HTML formatting
+          paragraphs: [
+            "",
+            "",
+            // "<strong>Best time to visit:</strong> Early morning."
+          ],
+
+          // or use a single paragraph string instead
+          // paragraph: "<strong>Best time to visit:</strong> Early morning.",
+
           image: "",
           imageAlt: "",
           mediaPosition: "right", // "left" | "right"
@@ -89,7 +107,7 @@ const articleData = {
       mediaPosition: "right", // "left" | "right"
 
       // use ONE of these:
-      image: "",        // single image
+      image: "", // single image
       imageAlt: "",
 
       // OR multiple stacked images
@@ -98,16 +116,20 @@ const articleData = {
       paragraphs: [
         "",
         "",
+        // supports inline HTML formatting:
+        // "<strong>Distance:</strong> 12 km from town."
       ],
 
       content: [
-        { type: "h3", text: "" },
+        { type: "h3", text: "", id: "" },
+
+        // paragraph text supports inline HTML formatting
         { type: "p", text: "" },
 
         {
           type: "button",
           label: "",
-          to: "",   // internal
+          to: "", // internal
           // href: "", // external
         },
       ],
@@ -122,15 +144,15 @@ const articleData = {
 
       align: "left", // "left" | "center"
 
-      collapsible: true,   // true | false
-      defaultOpen: true,   // true | false (initial state)
+      collapsible: true, // true | false
+      defaultOpen: true, // true | false (initial state)
 
-      toggleLabelOpen: "",   // label when collapsed
-      toggleLabelClose: "",  // label when expanded
+      toggleLabelOpen: "", // label when collapsed
+      toggleLabelClose: "", // label when expanded
 
       className: "", // optional extra CSS class
 
-      titleStyle: "", 
+      titleStyle: "",
       // options:
       // "styleblue" → blue, slightly larger title
       // "" (default)
@@ -152,7 +174,7 @@ const articleData = {
 
           button: {
             label: "",
-            to: "",   // internal link
+            to: "", // internal link
             href: "", // external link
           },
         },
