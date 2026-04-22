@@ -118,7 +118,7 @@ export default function NavBar() {
       <nav className="nav" aria-label="Primary">
         <Link className="nav-brand" to="/">
           <img
-            src={`${import.meta.env.BASE_URL}/Logo/LogoSquare.JPG`}
+            src={`${import.meta.env.BASE_URL}Logo/LogoSquare.JPG`}
             alt="logo"
             className="nav-logo"
           />

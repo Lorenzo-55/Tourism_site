@@ -10,7 +10,7 @@ const MataraArticle = {
     kicker: "SOUTH COAST CITY",
     title: "Matara",
     subtitle: ".",
-    backgroundImage: `${import.meta.env.BASE_URL}/Destinations/Matara/Matara1.jpg`,
+    backgroundImage: `${import.meta.env.BASE_URL}Destinations/Matara/Matara1.jpg`,
   },
 
   overview: {
@@ -40,7 +40,7 @@ const MataraArticle = {
           title: "History",
           description:
             "Explore Matara’s colonial past, strategic role on the southern coast, and the legacy of Portuguese, Dutch, and British rule.",
-          image: `${import.meta.env.BASE_URL}/Destinations/Matara/MataraHistory.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Matara/MataraHistory.jpg`,
           imageAlt: "Historic fort walls and colonial atmosphere in Matara",
           to: "/matara/history",
         },
@@ -48,7 +48,7 @@ const MataraArticle = {
           title: "Key Attractions",
           description:
             "See the city’s best-known landmarks, from forts and heritage structures to temples and coastal viewpoints.",
-          image: `${import.meta.env.BASE_URL}/Destinations/Matara/MataraAttractions.webp`,
+          image: `${import.meta.env.BASE_URL}Destinations/Matara/MataraAttractions.webp`,
           imageAlt: "Landmarks and attractions in Matara",
           // to: "/matara/attractions",
         },
@@ -56,7 +56,7 @@ const MataraArticle = {
           title: "Culture",
           description:
             "Get a feel for Matara’s religious heritage, local identity, and everyday cultural life beyond the beach.",
-          image: `${import.meta.env.BASE_URL}/Destinations/Matara/MataraCulture.webp`,
+          image: `${import.meta.env.BASE_URL}Destinations/Matara/MataraCulture.webp`,
           imageAlt: "Cultural and religious life in Matara",
           // to: "/matara/culture",
         },
@@ -64,7 +64,7 @@ const MataraArticle = {
           title: "Beaches",
           description:
             "Discover calm local beaches, scenic coastal stretches, and nearby bays suited to swimming and relaxed seaside days.",
-          image: `${import.meta.env.BASE_URL}/Destinations/Matara/MataraBeach.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Matara/MataraBeach.jpg`,
           imageAlt: "Beach scene near Matara",
           // to: "/matara/beaches",
         },
@@ -72,7 +72,7 @@ const MataraArticle = {
           title: "Surfing",
           description:
             "From beginner-friendly bays to stronger reef breaks, Matara connects easily to some of the South Coast’s best surf zones.",
-          image: `${import.meta.env.BASE_URL}/Destinations/Matara/Surfing.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Matara/Surfing.jpg`,
           imageAlt: "Surfing near Matara",
           // to: "/matara/surfing",
         },
@@ -80,7 +80,7 @@ const MataraArticle = {
           title: "Diving and Snorkeling",
           description:
             "Find calm reef areas, turtle sightings, and nearby dive options for visitors interested in marine life and clear coastal water.",
-          image: `${import.meta.env.BASE_URL}/Destinations/Matara/MataraSnorkeling.webp`,
+          image: `${import.meta.env.BASE_URL}Destinations/Matara/MataraSnorkeling.webp`,
           imageAlt: "Snorkeling and diving near Matara",
           //to: "/matara/diving-snorkeling",
         },

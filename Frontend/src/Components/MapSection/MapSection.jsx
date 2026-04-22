@@ -25,7 +25,7 @@ export default function MapSection() {
             <SimpleMapsSriLanka />
           ) : (
             <MapOverlay
-              imageSrc={`${import.meta.env.BASE_URL}/Maps/Map2.jpg`}
+              imageSrc={`${import.meta.env.BASE_URL}Maps/Map2.jpg`}
               locations={locations}
             />
           )}

@@ -348,7 +348,7 @@ export const locations = [
     name: "Weligama",
     slug: "weligama",
     x: 39.5,
-    y: 89,
+    y: 89.5,
     summary: "Coastal town with beautiful beaches, a relaxed atmosphere, and nearby natural attractions.",
     importance: 1,
   },

@@ -268,7 +268,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "P/05 Main street, Arugam Bay, Pottuvil 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/dylan-surf-company-x.webp`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/dylan-surf-company-x.webp`,
           button: {
             label: "Google Maps",
             href: "https://maps.app.goo.gl/FVPreVFur9scGbVg7",
@@ -282,7 +282,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Panama Road Arugam Bay, P/05 Main Street, Pottuvil 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/BananaSurfShop.webp`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/BananaSurfShop.webp`,
           button: {
             label: "Google Maps",
             href: "https://maps.app.goo.gl/VTtHsfrXcRQ5K41b6",
@@ -296,7 +296,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "pappy's surf school, Arugam Bay, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/PappysSurf.webp`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/PappysSurf.webp`,
           button: {
             label: "Google Maps",
             href: "https://maps.app.goo.gl/yT5imKci3MHSQF5x5",
@@ -310,7 +310,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Galaxy Rd, Arugam Bay, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/SafaSurf.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SafaSurf.jpg`,
           button: {
             label: "Google Maps",
             href: "https://google.com",
@@ -324,7 +324,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Al Aksha School Rd, Arugam Bay 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/SurfCenter.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SurfCenter.jpg`,
           button: {
             label: "Google Maps",
             href: "https://google.com",
@@ -338,7 +338,7 @@ const ArugamBayArticle = {
             label: "Google Maps",
             text: "Panama Rd, Arugam Bay 32500, Sri Lanka",
           },
-          image: `${import.meta.env.BASE_URL}/Destinations/Arugambay/main/SurfSoul.jpg`,
+          image: `${import.meta.env.BASE_URL}Destinations/Arugambay/main/SurfSoul.jpg`,
           button: {
             label: "Google Maps",
             href: "https://google.com",
