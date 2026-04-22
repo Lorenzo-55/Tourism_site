@@ -124,6 +124,18 @@ import KalutaraArticle from "../../Data/DestinationData/Kalutara/en/_KalutaraArt
 
 import AdamsPeakArticle from "../../Data/Parks/AdamsPeak/en/_AdamsPeakArticle.js";
 
+import AngammedillaArticle from "../../Data/Parks/AngammedillaNP/en/_AngammedillaNP.js";
+
+import BundalaArticle from "../../Data/Parks/BundalaNP/en/_BundalaNP.js";
+
+import EllakandaArticle from "../../Data/Parks/Ellakanda/en/_EllakandaNP.js";
+
+import HiyareReservoirArticle from "../../Data/Parks/HiyareRV/en/_HiyareRV.js";
+
+import SevenVirginsMountainRangeArticle from "../../Data/Parks/SevenVirginsMR/en/_SevenVirginsMR.js";
+
+import KalametiyaBirdSanctuaryArticle from "../../Data/Parks/KalametiyaSanctuary/en/_KalametiyaSanctuary.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -244,6 +256,18 @@ const placeRegistry = {
   //======================= Parks =======================
 
   "adams-peak": AdamsPeakArticle,
+
+  "angammedilla-national-park": AngammedillaArticle,
+
+  "bundala-national-park": BundalaArticle,
+
+  "ellakanda-national-park": EllakandaArticle,
+
+  "hiyare-reservoir": HiyareReservoirArticle,
+
+  "seven-virgins-mountain-range": SevenVirginsMountainRangeArticle,
+
+  "kalametiya-bird-sanctuary": KalametiyaBirdSanctuaryArticle,
 
 };
 
