@@ -136,6 +136,12 @@ import SevenVirginsMountainRangeArticle from "../../Data/Parks/SevenVirginsMR/en
 
 import KalametiyaBirdSanctuaryArticle from "../../Data/Parks/KalametiyaSanctuary/en/_KalametiyaSanctuary.js";
 
+import HuruluEcoParkArticle from "../../Data/Parks/HuruluNP/en/_HuruluNP.js";
+
+import KaudullaNPArticle from "../../Data/Parks/KaudullaNP/en/_KaudullaNP.js";
+
+import KumanaNationalParkArticle from "../../Data/Parks/KumanaNP/en/_KumanaNP.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -269,6 +275,11 @@ const placeRegistry = {
 
   "kalametiya-bird-sanctuary": KalametiyaBirdSanctuaryArticle,
 
+  "hurulu-eco-park": HuruluEcoParkArticle,
+
+  "kaudulla-national-park": KaudullaNPArticle,
+
+  "kumana-national-park": KumanaNationalParkArticle,
 };
 
 export default function PlacePage() {
