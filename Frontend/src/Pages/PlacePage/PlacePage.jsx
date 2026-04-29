@@ -142,6 +142,24 @@ import KaudullaNPArticle from "../../Data/Parks/KaudullaNP/en/_KaudullaNP.js";
 
 import KumanaNationalParkArticle from "../../Data/Parks/KumanaNP/en/_KumanaNP.js";
 
+import LunugamveheraNPArticle from "../../Data/Parks/LunugamveheraNP/en/_LunugamveheraNP.js"; 
+
+import MaduruOyaArticle from "../../Data/Parks/MaduruOyaNP/en/_MaduruOyaNP.js";
+
+import MakandawaArticle from "../../Data/Parks/MakandawaFR/en/_MakandawaFR.js";
+
+import MinneriyaArticle from "../../Data/Parks/MinneriyaNP/en/_MinneriyaNP.js";
+
+import SinharajaArticle from "../../Data/Parks/SinharajaRF/en/_SinharajaRF.js";
+
+import SomawathiyaArticle from "../../Data/Parks/SomawathiyaNP/en/_SomathiyaNP.js";
+
+import UdawalaweArticle from "../../Data/Parks/UdawalawaNP/en/_UdawalaweNP.js";
+
+import WasgamuwaArticle from "../../Data/Parks/WasgamuwaNP/en/_WasgamuwaNP.js";
+
+import WilpattuArticle from "../../Data/Parks/WilpattuNP/en/_WilpattuNP.js";
+
 const placeRegistry = {
   "lotus-tower": lotusTowerArticle,
   "nightlife": NightLifeArticle,
@@ -280,6 +298,24 @@ const placeRegistry = {
   "kaudulla-national-park": KaudullaNPArticle,
 
   "kumana-national-park": KumanaNationalParkArticle,
+
+  "lunugamvehera-national-park": LunugamveheraNPArticle,
+
+  "maduru-oya-national-park": MaduruOyaArticle,
+
+  "makandawa-forest-reserve": MakandawaArticle,
+
+  "minneriya-national-park": MinneriyaArticle,
+
+  "sinharaja-rainforest": SinharajaArticle,
+
+  "somawathiya-national-park": SomawathiyaArticle,
+
+  "udawalawe-national-park": UdawalaweArticle,
+
+  "wasgamuwa-national-park": WasgamuwaArticle,
+  
+  "wilpattu-national-park": WilpattuArticle,
 };
 
 export default function PlacePage() {
