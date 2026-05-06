@@ -38,124 +38,82 @@ const DickwellaArticle = {
     {
       type: "text",
       id: "dickwella-beach",
-      kicker: "Beach Life",
-      title: "Dickwella Beach",
+      kicker: "Main Attractions",
+      title: "Dickwella Beach and Hiriketiya",
       align: "left",
-      paragraphs: [
-        "Dickwella Beach is a long stretch of sandy coastline that stands out for its calm and protected waters.",
-        "Natural reefs and sandbars create a barrier that reduces strong waves, making the sea safer for swimming compared to many other beaches along the south coast.",
-        "This makes it especially popular for families and those looking for a relaxed beach experience without heavy surf conditions.",
-      ],
-    },
 
-    {
-      type: "text",
-      id: "dickwella-market",
-      kicker: "Local Life",
-      title: "Dickwella Market",
-      align: "left",
       content: [
         {
-          type: "p",
-          text: "The town center of Dickwella is a busy commercial area, with the Saturday market being one of the largest and most vibrant on the island. It serves as a central hub for trade, attracting vendors and visitors from across the region.",
+          type: "h3",
+          text: "Dickwella Beach",
         },
         {
           type: "p",
-          text: "The main market takes place every Saturday and typically runs from 6:00 AM to 6:00 PM, although the best time to visit is in the morning when produce is freshest and activity is at its peak.",
+          text: "A long, sandy beach that is largely protected by natural reefs and sandbars.",
         },
         {
           type: "p",
-          text: "While Saturday is the primary market day, smaller trading activity can also be found on Sundays, particularly near the beach, though these are less formal compared to the main weekly market.",
+          text: "This makes the water calmer and safer for swimming than many other beaches on the south coast, making it a favorite for families.",
         },
 
         {
           type: "split-paragraph",
-          heading: "What You Can Find",
-          headingLevel: "h4",
-          paragraphs: [
-            "The market offers a wide variety of goods, including fresh fruits, vegetables, flowers, and seafood caught along the nearby coast. It also features aromatic spices, traditional items such as clay pots and incense, and locally made handicrafts.",
-            "In addition, visitors can find general merchandise like clothing, household goods, and beachwear, making it both a practical shopping spot for locals and an interesting place for visitors to explore.",
-          ],
-          image: `${import.meta.env.BASE_URL}Destinations/Dickwella/market/market.webp`,
-          imageAlt: "Dickwella market",
-          mediaPosition: "right",
-        },
+          heading: "Hiriketiya Beach (Hiri)",
+          headingLevel: "h3",
 
-        {
-          type: "p",
-          text: "Visiting the Dickwella Market provides an authentic glimpse into local life. It is a lively and colorful environment where bargaining, trading, and daily routines unfold in a dynamic setting.",
-        },
-        {
-          type: "p",
-          text: "It is also a great place to sample local food, interact with vendors, and pick up unique souvenirs at reasonable prices. The market is located in the town center along the main road connecting Matara and Tangalle.",
+          paragraphs: [
+            "A small, picturesque horseshoe-shaped bay located very close to Dickwella.",
+            "It has rapidly become one of Sri Lanka’s trendiest coastal destinations, especially known for surfing.",
+            "Hiriketiya is particularly popular with beginner and intermediate surfers and is also known for its boutique cafés and vibrant digital nomad and backpacker culture.",
+          ],
+
+          image: `${import.meta.env.BASE_URL}Destinations/Dickwella/dickwella2.webp`,
+          imageAlt: "Hiriketiya Beach near Dickwella",
+          mediaPosition: "right",
         },
       ],
     },
 
     {
-        type: "horizontal-scroll",
-        kicker: "Highlights",
-        title: "What to Explore Around Dickwella",
-        text: "Key experiences and attractions in and around the area.",
-        align: "center",
-        collapsible: false,
-        defaultOpen: true,
-        toggleLabelOpen: "Show highlights",
-        toggleLabelClose: "Hide highlights",
-        titleStyle: "",
-        items: [
-            {
-            title: "Surfing in Dickwella / Hiriketiya",
-            description:
-                "Suitable for different skill levels, with surf schools and seasonal waves attracting beginners and experienced surfers.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dickwella/highlights/surfing.webp`,
-            button: {
-                label: "Explore",
-                to: "/places/dickwella/surfing",
-            },
-            },
-            {
-            title: "Diving and Snorkeling",
-            description:
-                "Opportunities to explore underwater life through local dive spots and nearby excursions.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dickwella/highlights/diving.webp`,
-            button: {
-                label: "Explore",
-                to: "/places/dickwella/diving-snorkeling",
-            },
-            },
-            {
-            title: "Hiriketiya Beach (Hiri)",
-            description:
-                "A trendy bay known for its relaxed atmosphere, surf culture, and growing digital nomad scene.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dickwella/highlights/hiriketiya.webp`,
-            button: {
-                label: "Explore",
-                to: "/places/dickwella/hiriketiya-beach",
-            },
-            },
-            {
-            title: "Wewurukannala Vihara Temple",
-            description:
-                "Famous for its giant Buddha statue and the unique ‘Tunnel of Hell’ depicting Buddhist teachings.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dickwella/highlights/wewurukannala.webp`,
-            button: {
-                label: "Explore",
-                to: "/places/dickwella/wewurukannala-temple",
-            },
-            },
-            {
-            title: "Hummanaya Blowhole",
-            description:
-                "A natural coastal phenomenon where seawater shoots high into the air through a rock formation.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dickwella/highlights/hummanaya.webp`,
-            button: {
-                label: "Explore",
-                to: "/places/dickwella/hummanaya-blowhole",
-            },
-            },
-        ],
-    }
+      type: "cards",
+      kicker: "Explore",
+      title: "Things to See and Do",
+      align: "center",
+
+      items: [
+        {
+          title: "Dickwella Market",
+          description:
+            "Explore one of the region’s busiest local markets, known for fresh produce, seafood, spices, handicrafts, and everyday goods.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dikwella/poi/dickwella-market.webp`,
+          to: "/places/dickwella-market",
+        },
+
+        {
+          title: "Wewurukannala Vihara Temple",
+          description:
+            "A famous Buddhist temple complex known for its giant seated Buddha statue and detailed religious artwork.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dikwella/poi/wewurukannala.webp`,
+          to: "/places/dickwella-wewurukannala-vihara",
+        },
+ 
+        {
+          title: "Hummanaya Blowhole",
+          description:
+            "Visit Sri Lanka’s largest natural blowhole, where powerful sea sprays erupt dramatically from coastal rock formations.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dikwella/poi/hummanaya.webp`,
+          to: "/places/dickwella-hummanaya-blowhole",
+        },
+
+        {
+          title: "Water Activities",
+          description:
+            "Enjoy snorkeling, surfing, swimming, fishing trips, and other coastal experiences around the Dikwella area.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dikwella/poi/water-activities.webp`,
+          to: "/places/dickwella-water-activities",
+        },
+      ],
+    },
   ],
 };
 

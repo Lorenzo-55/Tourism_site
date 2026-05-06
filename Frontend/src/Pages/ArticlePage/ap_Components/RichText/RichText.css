@@ -15,6 +15,31 @@
   margin-top: 0;
 }
 
+.article-copy p.article-labelParagraph {
+  margin: 0 0 6px 22px;
+  line-height: 1.55;
+  padding-left: 18px;
+  text-indent: -18px;
+}
+
+.article-h4 + .article-labelParagraph {
+  margin-top: 6px;
+}
+
+/* top spacing for start of group */
+.article-copy p:not(.article-labelParagraph) + p.article-labelParagraph,
+.article-copy .article-h4 + p.article-labelParagraph,
+.article-copy .article-h5 + p.article-labelParagraph,
+.article-copy .article-h6 + p.article-labelParagraph {
+  margin-top: 14px;
+}
+
+/* bottom spacing for end of group */
+.article-copy p.article-labelParagraph:has(+ p:not(.article-labelParagraph)),
+.article-copy p.article-labelParagraph:last-child {
+  margin-bottom: 18px;
+}
+
 .article-h2 {
   margin: 36px 0 14px;
   font-size: clamp(24px, 3vw, 32px);

@@ -54,10 +54,23 @@ import BadullaArticle from "../../Data/DestinationData/Badulla/en/_BadullaArticl
 import BatticaloaArticle from "../../Data/DestinationData/Batticaloa/en/_BatticaloaArticle.js";
 
 import DambullaArticle from "../../Data/DestinationData/Dambulla/en/_DambullaArticle.js";
+import DambullaCaveTempleArticle from "../../Data/DestinationData/Dambulla/en/DambullaCaveTempleArticle.js";
+import SigiriyaRegionArticle from "../../Data/DestinationData/Dambulla/en/DambullaSigiriyaRegionArticle.js";
+import WildlifeSafarisArticle from "../../Data/DestinationData/Dambulla/en/DambullaWildlifeSafarisArticle.js";
+import JathikaNamalUyanaArticle from "../../Data/DestinationData/Dambulla/en/DambullaJathikaNamalUyanaArticle.js";
 
 import DickwellaArticle from "../../Data/DestinationData/Dickwella/en/Dickwella.js";
+import WewurukannalaViharaArticle from "../../Data/DestinationData/Dickwella/en/DickwellaWewurukannalaViharaArticle.js";
+import HummanayaBlowholeArticle from "../../Data/DestinationData/Dickwella/en/DickwellaHummanayaBlowholeArticle.js";
+import DickwellaMarketArticle from "../../Data/DestinationData/Dickwella/en/DickwellaDickwellaMarketArticle.js";
+import WaterActivitiesArticle from "../../Data/DestinationData/Dickwella/en/DickwellaWaterActivitiesArticle.js";
 
 import EllaArticle from "../../Data/DestinationData/Ella/en/_EllaArticle.js";
+import DhowaRockTempleArticle from "../../Data/DestinationData/Ella/en/DhowaRockTempleArticle.js";
+import RavanaLegendsArticle from "../../Data/DestinationData/Ella/en/EllaRavanaLegendsArticle.js";
+import NineArchBridgeArticle from "../../Data/DestinationData/Ella/en/EllaNineArchBridgeArticle.js";
+import TeaEstatesFactoriesArticle from "../../Data/DestinationData/Ella/en/EllaTeaEstatesFactoriesArticle.js";
+import HikingViewpointsArticle from "../../Data/DestinationData/Ella/en/EllaHikingViewpointsArticle.js";
 
 import GalleArticle from "../../Data/DestinationData/Galle/en/_GalleArticle.js";
 
@@ -212,10 +225,23 @@ const placeRegistry = {
   "batticaloa": BatticaloaArticle,
 
   "dambulla": DambullaArticle,
+  "dambulla-cave-temple": DambullaCaveTempleArticle,
+  "dambulla-sigiriya-region": SigiriyaRegionArticle,
+  "dambulla-wildlife-safaris": WildlifeSafarisArticle,
+  "dambulla-namal-uyana": JathikaNamalUyanaArticle,
 
   "dickwella": DickwellaArticle,
+  "dickwella-wewurukannala-vihara": WewurukannalaViharaArticle,
+  "dickwella-hummanaya-blowhole": HummanayaBlowholeArticle,
+  "dickwella-market": DickwellaMarketArticle,
+  "dickwella-water-activities": WaterActivitiesArticle,
 
   "ella": EllaArticle,
+  "ella-dhowa-rock-temple": DhowaRockTempleArticle,
+  "ella-ravana-legends": RavanaLegendsArticle,
+  "ella-nine-arch-bridge": NineArchBridgeArticle,
+  "ella-tea-estates-factories": TeaEstatesFactoriesArticle,
+  "ella-hiking-viewpoints": HikingViewpointsArticle,
 
   "galle": GalleArticle,
 

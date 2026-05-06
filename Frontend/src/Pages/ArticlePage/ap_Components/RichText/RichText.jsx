@@ -7,9 +7,17 @@ export default function RichText({ paragraphs = [], content = [] }) {
 
   if (!hasStructured && !paragraphs.length) return null;
 
-  const renderHtmlParagraph = (text, key) => (
-    <p key={key} dangerouslySetInnerHTML={{ __html: text }} />
-  );
+  const renderHtmlParagraph = (text, key) => {
+    const isLabelParagraph = /^<strong>.*?:<\/strong>/.test(text.trim());
+
+    return (
+      <p
+        key={key}
+        className={isLabelParagraph ? "article-labelParagraph" : ""}
+        dangerouslySetInnerHTML={{ __html: text }}
+      />
+    );
+  };
 
   return (
     <div className="article-copy">

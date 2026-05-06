@@ -97,55 +97,41 @@ const DambullaArticle = {
     },
 
     {
-        type: "cards",
-        kicker: "Explore",
-        title: "Points of Interest",
-        align: "center", // "left" | "center"
+      type: "cards",
+      kicker: "Explore",
+      title: "Points of Interest",
+      align: "center",
 
-        items: [
-            {
-            title: "Dambulla Cave Temple",
-            description: "A UNESCO-listed cave temple complex and the city’s most iconic religious site.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/dambulla-cave-temple.webp`,
-            imageAlt: "Dambulla Cave Temple",
-            to: "/places/dambulla/dambulla-cave-temple",
-            },
-            {
-            title: "Sigiriya Rock Fortress (Lion Rock)",
-            description: "An ancient rock fortress rising dramatically above the plains, known for its history and views.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/sigiriya.webp`,
-            imageAlt: "Sigiriya Rock Fortress",
-            to: "/places/dambulla/sigiriya",
-            },
-            {
-            title: "Pidurangala Rock",
-            description: "A popular hiking spot offering panoramic views of Sigiriya and the surrounding landscape.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/pidurangala.webp`,
-            imageAlt: "Pidurangala Rock",
-            to: "/places/dambulla/pidurangala",
-            },
-            {
-            title: "Minneriya National Park",
-            description: "Famous for large gatherings of elephants and seasonal wildlife activity.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/minneriya.webp`,
-            imageAlt: "Minneriya National Park",
-            to: "/places/dambulla/minneriya-national-park",
-            },
-            {
-            title: "Kaudulla National Park",
-            description: "A wildlife reserve known for elephants, birdlife, and scenic tank landscapes.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/kaudulla.webp`,
-            imageAlt: "Kaudulla National Park",
-            to: "/places/dambulla/kaudulla-national-park",
-            },
-            {
-            title: "Jathika Namal Uyana (Rose Quartz Mountain)",
-            description: "A unique natural site featuring pink quartz formations and forested surroundings.",
-            image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/namal-uyana.webp`,
-            imageAlt: "Jathika Namal Uyana",
-            to: "/places/dambulla/namal-uyana",
-            },
-        ],
+      items: [
+        {
+          title: "Dambulla Cave Temple",
+          description: "A UNESCO-listed cave temple complex and one of Sri Lanka’s most important religious and cultural landmarks.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/dambulla-cave-temple.webp`,
+          imageAlt: "Dambulla Cave Temple",
+          to: "/places/dambulla-cave-temple",
+        },
+        {
+          title: "Sigiriya Region",
+          description: "Explore the wider Sigiriya area, known for ancient ruins, rock fortresses, villages, and scenic landscapes.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/sigiriya-region.webp`,
+          imageAlt: "Sigiriya Region",
+          to: "/places/dambulla-sigiriya-region",
+        },
+        {
+          title: "Wildlife & Safaris",
+          description: "Experience elephant safaris, birdlife, and nature excursions in the national parks surrounding Dambulla.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/wildlife-safaris.webp`,
+          imageAlt: "Wildlife and safaris near Dambulla",
+          to: "/places/dambulla-wildlife-safaris",
+        },
+        {
+          title: "Jathika Namal Uyana",
+          description: "A unique natural site featuring pink quartz formations, forest trails, and rare geological landscapes.",
+          image: `${import.meta.env.BASE_URL}Destinations/Dambulla/poi/namal-uyana.webp`,
+          imageAlt: "Jathika Namal Uyana",
+          to: "/places/dambulla-namal-uyana",
+        },
+      ],
     }
   ],
 };
