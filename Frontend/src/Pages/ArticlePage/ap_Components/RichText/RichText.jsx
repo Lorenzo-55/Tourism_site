@@ -1,5 +1,6 @@
 //src/Pages/ArticlePage/ap_Components/RichText/RichText.jsx
 
+import { Link } from "react-router-dom";
 import "./RichText.css";
 
 export default function RichText({ paragraphs = [], content = [] }) {
@@ -104,21 +105,27 @@ export default function RichText({ paragraphs = [], content = [] }) {
             }
 
             if (block.type === "button") {
+              const isExternal =
+                block.href ||
+                /^https?:\/\//i.test(block.to || "") ||
+                /^mailto:/i.test(block.to || "") ||
+                /^tel:/i.test(block.to || "");
+
               return (
                 <div key={index} className="article-buttonWrap">
-                  {block.to ? (
-                    <a href={block.to} className="article-button">
-                      {block.label}
-                    </a>
-                  ) : (
+                  {isExternal ? (
                     <a
-                      href={block.href}
+                      href={block.href || block.to}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="article-button"
                     >
                       {block.label}
                     </a>
+                  ) : (
+                    <Link to={block.to} className="article-button">
+                      {block.label}
+                    </Link>
                   )}
                 </div>
               );

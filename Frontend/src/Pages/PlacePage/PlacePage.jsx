@@ -95,6 +95,10 @@ import GampahaSmartCityProgrammeArticle from "../../Data/DestinationData/Gampaha
 import HenarathgodaBotanicalGardenArticle from "../../Data/DestinationData/Gampaha/en/GampahaHenarathgodaBotanicalGardenArticle.js";
 
 import HambantotaArticle from "../../Data/DestinationData/Hambantota/en/_HambantotaArticle.js";
+import WildlifeAndNatureArticle from "../../Data/DestinationData/Hambantota/en/HambantotaWildlifeAndNatureArticle.js";
+import GardensAndNaturalAttractionsArticle from "../../Data/DestinationData/Hambantota/en/HambantotaGardensAndNaturalAttractionsArticle.js";
+import CultureAndHistoryArticle from "../../Data/DestinationData/Hambantota/en/HambantotaCultureAndHistoryArticle.js";
+import HambantotaMartelloTowerArticle from "../../Data/DestinationData/Hambantota/en/HambantotaMartelloTowerArticle .js";
 
 import HaputaleArticle from "../../Data/DestinationData/Haputale/en/_HaputaleArticle.js";
 
@@ -284,6 +288,10 @@ const placeRegistry = {
   "gampaha-henarathgoda-botanical-garden": HenarathgodaBotanicalGardenArticle,
 
   "hambantota": HambantotaArticle,
+  "hambantota-wildlife-nature": WildlifeAndNatureArticle,
+  "hambantota-gardens-natural-attractions": GardensAndNaturalAttractionsArticle,
+  "hambantota-culture-history": CultureAndHistoryArticle,
+  "hambantota-martello-tower": HambantotaMartelloTowerArticle,
 
   "haputale": HaputaleArticle,
 
