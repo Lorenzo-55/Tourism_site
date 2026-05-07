@@ -50,8 +50,17 @@ import NegomboMuthurajawelaMarshArticle from "../../Data/DestinationData/Negombo
 import NegomboCityArticle from "../../Data/DestinationData/Negombo/en/NegomboCity.js";
 
 import BadullaArticle from "../../Data/DestinationData/Badulla/en/_BadullaArticle.js";
+import MuthiyanganaRajaMahaViharaArticle from "../../Data/DestinationData/Badulla/en/BadullaMuthiyanganaRajaMahaViharaArticle.js";
+import BogodaWoodenBridgeArticle from "../../Data/DestinationData/Badulla/en/BadullaBogodaWoodenBridgeArticle.js";
+import NamunukulaMountainRangeArticle from "../../Data/DestinationData/Badulla/en/BadullaNamunukulaMountainRangeArticle.js";
+import ColonialLandmarksArticle from "../../Data/DestinationData/Badulla/en/BadullaColonialLandmarksArticle.js";
+import DunhindaFallsArticle from "../../Data/DestinationData/Badulla/en/BadullaDunhindaFallsArticle.js";
 
 import BatticaloaArticle from "../../Data/DestinationData/Batticaloa/en/_BatticaloaArticle.js";
+import StMarysCathedralArticle from "../../Data/DestinationData/Batticaloa/en/BatticaloaStMarysCathedralArticle.js";
+import BatticaloaLandmarksArticle from "../../Data/DestinationData/Batticaloa/en/BatticaloaLandmarksArticle.js";
+import PalameenmaduArticle from "../../Data/DestinationData/Batticaloa/en/BatticaloaPalameenmaduArticle.js";
+import BatticaloaDutchFortArticle from "../../Data/DestinationData/Batticaloa/en/BatticaloaDutchFortArticle.js";
 
 import DambullaArticle from "../../Data/DestinationData/Dambulla/en/_DambullaArticle.js";
 import DambullaCaveTempleArticle from "../../Data/DestinationData/Dambulla/en/DambullaCaveTempleArticle.js";
@@ -73,8 +82,17 @@ import TeaEstatesFactoriesArticle from "../../Data/DestinationData/Ella/en/EllaT
 import HikingViewpointsArticle from "../../Data/DestinationData/Ella/en/EllaHikingViewpointsArticle.js";
 
 import GalleArticle from "../../Data/DestinationData/Galle/en/_GalleArticle.js";
+import GalleFortCoreArticle from "../../Data/DestinationData/Galle/en/GalleFortRampartsArticle.js";
+import ReligiousAndCulturalSitesArticle from "../../Data/DestinationData/Galle/en/GalleReligiousAndCulturalSitesArticle.js";
+import MuseumsAndHeritageArticle from "../../Data/DestinationData/Galle/en/GalleMuseumsAndHeritageArticle.js";
+import WaterAndAdventureActivitiesArticle from "../../Data/DestinationData/Galle/en/GalleWaterAndAdventureActivitiesArticle.js";
 
 import GampahaArticle from "../../Data/DestinationData/Gampaha/en/_GampahaArticle.js";
+import HistoricalKingdomsAndErasArticle from "../../Data/DestinationData/Gampaha/en/GampahaHistoricalKingdomsAndErasArticle.js";
+import ReligiousAndHistoricalSitesArticle from "../../Data/DestinationData/Gampaha/en/GampahaReligiousAndHistoricalSitesArticle.js";
+import ModernInstitutesArticle from "../../Data/DestinationData/Gampaha/en/GampahaModernInstitutesArticle.js";
+import GampahaSmartCityProgrammeArticle from "../../Data/DestinationData/Gampaha/en/GampahaSmartCityProgrammeArticle.js";
+import HenarathgodaBotanicalGardenArticle from "../../Data/DestinationData/Gampaha/en/GampahaHenarathgodaBotanicalGardenArticle.js";
 
 import HambantotaArticle from "../../Data/DestinationData/Hambantota/en/_HambantotaArticle.js";
 
@@ -221,8 +239,17 @@ const placeRegistry = {
   "negombo-city": NegomboCityArticle,
 
   "badulla": BadullaArticle,
+  "badulla-muthiyangana-raja-maha-vihara": MuthiyanganaRajaMahaViharaArticle,
+  "badulla-bogoda-wooden-bridge": BogodaWoodenBridgeArticle,
+  "badulla-namunukula-mountain-range": NamunukulaMountainRangeArticle,
+  "badulla-colonial-landmarks": ColonialLandmarksArticle,
+  "badulla-dunhinda-falls": DunhindaFallsArticle,
 
   "batticaloa": BatticaloaArticle,
+  "batticaloa-st-marys-cathedral": StMarysCathedralArticle,
+  "batticaloa-landmarks": BatticaloaLandmarksArticle,
+  "batticaloa-palameenmadu": PalameenmaduArticle,
+  "batticaloa-dutch-fort": BatticaloaDutchFortArticle,
 
   "dambulla": DambullaArticle,
   "dambulla-cave-temple": DambullaCaveTempleArticle,
@@ -244,8 +271,17 @@ const placeRegistry = {
   "ella-hiking-viewpoints": HikingViewpointsArticle,
 
   "galle": GalleArticle,
+  "galle-fort-core": GalleFortCoreArticle,
+  "galle-religious-sites": ReligiousAndCulturalSitesArticle,
+  "galle-museums": MuseumsAndHeritageArticle,
+  "galle-activities": WaterAndAdventureActivitiesArticle,
 
   "gampaha": GampahaArticle,
+  "gampaha-historical-kingdoms-eras": HistoricalKingdomsAndErasArticle,
+  "gampaha-religious-historical-sites": ReligiousAndHistoricalSitesArticle,
+  "gampaha-modern-institutes": ModernInstitutesArticle,
+  "gampaha-smart-city-programme": GampahaSmartCityProgrammeArticle,
+  "gampaha-henarathgoda-botanical-garden": HenarathgodaBotanicalGardenArticle,
 
   "hambantota": HambantotaArticle,
 

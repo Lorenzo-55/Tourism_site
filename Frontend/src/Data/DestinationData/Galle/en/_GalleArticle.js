@@ -71,6 +71,76 @@ const GalleArticle = {
     },
 
     {
+      type: "text",
+      id: "surrounding-area",
+      kicker: "Nearby Highlights",
+      title: "What to See in the Surrounding Area",
+      align: "left",
+
+      content: [
+        {
+          type: "split-paragraph",
+          heading: "Galle International Stadium",
+          headingLevel: "h3",
+
+          paragraphs: [
+            "Located just outside the fort walls, the Galle International Stadium is widely considered one of the most picturesque cricket grounds in the world.",
+            "The stadium is uniquely framed by the ocean and the historic ramparts of Galle Fort, creating one of the most recognizable sporting settings in Sri Lanka.",
+          ],
+
+          image: `${import.meta.env.BASE_URL}Destinations/Galle/nearby/galle-stadium.webp`,
+          imageAlt: "Galle International Stadium",
+          mediaPosition: "right",
+        },
+
+        {
+          type: "h3",
+          text: "Galle Markets",
+        },
+
+        {
+          type: "p",
+          text: "Located outside the fort area, the local markets of Galle offer a more authentic glimpse into daily Sri Lankan life.",
+        },
+
+        {
+          type: "p",
+          text: "Visitors can find fresh produce, spices, seafood, household goods, and a busy local atmosphere very different from the more tourist-oriented streets inside the fort.",
+        },
+
+        {
+          type: "split-paragraph",
+          heading: "Yatagala Rajamaha Viharaya Temple",
+          headingLevel: "h3",
+
+          paragraphs: [
+            "Yatagala Rajamaha Viharaya is an ancient Buddhist temple located a short drive from Galle.",
+            "Built among large natural rock formations, the temple is known for its peaceful atmosphere, cave-like surroundings, and historic religious significance.",
+          ],
+
+          image: `${import.meta.env.BASE_URL}Destinations/Galle/nearby/yatagala-temple.webp`,
+          imageAlt: "Yatagala Rajamaha Viharaya Temple",
+          mediaPosition: "left",
+        },
+
+        {
+          type: "h3",
+          text: "Japanese Peace Pagoda",
+        },
+
+        {
+          type: "p",
+          text: "Located on Rumassala Hill near Unawatuna, the Japanese Peace Pagoda overlooks the coastline and Galle Fort from an elevated viewpoint.",
+        },
+
+        {
+          type: "p",
+          text: "The white pagoda and surrounding hill area are popular for panoramic views, quiet walks, and sunset scenery over the southern coast.",
+        },
+      ],
+    },
+
+    {
       type: "cards",
       kicker: "Explore",
       title: "Attractions",
@@ -82,42 +152,28 @@ const GalleArticle = {
           description: "The historic heart of the city, with ramparts, streets, and colonial architecture.",
           image: `${import.meta.env.BASE_URL}Destinations/Galle/poi/fort-core.webp`,
           imageAlt: "Galle Fort core",
-          to: "/places/galle/fort-core",
+          to: "/places/galle-fort-core",
         },
         {
           title: "Religious & Cultural Sites",
           description: "Churches, mosques, and temples reflecting the city’s diverse heritage.",
           image: `${import.meta.env.BASE_URL}Destinations/Galle/poi/religious-sites.webp`,
           imageAlt: "Religious sites in Galle",
-          to: "/places/galle/religious-sites",
+          to: "/places/galle-religious-sites",
         },
         {
           title: "Museums & Heritage",
           description: "Museums and preserved buildings showcasing Galle’s layered past.",
           image: `${import.meta.env.BASE_URL}Destinations/Galle/poi/museums.webp`,
           imageAlt: "Museums in Galle",
-          to: "/places/galle/museums",
-        },
-        {
-          title: "Beaches & Coastal Areas",
-          description: "Scenic coastal stretches and beaches surrounding the city.",
-          image: `${import.meta.env.BASE_URL}Destinations/Galle/poi/beaches.webp`,
-          imageAlt: "Beaches near Galle",
-          to: "/places/galle/beaches",
+          to: "/places/galle-museums",
         },
         {
           title: "Activities (Water & Adventure)",
           description: "Surfing, diving, and other coastal activities in the region.",
           image: `${import.meta.env.BASE_URL}Destinations/Galle/poi/activities.webp`,
           imageAlt: "Water activities in Galle",
-          to: "/places/galle/activities",
-        },
-        {
-          title: "Surroundings & Local Life",
-          description: "Nearby villages, local culture, and everyday coastal living.",
-          image: `${import.meta.env.BASE_URL}Destinations/Galle/poi/local-life.webp`,
-          imageAlt: "Local life around Galle",
-          to: "/places/galle/local-life",
+          to: "/places/galle-activities",
         },
       ],
     },

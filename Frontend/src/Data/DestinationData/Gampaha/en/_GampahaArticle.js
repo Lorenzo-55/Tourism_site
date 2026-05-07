@@ -101,7 +101,6 @@ const GampahaArticle = {
         },
       ],
     },
-
     {
       type: "cards",
       kicker: "Explore",
@@ -112,31 +111,31 @@ const GampahaArticle = {
           title: "Historical Kingdoms & Eras",
           description: "From the Kingdom of Sitawaka to colonial transformation.",
           image: `${import.meta.env.BASE_URL}Destinations/Gampaha/cards/history.webp`,
+          to: "/places/gampaha-historical-kingdoms-eras",
         },
         {
           title: "Religious & Historical Sites",
           description: "Temples and heritage sites reflecting deep cultural roots.",
           image: `${import.meta.env.BASE_URL}Destinations/Gampaha/cards/temples.webp`,
+          to: "/places/gampaha-religious-historical-sites",
         },
         {
           title: "Education & Modern Institutions",
           description: "Universities and institutes shaping regional development.",
           image: `${import.meta.env.BASE_URL}Destinations/Gampaha/cards/education.webp`,
+          to: "/places/gampaha-modern-institutes",
         },
         {
-          title: "Urban Development",
+          title: "Smart City Initiative",
           description: "Rapid expansion driven by infrastructure and connectivity.",
           image: `${import.meta.env.BASE_URL}Destinations/Gampaha/cards/urban.webp`,
+          to: "/places/gampaha-smart-city-programme",
         },
         {
           title: "Henarathgoda Botanical Garden",
           description: "Site of Sri Lanka’s first rubber tree and botanical research.",
           image: `${import.meta.env.BASE_URL}Destinations/Gampaha/cards/botanical.webp`,
-        },
-        {
-          title: "Notable Remains Today",
-          description: "Visible traces of history embedded in the modern landscape.",
-          image: `${import.meta.env.BASE_URL}Destinations/Gampaha/cards/remains.webp`,
+          to: "/places/gampaha-henarathgoda-botanical-garden",
         },
       ],
     },

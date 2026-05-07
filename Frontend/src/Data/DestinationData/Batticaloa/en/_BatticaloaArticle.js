@@ -111,50 +111,49 @@ const BatticaloaArticle = {
         "Together, cultural diversity and local economic activity make Batticaloa not only historically significant, but also an important living center of eastern Sri Lanka.",
       ],
     },
-
     {
-    type: "cards",
-    kicker: "Discover",
-    title: "Historical and Cultural Landmarks",
-    align: "center", // "left" | "center"
+      type: "cards",
+      kicker: "Discover",
+      title: "Historical and Cultural Landmarks",
+      align: "center",
 
-    items: [
+      items: [
         {
-        title: "Dutch Fort of Batticaloa",
-        description: "A major colonial landmark reflecting the city’s layered European history.",
-        image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/dutch-fort.webp`,
-        imageAlt: "Dutch Fort of Batticaloa",
-        to: "/places/batticaloa/dutch-fort",
+          title: "Dutch Fort of Batticaloa",
+          description:
+            "A major colonial landmark reflecting the city’s layered European history.",
+          image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/dutch-fort.webp`,
+          imageAlt: "Dutch Fort of Batticaloa",
+          to: "/places/batticaloa-dutch-fort",
         },
+
         {
-        title: "St. Mary's Cathedral",
-        description: "One of the most prominent Catholic churches in the region.",
-        image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/st-marys-cathedral.webp`,
-        imageAlt: "St. Mary's Cathedral Batticaloa",
-        to: "/places/batticaloa/st-marys-cathedral",
+          title: "St. Mary's Cathedral",
+          description:
+            "One of the most prominent Catholic churches in the region.",
+          image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/st-marys-cathedral.webp`,
+          imageAlt: "St. Mary's Cathedral Batticaloa",
+          to: "/places/batticaloa-st-marys-cathedral",
         },
+
         {
-        title: "Batticaloa Lighthouse",
-        description: "A coastal landmark offering views over the lagoon and sea.",
-        image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/lighthouse.webp`,
-        imageAlt: "Batticaloa Lighthouse",
-        to: "/places/batticaloa/lighthouse",
+          title: "Landmarks",
+          description:
+            "Explore notable landmarks around Batticaloa that reflect the city’s history and coastal identity.",
+          image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/landmarks.webp`,
+          imageAlt: "Batticaloa landmarks",
+          to: "/places/batticaloa-landmarks",
         },
+
         {
-        title: "Kallady Bridge",
-        description: "The famous bridge associated with the legendary ‘singing fish’ phenomenon.",
-        image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/kallady-bridge.webp`,
-        imageAlt: "Kallady Bridge",
-        to: "/places/batticaloa/kallady-bridge",
+          title: "Palameenmadu",
+          description:
+            "A scenic coastal area known for beaches and lagoon surroundings.",
+          image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/palameenmadu.webp`,
+          imageAlt: "Palameenmadu beach",
+          to: "/places/batticaloa-palameenmadu",
         },
-        {
-        title: "Palameenmadu",
-        description: "A scenic coastal area known for beaches and lagoon surroundings.",
-        image: `${import.meta.env.BASE_URL}Destinations/Batticaloa/poi/palameenmadu.webp`,
-        imageAlt: "Palameenmadu beach",
-        to: "/places/batticaloa/palameenmadu",
-        },
-    ],
+      ],
     }
   ],
 };
