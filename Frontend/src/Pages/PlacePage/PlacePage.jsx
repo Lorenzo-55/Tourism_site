@@ -101,6 +101,10 @@ import CultureAndHistoryArticle from "../../Data/DestinationData/Hambantota/en/H
 import HambantotaMartelloTowerArticle from "../../Data/DestinationData/Hambantota/en/HambantotaMartelloTowerArticle .js";
 
 import HaputaleArticle from "../../Data/DestinationData/Haputale/en/_HaputaleArticle.js";
+import TeaAndColonialHeritageArticle from "../../Data/DestinationData/Haputale/en/HaputaleTeaAndColonialHeritageArticle.js";
+import NatureAndScenicAttractionsArticle from "../../Data/DestinationData/Haputale/en/HaputaleNatureAndScenicAttractionsArticle.js";
+import HortonPlainsNationalParkArticle from "../../Data/DestinationData/Haputale/en/HaputaleHortonPlainsNationalParkArticle.js";
+import HaputaleTrainJourneyArticle from "../../Data/DestinationData/Haputale/en/HaputaleTrainJourneyArticle.js";
 
 import HattonArticle from "../../Data/DestinationData/Hatton/en/_HattonArticle.js";
 
@@ -294,6 +298,10 @@ const placeRegistry = {
   "hambantota-martello-tower": HambantotaMartelloTowerArticle,
 
   "haputale": HaputaleArticle,
+  "haputale-tea-colonial-heritage": TeaAndColonialHeritageArticle,
+  "haputale-nature-scenic-attractions": NatureAndScenicAttractionsArticle,
+  "haputale-horton-plains-national-park": HortonPlainsNationalParkArticle,
+  "haputale-train-journey": HaputaleTrainJourneyArticle,
 
   "hatton": HattonArticle,
 

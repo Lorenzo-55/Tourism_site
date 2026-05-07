@@ -106,6 +106,7 @@ const HaputaleArticle = {
             "Explore historic tea plantations, the Dambatenne Tea Factory, and colonial-era landmarks like Adisham Bungalow.",
           image: `${import.meta.env.BASE_URL}Destinations/Haputale/cards/tea-heritage.webp`,
           imageAlt: "Tea plantations in Haputale",
+          to: "/places/haputale-tea-colonial-heritage",
         },
         {
           title: "Nature & Scenic Attractions",
@@ -113,13 +114,23 @@ const HaputaleArticle = {
             "Enjoy sweeping viewpoints such as Lipton’s Seat and panoramic landscapes stretching across Sri Lanka’s southern plains.",
           image: `${import.meta.env.BASE_URL}Destinations/Haputale/cards/scenic.webp`,
           imageAlt: "Scenic views in Haputale",
+          to: "/places/haputale-nature-scenic-attractions",
         },
         {
-          title: "Experiences",
+          title: "Haputale Train Journey",
           description:
             "Take one of the world’s most scenic train journeys, walk through misty hills, and experience life in the tea country.",
           image: `${import.meta.env.BASE_URL}Destinations/Haputale/cards/experiences.webp`,
           imageAlt: "Train journey through Haputale",
+          to: "/places/haputale-train-journey",
+        },
+        {
+          title: "Horton Plains National Park",
+          description:
+            "Visit Sri Lanka’s famous highland national park, home to cloud forests, grasslands, dramatic viewpoints, and unique wildlife.",
+          image: `${import.meta.env.BASE_URL}Destinations/Haputale/cards/horton-plains.webp`,
+          imageAlt: "Horton Plains National Park",
+          to: "/places/haputale-horton-plains-national-park",
         },
       ],
     },
