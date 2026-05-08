@@ -72,7 +72,7 @@ const HattonArticle = {
             "Hatton is one of the main gateway towns for travelers heading to the sacred mountain and its famous pilgrimage route.",
           image: `${import.meta.env.BASE_URL}Destinations/Hatton/poi/adams-peak.webp`,
           imageAlt: "Adam's Peak near Hatton",
-          to: "/places/hatton/adams-peak",
+          to: "/places/hatton-adams-peak",
         },
         {
           title: "Visit Christ Church Warleigh",
@@ -80,7 +80,7 @@ const HattonArticle = {
             "A historic church in the tea country, known for its colonial character and peaceful setting.",
           image: `${import.meta.env.BASE_URL}Destinations/Hatton/poi/christ-church-warleigh.webp`,
           imageAlt: "Christ Church Warleigh",
-          to: "/places/hatton/christ-church-warleigh",
+          to: "/places/hatton-christ-church-warleigh",
         },
         {
           title: "Waterfalls",
@@ -88,7 +88,7 @@ const HattonArticle = {
             "The wider Hatton region is home to several waterfalls shaped by the highland terrain and heavy rainfall.",
           image: `${import.meta.env.BASE_URL}Destinations/Hatton/poi/waterfalls.webp`,
           imageAlt: "Waterfalls near Hatton",
-          to: "/places/hatton/waterfalls",
+          to: "/places/hatton-waterfalls",
         },
         {
           title: "Nature & Landscapes",
@@ -96,15 +96,7 @@ const HattonArticle = {
             "Rolling hills, misty valleys, reservoirs, and mountain scenery define the visual identity of the Hatton area.",
           image: `${import.meta.env.BASE_URL}Destinations/Hatton/poi/nature-landscapes.webp`,
           imageAlt: "Nature and landscapes in Hatton",
-          to: "/places/hatton/nature-landscapes",
-        },
-        {
-          title: "Explore Tea Estates and Factories",
-          description:
-            "Tea estates and factories offer a closer look at the landscape, labor, and production behind Ceylon tea.",
-          image: `${import.meta.env.BASE_URL}Destinations/Hatton/poi/tea-estates.webp`,
-          imageAlt: "Tea estates and factories in Hatton",
-          to: "/places/hatton/tea-estates-and-factories",
+          to: "/places/hatton-nature-landscapes",
         },
       ],
     },

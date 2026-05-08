@@ -107,8 +107,17 @@ import HortonPlainsNationalParkArticle from "../../Data/DestinationData/Haputale
 import HaputaleTrainJourneyArticle from "../../Data/DestinationData/Haputale/en/HaputaleTrainJourneyArticle.js";
 
 import HattonArticle from "../../Data/DestinationData/Hatton/en/_HattonArticle.js";
+import HattonAdamsPeakArticle from "../../Data/DestinationData/Hatton/en/HattonAdamsPeakArticle.js";
+import HattonWaterfallsArticle from "../../Data/DestinationData/Hatton/en/HattonWaterfallsArticle.js";
+import HattonNatureAndLandscapesArticle from "../../Data/DestinationData/Hatton/en/HattonNatureAndLandscapesArticle.js";
+import ChristChurchWarleighArticle from "../../Data/DestinationData/Hatton/en/HattonChristChurchWarleighArticle.js";
 
 import HikkaduwaArticle from "../../Data/DestinationData/Hikkaduwa/en/_HikkaduwaArticle.js";
+import HikkaduwaHistoricalCulturalArticle from "../../Data/DestinationData/Hikkaduwa/en/HikkaduwaHistoricalCulturalArticle.js";
+import MaduRiverSafariArticle from "../../Data/DestinationData/Hikkaduwa/en/HikkaduwaMaduRiverSafariArticle.js";
+import HikkaduwaNightlifeArticle from "../../Data/DestinationData/Hikkaduwa/en/HikkaduwaNightlifeArticle.js";
+import HikkaduwaMarineNatureArticle from "../../Data/DestinationData/Hikkaduwa/en/HikkaduwaMarineNatureArticle.js";
+import HikkaduwaDivingSitesArticle from "../../Data/DestinationData/Hikkaduwa/en/HikkaduwaDivingSitesArticle.js";
 
 import JaffnaArticle from "../../Data/DestinationData/Jaffna/en/_JaffnaArticle.js";
 
@@ -304,8 +313,17 @@ const placeRegistry = {
   "haputale-train-journey": HaputaleTrainJourneyArticle,
 
   "hatton": HattonArticle,
+  "hatton-adams-peak": HattonAdamsPeakArticle,
+  "hatton-waterfalls": HattonWaterfallsArticle,
+  "hatton-nature-landscapes": HattonNatureAndLandscapesArticle,
+  "hatton-christ-church-warleigh": ChristChurchWarleighArticle,
 
   "hikkaduwa": HikkaduwaArticle,
+  "hikkaduwa-historical-cultural": HikkaduwaHistoricalCulturalArticle,
+  "hikkaduwa-madu-river-safari": MaduRiverSafariArticle,
+  "hikkaduwa-nightlife": HikkaduwaNightlifeArticle,
+  "hikkaduwa-marine-nature": HikkaduwaMarineNatureArticle,
+  "hikkaduwa-diving-sites": HikkaduwaDivingSitesArticle,
 
   "jaffna": JaffnaArticle,
 

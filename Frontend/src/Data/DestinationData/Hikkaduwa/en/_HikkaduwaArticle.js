@@ -108,7 +108,7 @@ const HikkaduwaArticle = {
             "Explore memorials, museums, and cultural landmarks connected to Hikkaduwa’s past and community life.",
           image: `${import.meta.env.BASE_URL}Destinations/Hikkaduwa/poi/historical-cultural.webp`,
           imageAlt: "Historical and cultural places in Hikkaduwa",
-          to: "/places/hikkaduwa/historical-cultural",
+          to: "/places/hikkaduwa-historical-cultural",
         },
         {
           title: "Marine & Nature",
@@ -116,7 +116,7 @@ const HikkaduwaArticle = {
             "Discover coral reefs, coastal habitats, and the marine environments that define Hikkaduwa.",
           image: `${import.meta.env.BASE_URL}Destinations/Hikkaduwa/poi/marine-nature.webp`,
           imageAlt: "Marine and nature attractions in Hikkaduwa",
-          to: "/places/hikkaduwa/marine-and-nature",
+          to: "/places/hikkaduwa-marine-nature",
         },
         {
           title: "Madu River Safari",
@@ -124,7 +124,7 @@ const HikkaduwaArticle = {
             "Take a boat ride through mangroves and waterways for a different natural experience beyond the beach.",
           image: `${import.meta.env.BASE_URL}Destinations/Hikkaduwa/poi/madu-river-safari.webp`,
           imageAlt: "Madu River Safari",
-          to: "/places/hikkaduwa/madu-river-safari",
+          to: "/places/hikkaduwa-madu-river-safari",
         },
         {
           title: "Diving Sites",
@@ -132,7 +132,7 @@ const HikkaduwaArticle = {
             "Visit underwater sites known for reef life, clear water in season, and easy access from the coast.",
           image: `${import.meta.env.BASE_URL}Destinations/Hikkaduwa/poi/diving-sites.webp`,
           imageAlt: "Diving in Hikkaduwa",
-          to: "/places/hikkaduwa/diving-sites",
+          to: "/places/hikkaduwa-diving-sites",
         },
         {
           title: "Spot Sea Turtles",
@@ -140,15 +140,7 @@ const HikkaduwaArticle = {
             "One of Hikkaduwa’s best-known experiences is seeing sea turtles near the shore and around the reef areas.",
           image: `${import.meta.env.BASE_URL}Destinations/Hikkaduwa/poi/sea-turtles.webp`,
           imageAlt: "Sea turtles in Hikkaduwa",
-          to: "/places/hikkaduwa/spot-sea-turtles",
-        },
-        {
-          title: "Nightlife",
-          description:
-            "Enjoy the lively side of the town through bars, restaurants, music, and its energetic coastal strip.",
-          image: `${import.meta.env.BASE_URL}Destinations/Hikkaduwa/poi/nightlife.webp`,
-          imageAlt: "Nightlife in Hikkaduwa",
-          to: "/places/hikkaduwa/nightlife",
+          to: "/places/hikkaduwa-spot-sea-turtles",
         },
       ],
     },
