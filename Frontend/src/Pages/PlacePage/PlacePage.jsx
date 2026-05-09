@@ -120,10 +120,24 @@ import HikkaduwaMarineNatureArticle from "../../Data/DestinationData/Hikkaduwa/e
 import HikkaduwaDivingSitesArticle from "../../Data/DestinationData/Hikkaduwa/en/HikkaduwaDivingSitesArticle.js";
 
 import JaffnaArticle from "../../Data/DestinationData/Jaffna/en/_JaffnaArticle.js";
+import JaffnaCityArticle from "../../Data/DestinationData/Jaffna/en/JaffnaCityArticle.js";
+import JaffnaIslandsArticle from "../../Data/DestinationData/Jaffna/en/JaffnaIslandsArticle.js";
+import JaffnaArchaeologicalCulturalArticle from "../../Data/DestinationData/Jaffna/en/JaffnaArchaeologicalCulturalArticle.js";
+import PointPedroAreaArticle from "../../Data/DestinationData/Jaffna/en/JaffnaPointPedroAreaArticle.js";
 
 import KalpitiyaArticle from "../../Data/DestinationData/Kalpitiya/en/_KalpitiyaArticle.js";
+import KalpitiyaHistoricalCulturalSitesArticle from "../../Data/DestinationData/Kalpitiya/en/KalpitiyaHistoricalCulturalSitesArticle.js";
+import KalpitiyaMarineLifeWildlifeArticle from "../../Data/DestinationData/Kalpitiya/en/KalpitiyaMarineLifeWildlifeArticle.js";
+import KalpitiyaDivingReefArticle from "../../Data/DestinationData/Kalpitiya/en/KalpitiyaDivingReefArticle.js";
+import KalpitiyaWaterSportsArticle from "../../Data/DestinationData/Kalpitiya/en/KalpitiyaWaterSportsArticle.js";
 
 import KandyArticle from "../../Data/DestinationData/Kandy/en/_KandyArticle.js";
+import KandyHistoryArticle from "../../Data/DestinationData/Kandy/en/KandyHistoryArticle.js"; 
+import KandyReligiousCulturalArticle from "../../Data/DestinationData/Kandy/en/KandyReligiousCulturalArticle.js";
+import KandyCityHighlightsArticle from "../../Data/DestinationData/Kandy/en/KandyCityHighlightsArticle.js";
+import KandyMuseumsHeritageArticle from "../../Data/DestinationData/Kandy/en/KandyMuseumsHeritageArticle.js";
+import KandyNatureGardensArticle from "../../Data/DestinationData/Kandy/en/KandyNatureGardensArticle.js";
+import KandyExcursionsArticle from "../../Data/DestinationData/Kandy/en/KandyExcursionsArticle.js";
 
 import KataragamaArticle from "../../Data/DestinationData/Kataragama/en/_KataragamaArticle.js";
 
@@ -326,10 +340,24 @@ const placeRegistry = {
   "hikkaduwa-diving-sites": HikkaduwaDivingSitesArticle,
 
   "jaffna": JaffnaArticle,
+  "jaffna-city": JaffnaCityArticle,
+  "jaffna-islands": JaffnaIslandsArticle,
+  "jaffna-archaeological-cultural": JaffnaArchaeologicalCulturalArticle,
+  "jaffna-point-pedro-area": PointPedroAreaArticle,
 
   "kalpitiya": KalpitiyaArticle,
+  "kalpitiya-historical-cultural-sites": KalpitiyaHistoricalCulturalSitesArticle,
+  "kalpitiya-marine-and-wildlife": KalpitiyaMarineLifeWildlifeArticle,
+  "kalpitiya-diving-reef": KalpitiyaDivingReefArticle,
+  "kalpitiya-water-sports": KalpitiyaWaterSportsArticle,
 
   "kandy": KandyArticle,
+  "kandy-history": KandyHistoryArticle,
+  "kandy-religious-cultural": KandyReligiousCulturalArticle,
+  "kandy-city-highlights": KandyCityHighlightsArticle,
+  "kandy-museums-heritage": KandyMuseumsHeritageArticle,
+  "kandy-nature-gardens": KandyNatureGardensArticle,
+  "kandy-excursions": KandyExcursionsArticle,
 
   "kataragama": KataragamaArticle,
 

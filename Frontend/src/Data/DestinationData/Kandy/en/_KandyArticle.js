@@ -126,7 +126,7 @@ const KandyArticle = {
             "Explore the royal and colonial history that shaped Kandy into the last independent kingdom of Sri Lanka.",
           image: `${import.meta.env.BASE_URL}Destinations/Kandy/poi/history.webp`,
           imageAlt: "History of Kandy",
-          to: "/places/kandy/history",
+          to: "/places/kandy-history",
         },
         {
           title: "Religious / Cultural",
@@ -134,7 +134,7 @@ const KandyArticle = {
             "Discover sacred sites, Buddhist heritage, and the cultural traditions that define Kandy’s identity.",
           image: `${import.meta.env.BASE_URL}Destinations/Kandy/poi/religious-cultural.webp`,
           imageAlt: "Religious and cultural landmarks in Kandy",
-          to: "/places/kandy/religious-cultural",
+          to: "/places/kandy-religious-cultural",
         },
         {
           title: "City Highlights",
@@ -142,7 +142,7 @@ const KandyArticle = {
             "See the main urban attractions, viewpoints, and everyday landmarks that shape the city experience.",
           image: `${import.meta.env.BASE_URL}Destinations/Kandy/poi/city-highlights.webp`,
           imageAlt: "City highlights in Kandy",
-          to: "/places/kandy/city-highlights",
+          to: "/places/kandy-city-highlights",
         },
         {
           title: "Museums & Heritage",
@@ -150,7 +150,7 @@ const KandyArticle = {
             "Visit museums and heritage sites that preserve the memory of Kandyan royalty, religion, and local history.",
           image: `${import.meta.env.BASE_URL}Destinations/Kandy/poi/museums-heritage.webp`,
           imageAlt: "Museums and heritage in Kandy",
-          to: "/places/kandy/museums-heritage",
+          to: "/places/kandy-museums-heritage",
         },
         {
           title: "Nature & Gardens",
@@ -158,7 +158,7 @@ const KandyArticle = {
             "Enjoy botanical gardens, lake views, and the green landscapes that surround the hill capital.",
           image: `${import.meta.env.BASE_URL}Destinations/Kandy/poi/nature-gardens.webp`,
           imageAlt: "Nature and gardens in Kandy",
-          to: "/places/kandy/nature-gardens",
+          to: "/places/kandy-nature-gardens",
         },
         {
           title: "Excursions",
@@ -166,7 +166,7 @@ const KandyArticle = {
             "Use Kandy as a base for nearby hill country trips, scenic routes, and cultural day excursions.",
           image: `${import.meta.env.BASE_URL}Destinations/Kandy/poi/excursions.webp`,
           imageAlt: "Excursions from Kandy",
-          to: "/places/kandy/excursions",
+          to: "/places/kandy-excursions",
         },
       ],
     },

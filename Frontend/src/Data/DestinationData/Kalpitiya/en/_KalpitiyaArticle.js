@@ -131,20 +131,12 @@ const KalpitiyaArticle = {
       align: "center",
       items: [
         {
-          title: "History",
-          description:
-            "Explore the deeper historical background of Kalpitiya as a coastal trade point and colonial stronghold.",
-          image: `${import.meta.env.BASE_URL}Destinations/Kalpitiya/poi/history.webp`,
-          imageAlt: "History of Kalpitiya",
-          to: "/places/kalpitiya/history",
-        },
-        {
           title: "Historical / Cultural Sites",
           description:
             "Visit forts, churches, and religious landmarks that reflect the peninsula’s layered colonial and spiritual heritage.",
           image: `${import.meta.env.BASE_URL}Destinations/Kalpitiya/poi/historical-cultural-sites.webp`,
           imageAlt: "Historical and cultural sites in Kalpitiya",
-          to: "/places/kalpitiya/historical-cultural-sites",
+          to: "/places/kalpitiya-historical-cultural-sites",
         },
         {
           title: "Marine & Wildlife",
@@ -152,7 +144,7 @@ const KalpitiyaArticle = {
             "Discover the lagoon, coastal ecosystems, and wildlife-rich environments that shape Kalpitiya’s eco-tourism appeal.",
           image: `${import.meta.env.BASE_URL}Destinations/Kalpitiya/poi/marine-wildlife.webp`,
           imageAlt: "Marine and wildlife in Kalpitiya",
-          to: "/places/kalpitiya/marine-and-wildlife",
+          to: "/places/kalpitiya-marine-and-wildlife",
         },
         {
           title: "Diving & Reef",
@@ -160,7 +152,7 @@ const KalpitiyaArticle = {
             "Experience underwater landscapes, reef areas, and marine life in one of Sri Lanka’s emerging coastal activity zones.",
           image: `${import.meta.env.BASE_URL}Destinations/Kalpitiya/poi/diving-reef.webp`,
           imageAlt: "Diving and reef areas in Kalpitiya",
-          to: "/places/kalpitiya/diving-and-reef",
+          to: "/places/kalpitiya-diving-reef",
         },
         {
           title: "Water Sports",
@@ -168,7 +160,7 @@ const KalpitiyaArticle = {
             "Kalpitiya is especially known for kitesurfing, with strong seasonal winds and lagoon conditions ideal for action on the water.",
           image: `${import.meta.env.BASE_URL}Destinations/Kalpitiya/poi/water-sports.webp`,
           imageAlt: "Water sports in Kalpitiya",
-          to: "/places/kalpitiya/water-sports",
+          to: "/places/kalpitiya-water-sports",
         },
       ],
     },

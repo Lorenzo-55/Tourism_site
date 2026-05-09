@@ -115,7 +115,7 @@ const JaffnaArticle = {
             "Explore the historic urban center, cultural landmarks, temples, churches, and the everyday life of northern Sri Lanka.",
           image: `${import.meta.env.BASE_URL}Destinations/Jaffna/poi/jaffna-city.webp`,
           imageAlt: "Jaffna City",
-          to: "/places/jaffna/jaffna-city",
+          to: "/places/jaffna-city",
         },
         {
           title: "Jaffna Islands",
@@ -123,7 +123,7 @@ const JaffnaArticle = {
             "Discover the nearby islands known for coastal scenery, quiet roads, local villages, and distinctive northern landscapes.",
           image: `${import.meta.env.BASE_URL}Destinations/Jaffna/poi/jaffna-islands.webp`,
           imageAlt: "Jaffna Islands",
-          to: "/places/jaffna/jaffna-islands",
+          to: "/places/jaffna-islands",
         },
         {
           title: "Archaeological / Cultural",
@@ -131,7 +131,7 @@ const JaffnaArticle = {
             "Visit sites that reflect Jaffna’s Tamil heritage, religious history, and layered colonial past.",
           image: `${import.meta.env.BASE_URL}Destinations/Jaffna/poi/archaeological-cultural.webp`,
           imageAlt: "Archaeological and cultural sites in Jaffna",
-          to: "/places/jaffna/archaeological-cultural",
+          to: "/places/jaffna-archaeological-cultural",
         },
         {
           title: "Point Pedro Area",
@@ -139,7 +139,7 @@ const JaffnaArticle = {
             "Head toward the northeastern edge of the peninsula for coastal views, villages, and one of the island’s northernmost areas.",
           image: `${import.meta.env.BASE_URL}Destinations/Jaffna/poi/point-pedro-area.webp`,
           imageAlt: "Point Pedro area",
-          to: "/places/jaffna/point-pedro-area",
+          to: "/places/jaffna-point-pedro-area",
         },
       ],
     },
