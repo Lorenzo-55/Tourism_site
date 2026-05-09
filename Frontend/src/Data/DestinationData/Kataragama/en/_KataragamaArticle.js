@@ -98,7 +98,7 @@ const KataragamaArticle = {
             "Learn about the different faith traditions, sacred figures, and devotional practices that make Kataragama unique.",
           image: `${import.meta.env.BASE_URL}Destinations/Kataragama/poi/religion-deities.webp`,
           imageAlt: "Religion and deities in Kataragama",
-          to: "/places/kataragama/religion-and-deities",
+          to: "/places/kataragama-religion-and-deities",
         },
         {
           title: "Main Sacred Sites",
@@ -106,7 +106,7 @@ const KataragamaArticle = {
             "Visit the most important shrines, temples, and sacred landmarks at the heart of Kataragama’s pilgrimage landscape.",
           image: `${import.meta.env.BASE_URL}Destinations/Kataragama/poi/main-sacred-sites.webp`,
           imageAlt: "Main sacred sites in Kataragama",
-          to: "/places/kataragama/main-sacred-sites",
+          to: "/places/kataragama-main-sacred-sites",
         },
         {
           title: "Kataragama Esala Festival",
@@ -114,7 +114,7 @@ const KataragamaArticle = {
             "Explore one of the town’s most important religious celebrations, known for devotion, ritual, and large pilgrim gatherings.",
           image: `${import.meta.env.BASE_URL}Destinations/Kataragama/poi/esala-festival.webp`,
           imageAlt: "Kataragama Esala Festival",
-          to: "/places/kataragama/esala-festival",
+          to: "/places/kataragama-esala-festival",
         },
         {
           title: "Nearby Historical / Religious",
@@ -122,7 +122,7 @@ const KataragamaArticle = {
             "Discover important nearby places connected to the wider religious and historical landscape of the region.",
           image: `${import.meta.env.BASE_URL}Destinations/Kataragama/poi/nearby-historical-religious.webp`,
           imageAlt: "Nearby historical and religious places around Kataragama",
-          to: "/places/kataragama/nearby-historical-religious",
+          to: "/places/kataragama-nearby-historical-religious",
         },
         {
           title: "Tissa Wewa",
@@ -130,7 +130,7 @@ const KataragamaArticle = {
             "Visit the nearby reservoir area for scenery, atmosphere, and a different side of the wider Kataragama region.",
           image: `${import.meta.env.BASE_URL}Destinations/Kataragama/poi/tissa-wewa.webp`,
           imageAlt: "Tissa Wewa",
-          to: "/places/kataragama/tissa-wewa",
+          to: "/places/kataragama-tissa-wewa",
         },
         {
           title: "Museums & Experiences",
@@ -138,7 +138,7 @@ const KataragamaArticle = {
             "Explore cultural spaces and local experiences that deepen the understanding of Kataragama’s sacred identity.",
           image: `${import.meta.env.BASE_URL}Destinations/Kataragama/poi/museums-experiences.webp`,
           imageAlt: "Museums and experiences in Kataragama",
-          to: "/places/kataragama/museums-and-experiences",
+          to: "/places/kataragama-museums-and-experiences",
         },
       ],
     },

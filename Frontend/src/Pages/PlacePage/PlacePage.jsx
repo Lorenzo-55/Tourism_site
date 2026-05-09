@@ -140,8 +140,20 @@ import KandyNatureGardensArticle from "../../Data/DestinationData/Kandy/en/Kandy
 import KandyExcursionsArticle from "../../Data/DestinationData/Kandy/en/KandyExcursionsArticle.js";
 
 import KataragamaArticle from "../../Data/DestinationData/Kataragama/en/_KataragamaArticle.js";
+import KataragamaReligionDeitiesArticle from "../../Data/DestinationData/Kataragama/en/KataragamaReligionDeitiesArticle.js";
+import KataragamaMainSacredSitesArticle from "../../Data/DestinationData/Kataragama/en/KataragamaMainSacredSitesArticle.js";
+import KataragamaEsalaFestivalArticle from "../../Data/DestinationData/Kataragama/en/KataragamaEsalaFestivalArticle.js";
+import KataragamaNearbyReligiousSitesArticle from "../../Data/DestinationData/Kataragama/en/KataragamaNearbyReligiousSitesArticle.js";
+import KataragamaTissaWewaArticle from "../../Data/DestinationData/Kataragama/en/KataragamaTissaWewaArticle.js";
+import KataragamaMuseumsExperiencesArticle from "../../Data/DestinationData/Kataragama/en/KataragamaMuseumsExperiencesArticle.js";
 
 import KitulgalaArticle from "../../Data/DestinationData/Kitulgala/en/_KitulgalaArticle.js";
+import KitulgalaPrehistoryFilmArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaPrehistoryFilmArticle.js";
+import KitulgalaWaterActivitiesArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaWaterActivitiesArticle.js";
+import KitulgalaAdventureActivitiesArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaAdventureActivitiesArticle.js";
+import KitulgalaMakandawaForestReserveArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaMakandawaForestReserveArticle.js";
+import KitulgalaWaterfallsArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaWaterfallsArticle.js";
+import KitulgalaHalgollaTeaEstateArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaHalgollaTeaEstateArticle.js";
 
 import KoggalaArticle from "../../Data/DestinationData/Koggala/en/_KoggalaArticle.js";  
 
@@ -360,8 +372,20 @@ const placeRegistry = {
   "kandy-excursions": KandyExcursionsArticle,
 
   "kataragama": KataragamaArticle,
+  "kataragama-religion-and-deities": KataragamaReligionDeitiesArticle,
+  "kataragama-main-sacred-sites": KataragamaMainSacredSitesArticle,
+  "kataragama-esala-festival": KataragamaEsalaFestivalArticle,
+  "kataragama-nearby-historical-religious": KataragamaNearbyReligiousSitesArticle,
+  "kataragama-tissa-wewa": KataragamaTissaWewaArticle,
+  "kataragama-museums-and-experiences": KataragamaMuseumsExperiencesArticle,
 
   "kitulgala": KitulgalaArticle,
+  "kitulgala-prehistory-and-film": KitulgalaPrehistoryFilmArticle,
+  "kitulgala-water-activities": KitulgalaWaterActivitiesArticle,
+  "kitulgala-adventure-activities": KitulgalaAdventureActivitiesArticle,
+  "kitulgala-makandawa-forest-reserve": KitulgalaMakandawaForestReserveArticle,
+  "kitulgala-waterfalls": KitulgalaWaterfallsArticle,
+  "kitulgala-halgolla-tea-estate": KitulgalaHalgollaTeaEstateArticle,
 
   "koggala": KoggalaArticle,
 

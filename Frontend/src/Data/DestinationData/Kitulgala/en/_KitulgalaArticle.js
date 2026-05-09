@@ -191,7 +191,7 @@ const KitulgalaArticle = {
             "Discover Kitulgala’s prehistoric significance and its association with an internationally famous film legacy.",
           image: `${import.meta.env.BASE_URL}Destinations/Kitulgala/poi/prehistory-film.webp`,
           imageAlt: "Prehistory and film in Kitulgala",
-          to: "/places/kitulgala/prehistory-and-film",
+          to: "/places/kitulgala-prehistory-and-film",
         },
         {
           title: "Water Activities",
@@ -199,7 +199,7 @@ const KitulgalaArticle = {
             "Explore river-based experiences ranging from rafting to calmer safari-style journeys on the Kelani River.",
           image: `${import.meta.env.BASE_URL}Destinations/Kitulgala/poi/water-activities.webp`,
           imageAlt: "Water activities in Kitulgala",
-          to: "/places/kitulgala/water-activities",
+          to: "/places/kitulgala-water-activities",
         },
         {
           title: "Adventure Activities",
@@ -207,7 +207,7 @@ const KitulgalaArticle = {
             "See the full range of high-energy outdoor activities that make Kitulgala Sri Lanka’s adventure capital.",
           image: `${import.meta.env.BASE_URL}Destinations/Kitulgala/poi/adventure-activities.webp`,
           imageAlt: "Adventure activities in Kitulgala",
-          to: "/places/kitulgala/adventure-activities",
+          to: "/places/kitulgala-adventure-activities",
         },
         {
           title: "Makandawa Forest Reserve",
@@ -215,7 +215,7 @@ const KitulgalaArticle = {
             "Visit one of Sri Lanka’s most important lowland rainforests and a key ecological attraction of the area.",
           image: `${import.meta.env.BASE_URL}Destinations/Kitulgala/poi/makandawa-forest-reserve.webp`,
           imageAlt: "Makandawa Forest Reserve",
-          to: "/places/kitulgala/makandawa-forest-reserve",
+          to: "/places/kitulgala-makandawa-forest-reserve",
         },
         {
           title: "Waterfalls",
@@ -223,7 +223,7 @@ const KitulgalaArticle = {
             "Discover the waterfalls and rocky streams that help define the area’s landscape and adventure setting.",
           image: `${import.meta.env.BASE_URL}Destinations/Kitulgala/poi/waterfalls.webp`,
           imageAlt: "Waterfalls in Kitulgala",
-          to: "/places/kitulgala/waterfalls",
+          to: "/places/kitulgala-waterfalls",
         },
         {
           title: "Halgolla Tea Estate / Wewalthalawa Plateau",
@@ -231,7 +231,7 @@ const KitulgalaArticle = {
             "Explore elevated scenery, plantation landscapes, and quieter viewpoints beyond the river adventure zone.",
           image: `${import.meta.env.BASE_URL}Destinations/Kitulgala/poi/halgolla-wewalthalawa.webp`,
           imageAlt: "Halgolla Tea Estate and Wewalthalawa Plateau",
-          to: "/places/kitulgala/halgolla-tea-estate-wewalthalawa-plateau",
+          to: "/places/kitulgala-halgolla-tea-estate",
         },
       ],
     },
