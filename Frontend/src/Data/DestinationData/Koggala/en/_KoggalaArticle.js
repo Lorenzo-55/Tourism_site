@@ -184,39 +184,39 @@ const KoggalaArticle = {
       align: "center",
       items: [
         {
-          title: "History & Culture",
+          title: "Ancient Roots",
           description:
             "Explore temples, heritage, and the literary legacy of Koggala.",
           image: `${import.meta.env.BASE_URL}Destinations/Koggala/poi/history-culture.webp`,
-          to: "/places/koggala/history-and-culture",
+          to: "/places/koggala-ancient-roots",
         },
         {
           title: "Koggala Lake Boat Trip",
           description:
             "Discover mangroves, islands, and lagoon life on a scenic boat tour.",
           image: `${import.meta.env.BASE_URL}Destinations/Koggala/poi/lake.webp`,
-          to: "/places/koggala/koggala-lake-boat-trip",
+          to: "/places/koggala-lake-boat-trip",
         },
         {
           title: "Cultural Attractions",
           description:
             "Visit important temples and cultural sites in the region.",
           image: `${import.meta.env.BASE_URL}Destinations/Koggala/poi/cultural.webp`,
-          to: "/places/koggala/cultural-attractions",
+          to: "/places/koggala-cultural-attractions",
         },
         {
           title: "Sea Turtle Hatchery",
           description:
             "Learn about conservation efforts and see rescued sea turtles.",
           image: `${import.meta.env.BASE_URL}Destinations/Koggala/poi/turtles.webp`,
-          to: "/places/koggala/turtle-hatchery",
+          to: "/places/koggala-sea-turtle-hatchery",
         },
         {
           title: "Diving and Snorkeling",
           description:
             "Explore marine life and underwater environments along the coast.",
           image: `${import.meta.env.BASE_URL}Destinations/Koggala/poi/diving.webp`,
-          to: "/places/koggala/diving-and-snorkeling",
+          to: "/places/koggala-diving-snorkeling",
         },
       ],
     },

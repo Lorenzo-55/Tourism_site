@@ -98,20 +98,12 @@ const MannarArticle = {
       align: "center",
       items: [
         {
-          image: `${import.meta.env.BASE_URL}Destinations/Mannar/history.jpg`,
-          imageAlt: "Historical heritage of Mannar",
-          title: "History",
-          description:
-            "Mannar’s past reflects its role as a trading point, colonial stronghold, and borderland shaped by both regional exchange and the civil war.",
-          to: "/places/mannar/history",
-        },
-        {
           image: `${import.meta.env.BASE_URL}Destinations/Mannar/pearling-industry.jpg`,
           imageAlt: "Pearling heritage in Mannar",
           title: "Pearling Industry",
           description:
             "A defining chapter of Mannar’s history, the pearl fishery once brought the region international importance and lasting maritime significance.",
-          to: "/places/mannar/pearling-industry",
+          to: "/places/mannar-pearling-industry",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Mannar/mannar-fort.jpg`,
@@ -119,7 +111,7 @@ const MannarArticle = {
           title: "Mannar Fort",
           description:
             "Originally built by the Portuguese and later rebuilt by the Dutch, the fort remains one of the clearest reminders of Mannar’s colonial past.",
-          to: "/places/mannar/mannar-fort",
+          to: "/places/mannar-fort",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Mannar/adams-bridge.jpg`,
@@ -127,7 +119,7 @@ const MannarArticle = {
           title: "Adam's Bridge",
           description:
             "A remarkable chain of shoals linking Sri Lanka and India, long associated with geography, legend, and Mannar’s strategic location.",
-          to: "/places/mannar/adams-bridge",
+          to: "/places/mannar-adams-bridge",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Mannar/madhu-shrine.jpg`,
@@ -135,7 +127,7 @@ const MannarArticle = {
           title: "Shrine of Our Lady of Madhu",
           description:
             "One of Sri Lanka’s most important Catholic pilgrimage sites, closely connected to the wider cultural and religious landscape of the region.",
-          to: "/places/mannar/shrine-of-our-lady-of-madhu",
+          to: "/places/mannar-shrine-of-our-lady-of-madhu",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Mannar/baobab-tree.jpg`,
@@ -143,7 +135,7 @@ const MannarArticle = {
           title: "Baobab Tree",
           description:
             "A striking and unusual landmark in Mannar, often noted for its rare presence in Sri Lanka and its connection to older trade routes.",
-          to: "/places/mannar/baobab-tree",
+          to: "/places/mannar-baobab-tree",
         },
       ],
     },

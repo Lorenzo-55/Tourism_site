@@ -144,7 +144,7 @@ const MadampellaArticle = {
           title: "Nazareth Gedara",
           description:
             "A community-focused location reflecting the social and religious fabric of Madampella, closely tied to local parish life and outreach activities.",
-          to: "/places/madampella/nazareth-gedara",
+          to: "/places/madampella-capuchin-sisters",
         },
       ],
     },

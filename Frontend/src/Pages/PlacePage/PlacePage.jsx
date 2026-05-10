@@ -156,10 +156,21 @@ import KitulgalaWaterfallsArticle from "../../Data/DestinationData/Kitulgala/en/
 import KitulgalaHalgollaTeaEstateArticle from "../../Data/DestinationData/Kitulgala/en/KitulgalaHalgollaTeaEstateArticle.js";
 
 import KoggalaArticle from "../../Data/DestinationData/Koggala/en/_KoggalaArticle.js";  
+import AncientRootsArticle from "../../Data/DestinationData/Koggala/en/KoggalaAncientRootsArticle.js";
+import KoggalaLakeBoatTripArticle from "../../Data/DestinationData/Koggala/en/KoggalaLakeBoatTripArticle.js";
+import KoggalaCulturalAttractionsArticle from "../../Data/DestinationData/Koggala/en/KoggalaCulturalAttractionsArticle.js";
+import KoggalaHabaraduwaSeaTurtleHatcheryArticle from "../../Data/DestinationData/Koggala/en/KoggalaHabaraduwaSeaTurtleHatcheryArticle.js";
+import KoggalaDivingAndSnorkelingArticle from "../../Data/DestinationData/Koggala/en/KoggalaDivingAndSnorkelingArticle.js";
 
 import MadampellaArticle from "../../Data/DestinationData/Madampalla/en/_MadampellaArticle.js";
+import MadampellaCapuchinSistersArticle from "../../Data/DestinationData/Madampalla/en/MadampellaCapuchinSistersArticle.js";
 
 import MannarArticle from "../../Data/DestinationData/Mannar/en/_MannarArticle.js";
+import MannarPearlingIndustryArticle from "../../Data/DestinationData/Mannar/en/MannarPearlingIndustryArticle.js";
+import MannarFortArticle from "../../Data/DestinationData/Mannar/en/MannarFortArticle.js";
+import MannarAdamsBridgeArticle from "../../Data/DestinationData/Mannar/en/MannarAdamsBridgeArticle.js";
+import MannarBaobabTreeArticle from "../../Data/DestinationData/Mannar/en/MannarBaobabTreeArticle.js";
+import MannarShrineOfOurLadyOfMadhuArticle from "../../Data/DestinationData/Mannar/en/MannarShrineOfOurLadyOfMadhuArticle.js";
 
 import MataleArticle from "../../Data/DestinationData/Matale/en/_MataleArticle.js";
 
@@ -388,10 +399,21 @@ const placeRegistry = {
   "kitulgala-halgolla-tea-estate": KitulgalaHalgollaTeaEstateArticle,
 
   "koggala": KoggalaArticle,
+  "koggala-ancient-roots": AncientRootsArticle,
+  "koggala-lake-boat-trip": KoggalaLakeBoatTripArticle,
+  "koggala-cultural-attractions": KoggalaCulturalAttractionsArticle,
+  "koggala-sea-turtle-hatchery": KoggalaHabaraduwaSeaTurtleHatcheryArticle,
+  "koggala-diving-snorkeling": KoggalaDivingAndSnorkelingArticle,
 
   "madampella": MadampellaArticle,
+  "madampella-capuchin-sisters": MadampellaCapuchinSistersArticle,
 
   "mannar": MannarArticle,
+  "mannar-pearling-industry": MannarPearlingIndustryArticle,
+  "mannar-fort": MannarFortArticle,
+  "mannar-adams-bridge": MannarAdamsBridgeArticle,
+  "mannar-baobab-tree": MannarBaobabTreeArticle,
+  "mannar-shrine-of-our-lady-of-madhu": MannarShrineOfOurLadyOfMadhuArticle,
 
   "matale": MataleArticle,
 
