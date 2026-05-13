@@ -173,12 +173,28 @@ import MannarBaobabTreeArticle from "../../Data/DestinationData/Mannar/en/Mannar
 import MannarShrineOfOurLadyOfMadhuArticle from "../../Data/DestinationData/Mannar/en/MannarShrineOfOurLadyOfMadhuArticle.js";
 
 import MataleArticle from "../../Data/DestinationData/Matale/en/_MataleArticle.js";
+import MataleRebellionOf1848Article from "../../Data/DestinationData/Matale/en/MataleRebellionOf1848Article.js";
+import MataleAluvihareRockTempleArticle from "../../Data/DestinationData/Matale/en/MataleAluvihareRockTempleArticle.js";
+import MataleSriMuthumariammanTempleArticle from "../../Data/DestinationData/Matale/en/MataleSriMuthumariammanTempleArticle.js";
+import MataleNalandaGedigeArticle from "../../Data/DestinationData/Matale/en/MataleNalandaGedigeArticle.js";
+import MataleFortMacDowallArticle from "../../Data/DestinationData/Matale/en/MataleFortMacDowallArticle.js";
 
 import MihintaleArticle from "../../Data/DestinationData/Mihintale/en/_MihintaleArticle.js";
 
 import MirissaArticle from "../../Data/DestinationData/Mirissa/en/_MirissaArticle.js";
+import MirissaWhaleWatchingArticle from "../../Data/DestinationData/Mirissa/en/MirissaWhaleWatchingArticle.js";
+import MirissaViewpointsAndLandmarksArticle from "../../Data/DestinationData/Mirissa/en/MirissaViewpointsAndLandmarksArticle.js";
+import MirissaStiltFishermenArticle from "../../Data/DestinationData/Mirissa/en/MirissaStiltFishermenArticle.js";
 
 import NuwaraEliyaArticle from "../../Data/DestinationData/NuwaraEliya/en/_NuwaraEliyaArticle.js";
+import NuwaraEliyaColonialHistoryHeritageArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaColonialHistoryHeritageArticle.js";
+import NuwaraEliyaColonialLandmarksArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaColonialLandmarksArticle.js";
+import NuwaraEliyaTeaIndustryArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaTeaIndustryArticle.js";
+import NuwaraEliyaMarketsLocalProductsArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaMarketsLocalProductsArticle.js";
+import NuwaraEliyaNatureNationalParksArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaNatureNationalParksArticle.js";
+import NuwaraEliyaGardensMythologyArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaGardensMythologyArticle.js";
+import NuwaraEliyaHikingArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaHikingArticle.js";
+import NuwaraEliyaWaterfallsArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaWaterfallsArticle.js";
 
 import TrincomaleeArticle from "../../Data/DestinationData/Trincomalee/en/_TrincomaleeArticle.js";
 
@@ -416,12 +432,28 @@ const placeRegistry = {
   "mannar-shrine-of-our-lady-of-madhu": MannarShrineOfOurLadyOfMadhuArticle,
 
   "matale": MataleArticle,
+  "matale-rebellion-of-1848": MataleRebellionOf1848Article,
+  "matale-aluvihare-rock-temple": MataleAluvihareRockTempleArticle,
+  "matale-sri-muthumariamman-temple": MataleSriMuthumariammanTempleArticle,
+  "matale-nalanda-gedige": MataleNalandaGedigeArticle,
+  "matale-fort-macdowall": MataleFortMacDowallArticle,
 
   "mihintale": MihintaleArticle,
 
   "mirissa": MirissaArticle,
+  "mirissa-whale-watching": MirissaWhaleWatchingArticle,
+  "mirissa-viewpoints-and-landmarks": MirissaViewpointsAndLandmarksArticle,
+  "mirissa-stilt-fishermen": MirissaStiltFishermenArticle,
 
   "nuwara-eliya": NuwaraEliyaArticle,
+  "nuwara-eliya-colonial-history-heritage": NuwaraEliyaColonialHistoryHeritageArticle,
+  "nuwara-eliya-colonial-landmarks": NuwaraEliyaColonialLandmarksArticle,
+  "nuwara-eliya-tea-industry": NuwaraEliyaTeaIndustryArticle,
+  "nuwara-eliya-markets-local-products": NuwaraEliyaMarketsLocalProductsArticle,
+  "nuwara-eliya-nature-national-parks": NuwaraEliyaNatureNationalParksArticle,
+  "nuwara-eliya-gardens-mythology": NuwaraEliyaGardensMythologyArticle,
+  "nuwara-eliya-hiking": NuwaraEliyaHikingArticle,
+  "nuwara-eliya-waterfalls": NuwaraEliyaWaterfallsArticle,
 
   "trincomalee": TrincomaleeArticle,
 

@@ -94,20 +94,12 @@ const MirissaArticle = {
 
       items: [
         {
-          image: `${import.meta.env.BASE_URL}Destinations/Mirissa/beaches.jpg`,
-          imageAlt: "Beaches in Mirissa",
-          title: "Beaches",
-          description:
-            "Mirissa offers a mix of lively beachfront areas and quieter nearby coves, with palm-lined sands, sunset views, swimming spots, and easy access to the coast.",
-          to: "/places/mirissa/beaches",
-        },
-        {
           image: `${import.meta.env.BASE_URL}Destinations/Mirissa/whale-watching.jpg`,
           imageAlt: "Whale watching in Mirissa",
           title: "Whale Watching",
           description:
             "Mirissa is widely associated with whale watching excursions, making marine life one of the area’s most recognized tourism draws.",
-          to: "/places/mirissa/whale-watching",
+          to: "/places/mirissa-whale-watching",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Mirissa/viewpoints.jpg`,
@@ -115,7 +107,7 @@ const MirissaArticle = {
           title: "Viewpoints & Landmarks",
           description:
             "Rocky coastal viewpoints and recognizable local landmarks add scenic variety to Mirissa’s beach setting and help shape its character.",
-          to: "/places/mirissa/viewpoints-and-landmarks",
+          to: "/places/mirissa-viewpoints-and-landmarks",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Mirissa/stilt-fishermen.jpg`,
@@ -123,7 +115,7 @@ const MirissaArticle = {
           title: "Stilt Fishermen",
           description:
             "The stilt fishermen associated with Sri Lanka’s southern coast remain one of the most iconic cultural images linked to the wider Mirissa area.",
-          to: "/places/mirissa/stilt-fishermen",
+          to: "/places/mirissa-stilt-fishermen",
         },
       ],
     },

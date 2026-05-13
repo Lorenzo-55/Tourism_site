@@ -103,7 +103,7 @@ const MataleArticle = {
             title: "Colonial Era and Rebellions",
             description:
                 "Matale played a central role during British rule and was the epicenter of the 1848 rebellion, a major uprising led by national figures such as Weera Puran Appu and Gongalegoda Banda.",
-            to: "/places/matale/colonial-era-and-rebellions",
+            to: "/places/matale-rebellion-of-1848",
             },
             {
             image: `${import.meta.env.BASE_URL}Destinations/Matale/aluvihare.jpg`,
@@ -111,7 +111,7 @@ const MataleArticle = {
             title: "Aluvihare Rock Temple",
             description:
                 "A major Buddhist site where the Tripitaka was first written down in Pali on palm leaves, marking a defining moment in Sri Lankan religious history.",
-            to: "/places/matale/aluvihare-rock-temple",
+            to: "/places/matale-aluvihare-rock-temple",
             },
             {
             image: `${import.meta.env.BASE_URL}Destinations/Matale/muthumariamman.jpg`,
@@ -119,7 +119,7 @@ const MataleArticle = {
             title: "Sri Muthumariamman Temple",
             description:
                 "A large and vibrant Hindu temple in Matale, known for its detailed architecture and importance to the local Tamil Hindu community.",
-            to: "/places/matale/sri-muthumariamman-temple",
+            to: "/places/matale-sri-muthumariamman-temple",
             },
             {
             image: `${import.meta.env.BASE_URL}Destinations/Matale/nalanda-gedige.jpg`,
@@ -127,7 +127,7 @@ const MataleArticle = {
             title: "Nalanda Gedige",
             description:
                 "An unique archaeological structure blending Buddhist and Hindu architectural elements, believed to have served as a shared place of worship.",
-            to: "/places/matale/nalanda-gedige",
+            to: "/places/matale-nalanda-gedige",
             },
             {
             image: `${import.meta.env.BASE_URL}Destinations/Matale/fort-macdowall.jpg`,
@@ -135,7 +135,7 @@ const MataleArticle = {
             title: "Fort MacDowall",
             description:
                 "A British-era fort built for strategic control of the region, reflecting Matale’s importance during the colonial period.",
-            to: "/places/matale/fort-macdowall",
+            to: "/places/matale-fort-macdowall",
             },
         ],
     }
