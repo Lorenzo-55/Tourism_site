@@ -107,7 +107,7 @@ const TangalleArticle = {
           title: "Water Activities",
           description:
             "Tangalle offers a mix of coastal activities including surfing, snorkeling, and diving, with nearby breaks and marine experiences adding variety to a beach stay.",
-          to: "/places/tangalle/water-activities",
+          to: "/places/tangalle-water-activities",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Tangalle/beaches.jpg`,
@@ -115,7 +115,7 @@ const TangalleArticle = {
           title: "Beaches",
           description:
             "Wide sandy beaches such as Goyambokka Beach and Silent Beach give Tangalle its relaxed coastal appeal and quieter atmosphere.",
-          to: "/places/tangalle/beaches",
+          to: "/places/tangalle-beaches",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Tangalle/nature.jpg`,
@@ -123,7 +123,7 @@ const TangalleArticle = {
           title: "Nature & Unique Attractions",
           description:
             "The surrounding area includes scenic coastline, rocky landscapes, and distinctive sites that add depth beyond the main beach experience.",
-          to: "/places/tangalle/nature-unique-attractions",
+          to: "/places/tangalle-nature-unique-attractions",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Tangalle/rekawa-turtles.jpg`,
@@ -131,7 +131,7 @@ const TangalleArticle = {
           title: "Turtle Watching (Rekawa Beach)",
           description:
             "Rekawa Beach is one of the region’s best-known wildlife experiences, where sea turtles are known to come ashore to nest.",
-          to: "/places/tangalle/turtle-watching-rekawa-beach",
+          to: "/places/tangalle-turtle-watching",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Tangalle/mulkirigala.jpg`,
@@ -139,7 +139,7 @@ const TangalleArticle = {
           title: "Mulkirigala Rock Temple",
           description:
             "This striking rock temple inland from Tangalle offers religious significance, elevated views, and a different cultural dimension to the coastal area.",
-          to: "/places/tangalle/mulkirigala-rock-temple",
+          to: "/places/tangalle-mulkirigala-rock-temple",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Tangalle/nilwella-gallery.jpg`,
@@ -147,7 +147,7 @@ const TangalleArticle = {
           title: "The Nilwella Underwater Gallery",
           description:
             "An unusual marine attraction near Tangalle, combining underwater exploration with a more distinctive and memorable coastal experience.",
-          to: "/places/tangalle/the-nilwella-underwater-gallery",
+          to: "/places/tangalle-nilwella-underwater-gallery",
         },
       ],
     },

@@ -102,23 +102,15 @@ const TissamaharamaArticle = {
           title: "Religious & Cultural",
           description:
             "Ancient temples and Buddhist monuments define Tissamaharama’s identity as one of the key sacred landscapes of the Ruhuna region.",
-          to: "/places/tissamaharama/religious-cultural",
+          to: "/places/tissamaharama-religious-cultural",
         },
         {
-          image: `${import.meta.env.BASE_URL}Destinations/Tissamaharama/nature-landscape.jpg`,
-          imageAlt: "Nature and landscape around Tissamaharama",
-          title: "Nature & Landscape",
+          image: `${import.meta.env.BASE_URL}Destinations/Tissamaharama/tissa-wewa.jpg`,
+          imageAlt: "Tissa Wewa reservoir",
+          title: "Tissa Wewa & Nature",
           description:
-            "Reservoirs, dry-zone scenery, and surrounding open landscapes give the area a distinct natural character beyond its temple heritage.",
-          to: "/places/tissamaharama/nature-landscape",
-        },
-        {
-          image: `${import.meta.env.BASE_URL}Destinations/Tissamaharama/wildlife-safaris.jpg`,
-          imageAlt: "Wildlife and safaris near Tissamaharama",
-          title: "Wildlife & Safaris",
-          description:
-            "As the main base for Yala and a convenient point for Bundala, Tissamaharama is central to safari travel in southern Sri Lanka.",
-          to: "/places/tissamaharama/wildlife-safaris",
+            "The large reservoir of Tissa Wewa and the surrounding dry-zone landscape offer a unique natural setting that complements the town’s historical and religious significance.",
+          to: "/places/tissamaharama-tissa-wewa",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Tissamaharama/sithulpawwa.jpg`,
@@ -126,7 +118,7 @@ const TissamaharamaArticle = {
           title: "Sithulpawwa Rock Temple",
           description:
             "An important ancient rock temple within the wider Yala region, combining religious significance with a dramatic natural setting.",
-          to: "/places/tissamaharama/sithulpawwa-rock-temple",
+          to: "/places/tissamaharama-sithulpawwa-rock-temple",
         },
       ],
     },

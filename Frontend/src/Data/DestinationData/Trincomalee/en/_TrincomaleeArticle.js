@@ -117,7 +117,7 @@ const TrincomaleeArticle = {
           title: "Landmarks & Culture",
           description:
             "Historic forts, temples, and viewpoints reflect Trincomalee’s long history and cultural significance.",
-          to: "/places/trincomalee/landmarks-culture",
+          to: "/places/trincomalee-landmarks-culture",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Trincomalee/pigeon-island.jpg`,
@@ -125,7 +125,15 @@ const TrincomaleeArticle = {
           title: "Pigeon Island",
           description:
             "A protected marine park known for coral reefs, snorkeling, and diverse marine life just off the coast.",
-          to: "/places/trincomalee/pigeon-island",
+          to: "/places/trincomalee-pigeon-island",
+        },
+        {
+          image: `${import.meta.env.BASE_URL}Destinations/Trincomalee/dolphin-watching.jpg`,
+          imageAlt: "Dolphin watching off the coast of Trincomalee",
+          title: "Dolphin Watching",
+          description:
+            "Seasonal dolphin watching excursions off the Trincomalee coast offer chances to see various species of dolphins in the Indian Ocean.",
+          to: "/places/trincomalee-dolphin-watching",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Trincomalee/hot-springs.jpg`,
@@ -133,7 +141,7 @@ const TrincomaleeArticle = {
           title: "Hot Springs",
           description:
             "Natural geothermal wells near Trincomalee, known for their warm mineral-rich waters and cultural significance.",
-          to: "/places/trincomalee/hot-springs",
+          to: "/places/trincomalee-hot-springs",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Trincomalee/diving.jpg`,
@@ -141,15 +149,7 @@ const TrincomaleeArticle = {
           title: "Diving in Trincomalee and Nilaveli",
           description:
             "Clear waters and varied dive sites make the region ideal for underwater exploration at all levels.",
-          to: "/places/trincomalee/diving",
-        },
-        {
-          image: `${import.meta.env.BASE_URL}Destinations/Trincomalee/beaches.jpg`,
-          imageAlt: "Beaches in Trincomalee region",
-          title: "Beaches",
-          description:
-            "From lively Uppuveli to tranquil Nilaveli, the coastline offers a range of beach experiences.",
-          to: "/places/trincomalee/beaches",
+          to: "/places/trincomalee-diving",
         },
       ],
     },

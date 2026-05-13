@@ -197,14 +197,28 @@ import NuwaraEliyaHikingArticle from "../../Data/DestinationData/NuwaraEliya/en/
 import NuwaraEliyaWaterfallsArticle from "../../Data/DestinationData/NuwaraEliya/en/NuwaraEliyaWaterfallsArticle.js";
 
 import TrincomaleeArticle from "../../Data/DestinationData/Trincomalee/en/_TrincomaleeArticle.js";
+import TrincomaleeLandmarksCultureArticle from "../../Data/DestinationData/Trincomalee/en/TrincomaleeLandmarksCultureArticle.js";
+import TrincomaleePigeonIslandArticle from "../../Data/DestinationData/Trincomalee/en/TrincomaleePigeonIslandArticle.js";
+import TrincomaleeKanniyaHotSpringsArticle from "../../Data/DestinationData/Trincomalee/en/TrincomaleeKanniyaHotSpringsArticle.js";
+import TrincomaleeDivingArticle from "../../Data/DestinationData/Trincomalee/en/TrincomaleeDivingArticle.js";
+import TrincomaleeDolphinWatchingArticle from "../../Data/DestinationData/Trincomalee/en/TrincomaleeDolphinWatchingArticl.js";
 
 import PassikudahArticle from "../../Data/DestinationData/Pasikudah/en/_PasikudahArticle.js";
 
 import PinnawalaArticle from "../../Data/DestinationData/Pinnawala/en/_PinnawalaArticle.js";
 
 import TangalleArticle from "../../Data/DestinationData/Tangalle/en/_TangalleArticle.js";
+import TangalleBeachesArticle from "../../Data/DestinationData/Tangalle/en/TangalleBeachesArticle.js";
+import TangalleWaterActivitiesArticle from "../../Data/DestinationData/Tangalle/en/TangalleWaterActivitiesArticle.js";
+import TangalleNatureUniqueAttractionsArticle from "../../Data/DestinationData/Tangalle/en/TangalleNatureUniqueAttractionsArticle.js";
+import TangalleTurtleWatchingRekawaBeachArticle from "../../Data/DestinationData/Tangalle/en/TangalleTurtleWatchingRekawaBeachArticle.js";
+import TangalleMulkirigalaRockTempleArticle from "../../Data/DestinationData/Tangalle/en/TangalleMulkirigalaRockTempleArticle.js";
+import TangalleNilwellaUnderwaterGalleryArticle from "../../Data/DestinationData/Tangalle/en/TangalleNilwellaUnderwaterGalleryArticle.js";
 
 import TissamaharamaArticle from "../../Data/DestinationData/Tissamaharama/en/_TissamaharamaArticle.js";
+import TissamaharamaReligiousCulturalArticle from "../../Data/DestinationData/Tissamaharama/en/TissamaharamaReligiousCulturalArticle.js";
+import TissamaharamaTissaWewaArticle from "../../Data/DestinationData/Tissamaharama/en/TissamaharamaTissaWewaArticle.js";
+import TissamaharamaSithulpawwaRockTempleArticle from "../../Data/DestinationData/Tissamaharama/en/TissamaharamaSithulpawwaRockTempleArticle.js";
 
 import UnawatunaArticle from "../../Data/DestinationData/Unawatuna/en/_UnawatunaArticle.js";
 
@@ -456,14 +470,28 @@ const placeRegistry = {
   "nuwara-eliya-waterfalls": NuwaraEliyaWaterfallsArticle,
 
   "trincomalee": TrincomaleeArticle,
+  "trincomalee-landmarks-culture": TrincomaleeLandmarksCultureArticle,
+  "trincomalee-pigeon-island": TrincomaleePigeonIslandArticle,
+  "trincomalee-hot-springs": TrincomaleeKanniyaHotSpringsArticle,
+  "trincomalee-diving": TrincomaleeDivingArticle,
+  "trincomalee-dolphin-watching": TrincomaleeDolphinWatchingArticle,
 
   "pasikudah": PassikudahArticle,
 
   "pinnawala": PinnawalaArticle,
 
   "tangalle": TangalleArticle,
+  "tangalle-beaches": TangalleBeachesArticle,
+  "tangalle-water-activities": TangalleWaterActivitiesArticle,
+  "tangalle-nature-unique-attractions": TangalleNatureUniqueAttractionsArticle,
+  "tangalle-turtle-watching": TangalleTurtleWatchingRekawaBeachArticle,
+  "tangalle-mulkirigala-rock-temple": TangalleMulkirigalaRockTempleArticle,
+  "tangalle-nilwella-underwater-gallery": TangalleNilwellaUnderwaterGalleryArticle,
 
   "tissamaharama": TissamaharamaArticle,
+  "tissamaharama-religious-cultural": TissamaharamaReligiousCulturalArticle,
+  "tissamaharama-tissa-wewa": TissamaharamaTissaWewaArticle,
+  "tissamaharama-sithulpawwa-rock-temple": TissamaharamaSithulpawwaRockTempleArticle,
 
   "unawatuna": UnawatunaArticle,
 
