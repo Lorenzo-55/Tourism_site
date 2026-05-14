@@ -57,6 +57,43 @@ const RatnapuraArticle = {
       ],
     },
 
+        {
+      type: "text",
+      id: "excursions",
+      kicker: "Excursions",
+      title: "Excursions from Ratnapura",
+      align: "left",
+      content: [
+        {
+          type: "h3",
+          text: "Sinharaja Forest Reserve",
+        },
+        {
+          type: "p",
+          text: "A UNESCO World Heritage Site and biodiversity hotspot, Sinharaja Forest Reserve is one of Sri Lanka’s last remaining primary rainforests, known for guided treks, endemic wildlife, and exceptional birdwatching opportunities.",
+        },
+        {
+          type: "button",
+          label: "Read Chapter: Sinharaja Rainforest",
+          to: "/places/sinharaja-rainforest",
+        },
+
+        {
+          type: "h3",
+          text: "Adam's Peak (Sri Pada / Samanalakande)",
+        },
+        {
+          type: "p",
+          text: "Located near Ratnapura, Adam’s Peak is a sacred mountain revered by multiple religions. Ratnapura serves as the starting point for one of the main pilgrimage routes to the summit, known for being longer and more challenging than the more commonly used paths.",
+        },
+        {
+          type: "button",
+          label: "Read Chapter: Adam’s Peak",
+          to: "/places/adams-peak",
+        },
+      ],
+    },
+
     {
       type: "cards",
       kicker: "Highlights",
@@ -68,7 +105,7 @@ const RatnapuraArticle = {
           imageAlt: "Gem experience Ratnapura",
           title: "Gem Experience",
           description: "Visit mines and markets to experience the full gem journey from extraction to trade.",
-          to: "#gems",
+          to: "/places/ratnapura-gem-experience",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Ratnapura/museum.webp`,
@@ -82,28 +119,21 @@ const RatnapuraArticle = {
           imageAlt: "Maha Saman Dewalaya",
           title: "Maha Saman Dewalaya",
           description: "A major Buddhist shrine dedicated to the guardian deity of the region.",
-          to: "/places/maha-saman-dewalaya",
+          to: "/places/ratnapura-maha-saman-dewalaya",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Ratnapura/clocktower.webp`,
           imageAlt: "Ratnapura Clock Tower",
           title: "Ratnapura Clock Tower",
           description: "A historic landmark at the center of the city.",
-          to: "#",
-        },
-        {
-          image: `${import.meta.env.BASE_URL}Destinations/Ratnapura/sinharaja.webp`,
-          imageAlt: "Sinharaja Forest Reserve",
-          title: "Sinharaja Forest Reserve",
-          description: "A UNESCO-listed rainforest rich in biodiversity, located nearby.",
-          to: "/places/sinharaja-forest-reserve",
+          to: "/places/ratnapura-clock-tower",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Ratnapura/waterfalls.webp`,
           imageAlt: "Waterfalls near Ratnapura",
           title: "Waterfalls",
           description: "The surrounding region is dotted with scenic waterfalls hidden in dense greenery.",
-          to: "#",
+          to: "/places/ratnapura-waterfalls",
         },
       ],
     },

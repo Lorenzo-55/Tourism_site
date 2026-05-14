@@ -239,6 +239,11 @@ import PolonnaruwaParakramaSamudraArticle from "../../Data/DestinationData/Polon
 import PolonnaruwaFishingParakramaSamudraArticle from "../../Data/DestinationData/Polonaruwa/en/PolonnaruwaFishingParakramaSamudraArticle.js";
 
 import RatnapuraArticle from "../../Data/DestinationData/Ratnapura/en/_RatnapuraArticle.js";
+import RatnapuraGemExperienceArticle from "../../Data/DestinationData/Ratnapura/en/RatnapuraGemExperienceArticle.js";
+import RatnapuraNationalMuseumArticle from "../../Data/DestinationData/Ratnapura/en/RatnapuraNationalMuseumArticle.js";
+import RatnapuraMahaSamanDewalayaArticle from "../../Data/DestinationData/Ratnapura/en/RatnapuraMahaSamanDewalayaArticle.js";
+import RatnapuraClockTowerArticle from "../../Data/DestinationData/Ratnapura/en/RatnapuraClockTowerArticle.js";
+import RatnapuraWaterfallsArticle from "../../Data/DestinationData/Ratnapura/en/RatnapuraWaterfallsArticle.js";
 
 import SigiriyaArticle from "../../Data/DestinationData/Sigiriya/en/_SigiriyaArticle.js";
 
@@ -524,6 +529,11 @@ const placeRegistry = {
   "polonnaruwa-fishing-parakrama-samudra": PolonnaruwaFishingParakramaSamudraArticle,
 
   "ratnapura": RatnapuraArticle,
+  "ratnapura-gem-experience": RatnapuraGemExperienceArticle,
+  "ratnapura-national-museum": RatnapuraNationalMuseumArticle,
+  "ratnapura-maha-saman-dewalaya": RatnapuraMahaSamanDewalayaArticle,
+  "ratnapura-clock-tower": RatnapuraClockTowerArticle,
+  "ratnapura-waterfalls": RatnapuraWaterfallsArticle,
 
   "sigiriya": SigiriyaArticle,
 
