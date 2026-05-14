@@ -233,6 +233,10 @@ import WeligamaHandunugodaTeaEstateArticle from "../../Data/DestinationData/Weli
 import WeligamaExcursionsArticle from "../../Data/DestinationData/Weligama/en/WeligamaExcursionsArticle.js";
 
 import PolonnaruwaArticle from "../../Data/DestinationData/Polonaruwa/en/_PolonaruwaArticle.js";
+import PolonnaruwaSacredQuadrangleArticle from "../../Data/DestinationData/Polonaruwa/en/PolonnaruwaSacredQuadrangleArticle.js";
+import PolonnaruwaRoyalPalaceArticle from "../../Data/DestinationData/Polonaruwa/en/PolonnaruwaRoyalPalaceArticle.js";
+import PolonnaruwaParakramaSamudraArticle from "../../Data/DestinationData/Polonaruwa/en/PolonnaruwaParakramaSamudraArticle.js";
+import PolonnaruwaFishingParakramaSamudraArticle from "../../Data/DestinationData/Polonaruwa/en/PolonnaruwaFishingParakramaSamudraArticle.js";
 
 import RatnapuraArticle from "../../Data/DestinationData/Ratnapura/en/_RatnapuraArticle.js";
 
@@ -514,6 +518,10 @@ const placeRegistry = {
   "weligama-excursions": WeligamaExcursionsArticle,
 
   "polonnaruwa": PolonnaruwaArticle,
+  "polonnaruwa-sacred-quadrangle": PolonnaruwaSacredQuadrangleArticle,
+  "polonnaruwa-royal-palace": PolonnaruwaRoyalPalaceArticle,
+  "polonnaruwa-parakrama-samudra": PolonnaruwaParakramaSamudraArticle,
+  "polonnaruwa-fishing-parakrama-samudra": PolonnaruwaFishingParakramaSamudraArticle,
 
   "ratnapura": RatnapuraArticle,
 
