@@ -163,28 +163,12 @@ const WeligamaArticle = {
 
   items: [
     {
-      image: `${import.meta.env.BASE_URL}Destinations/Weligama/nearby-beaches.jpg`,
-      imageAlt: "Nearby beaches and surf spots around Weligama",
-      title: "Nearby Beaches & Surf Spots",
-      description:
-        "Short rides from Weligama lead to spots like Midigama, Mirissa, and Coconut Point, offering a wider range of waves and beach experiences.",
-      to: "/places/weligama/nearby-beaches-surf-spots",
-    },
-    {
-      image: `${import.meta.env.BASE_URL}Destinations/Weligama/activities.jpg`,
-      imageAlt: "Activities on Weligama coast",
-      title: "Activities on Weligama's Coast",
-      description:
-        "Surfing, snorkeling, diving, and beachfront relaxation define the main coastal experience in Weligama.",
-      to: "/places/weligama/activities-coast",
-    },
-    {
       image: `${import.meta.env.BASE_URL}Destinations/Weligama/wildlife.jpg`,
       imageAlt: "Nature and wildlife around Weligama",
       title: "Nature & Wildlife",
       description:
         "Marine life including turtles, reef fish, and seasonal sightings of larger species can be experienced through snorkeling and diving.",
-      to: "/places/weligama/nature-wildlife",
+      to: "/places/weligama-nature-wildlife",
     },
     {
       image: `${import.meta.env.BASE_URL}Destinations/Weligama/culture.jpg`,
@@ -192,7 +176,7 @@ const WeligamaArticle = {
       title: "Cultural & Heritage",
       description:
         "Local fishing traditions, including stilt fishing, and nearby historic towns provide cultural depth beyond the beach.",
-      to: "/places/weligama/cultural-heritage",
+      to: "/places/weligama-cultural-heritage",
     },
     {
       image: `${import.meta.env.BASE_URL}Destinations/Weligama/tea.jpg`,
@@ -200,7 +184,7 @@ const WeligamaArticle = {
       title: "Tea & Local Industry",
       description:
         "Visits to nearby estates such as Handunugoda offer insight into Sri Lanka’s tea production and local industries.",
-      to: "/places/weligama/tea-local-industry",
+      to: "/places/weligama-handunugoda-tea-estate",
     },
     {
       image: `${import.meta.env.BASE_URL}Destinations/Weligama/excursions.jpg`,
@@ -208,15 +192,7 @@ const WeligamaArticle = {
       title: "Excursions",
       description:
         "Weligama is a convenient base for trips to Mirissa, Galle, and other south coast destinations.",
-      to: "/places/weligama/excursions",
-    },
-    {
-      image: `${import.meta.env.BASE_URL}Destinations/Weligama/wellness.jpg`,
-      imageAlt: "Wellness and yoga in Weligama",
-      title: "Wellness",
-      description:
-        "Yoga classes, surf camps, and beachfront relaxation spaces make Weligama a popular spot for wellness-focused stays.",
-      to: "/places/weligama/wellness",
+      to: "/places/weligama-excursions",
     },
   ],
 }

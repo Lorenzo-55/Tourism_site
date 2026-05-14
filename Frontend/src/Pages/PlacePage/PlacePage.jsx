@@ -221,8 +221,16 @@ import TissamaharamaTissaWewaArticle from "../../Data/DestinationData/Tissamahar
 import TissamaharamaSithulpawwaRockTempleArticle from "../../Data/DestinationData/Tissamaharama/en/TissamaharamaSithulpawwaRockTempleArticle.js";
 
 import UnawatunaArticle from "../../Data/DestinationData/Unawatuna/en/_UnawatunaArticle.js";
+import UnawatunaBeachesArticle from "../../Data/DestinationData/Unawatuna/en/UnawatunaBeachesArticle.js";
+import UnawatunaNearbyHighlightsArticle from "../../Data/DestinationData/Unawatuna/en/UnawatunaNearbyHighlightsArticle.js";
+import UnawatunaWildlifeArticle from "../../Data/DestinationData/Unawatuna/en/UnawatunaWildlifeArticl.js";  
+import UnawatunaYatagalaRajamahaViharayaArticle from "../../Data/DestinationData/Unawatuna/en/UnawatunaYatagalaRajamahaViharayaArticle.js";
 
 import WeligamaArticle from "../../Data/DestinationData/Weligama/en/_WeligamaArticle.js";
+import WeligamaNatureWildlifeArticle from "../../Data/DestinationData/Weligama/en/WeligamaNatureWildlifeArticle.js";
+import WeligamaCulturalHeritageArticle from "../../Data/DestinationData/Weligama/en/WeligamaCulturalHeritageArticle.js";
+import WeligamaHandunugodaTeaEstateArticle from "../../Data/DestinationData/Weligama/en/WeligamaHandunugodaTeaEstateArticle.js";
+import WeligamaExcursionsArticle from "../../Data/DestinationData/Weligama/en/WeligamaExcursionsArticle.js";
 
 import PolonnaruwaArticle from "../../Data/DestinationData/Polonaruwa/en/_PolonaruwaArticle.js";
 
@@ -494,8 +502,16 @@ const placeRegistry = {
   "tissamaharama-sithulpawwa-rock-temple": TissamaharamaSithulpawwaRockTempleArticle,
 
   "unawatuna": UnawatunaArticle,
+  "unawatuna-beaches": UnawatunaBeachesArticle,
+  "unawatuna-nearby-highlights": UnawatunaNearbyHighlightsArticle,
+  "unawatuna-wildlife": UnawatunaWildlifeArticle,
+  "unawatuna-yatagala-rajamaha-viharaya": UnawatunaYatagalaRajamahaViharayaArticle,
 
   "weligama": WeligamaArticle,
+  "weligama-nature-wildlife": WeligamaNatureWildlifeArticle,
+  "weligama-cultural-heritage": WeligamaCulturalHeritageArticle,
+  "weligama-handunugoda-tea-estate": WeligamaHandunugodaTeaEstateArticle,
+  "weligama-excursions": WeligamaExcursionsArticle,
 
   "polonnaruwa": PolonnaruwaArticle,
 

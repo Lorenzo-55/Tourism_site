@@ -144,7 +144,7 @@ const UnawatunaArticle = {
           title: "Beaches",
           description:
             "From the main bay to quieter spots like Jungle Beach and Dalawella, Unawatuna offers a range of coastal experiences.",
-          to: "/places/unawatuna/beaches",
+          to: "/places/unawatuna-beaches",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Unawatuna/nearby.jpg`,
@@ -152,7 +152,7 @@ const UnawatunaArticle = {
           title: "Nearby Highlights",
           description:
             "Close proximity to Galle and other landmarks makes Unawatuna a convenient base for exploring the south coast.",
-          to: "/places/unawatuna/nearby-highlights",
+          to: "/places/unawatuna-nearby-highlights",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Unawatuna/wildlife.jpg`,
@@ -160,7 +160,7 @@ const UnawatunaArticle = {
           title: "Wildlife",
           description:
             "Sea turtles, reef life, and nearby whale watching opportunities make the area appealing for marine wildlife experiences.",
-          to: "/places/unawatuna/wildlife",
+          to: "/places/unawatuna-wildlife",
         },
         {
           image: `${import.meta.env.BASE_URL}Destinations/Unawatuna/yatagala.jpg`,
@@ -168,7 +168,7 @@ const UnawatunaArticle = {
           title: "Yatagala Rajamaha Viharaya",
           description:
             "A historic inland temple offering a peaceful contrast to the coastal setting of Unawatuna.",
-          to: "/places/unawatuna/yatagala-rajamaha-viharaya",
+          to: "/places/unawatuna-yatagala-rajamaha-viharaya",
         },
       ],
     },
