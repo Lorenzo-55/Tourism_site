@@ -250,6 +250,11 @@ import SigiriyaArticle from "../../Data/DestinationData/Sigiriya/en/_SigiriyaArt
 import MoratuwaArticle from "../../Data/DestinationData/Moratuwa/en/_MoratuwaArticle.js";
 
 import KalutaraArticle from "../../Data/DestinationData/Kalutara/en/_KalutaraArticle.js";
+import KalutaraBodhiyaArticle from "../../Data/DestinationData/Kalutara/en/KalutaraBodhiyaArticle.js";
+import KalutaraKaluGangaArticle from "../../Data/DestinationData/Kalutara/en/KalutaraKaluGangaArticle.js";
+import KalutaraRichmondCastleArticle from "../../Data/DestinationData/Kalutara/en/KalutaraRichmondCastleArticle.js";
+import KalutaraThudugalaEllaArticle from "../../Data/DestinationData/Kalutara/en/KalutaraThudugalaEllaArticle.js";
+import KalutaraDivingAndSnorkelingArticle from "../../Data/DestinationData/Kalutara/en/KalutaraDivingAndSnorkelingArticle.js";
 
 //================================== Parks ==================================
 
@@ -540,6 +545,11 @@ const placeRegistry = {
   "moratuwa": MoratuwaArticle,
 
   "kalutara": KalutaraArticle,
+  "kalutara-bodhiya": KalutaraBodhiyaArticle,
+  "kalutara-kalu-ganga": KalutaraKaluGangaArticle,
+  "kalutara-richmond-castle": KalutaraRichmondCastleArticle,
+  "kalutara-thudugala-ella": KalutaraThudugalaEllaArticle,
+  "kalutara-diving-snorkeling": KalutaraDivingAndSnorkelingArticle,
 
   //======================= Parks =======================
 
