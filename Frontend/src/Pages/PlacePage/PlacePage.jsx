@@ -246,8 +246,18 @@ import RatnapuraClockTowerArticle from "../../Data/DestinationData/Ratnapura/en/
 import RatnapuraWaterfallsArticle from "../../Data/DestinationData/Ratnapura/en/RatnapuraWaterfallsArticle.js";
 
 import SigiriyaArticle from "../../Data/DestinationData/Sigiriya/en/_SigiriyaArticle.js";
+import SigiriyaLionRockArticle from "../../Data/DestinationData/Sigiriya/en/SigiriyaLionRockArticle.js";
+import SigiriyaPidurangalaRockArticle from "../../Data/DestinationData/Sigiriya/en/SigiriyaPidurangalaRockArticle.js";
+import SigiriyaTemplesAndHeritageArticle from "../../Data/DestinationData/Sigiriya/en/SigiriyaTemplesAndHeritageArticle.js";
+import SigiriyaHiriwadunnaVillageTourArticle from "../../Data/DestinationData/Sigiriya/en/SigiriyaHiriwadunnaVillageTourArticl.js";
+import SigiriyaMuseumsAndLocalLifeArticle from "../../Data/DestinationData/Sigiriya/en/SigiriyaMuseumsAndLocalLifeArticle.js";
 
 import MoratuwaArticle from "../../Data/DestinationData/Moratuwa/en/_MoratuwaArticle.js";
+import MoratuwaNatureWaterArticle from "../../Data/DestinationData/Moratuwa/en/MoratuwaNatureWaterArticle.js";
+import MoratuwaVeeraPuranAppuArticle from "../../Data/DestinationData/Moratuwa/en/MoratuwaVeeraPuranAppuArticle.js";
+import MoratuwaReligiousSitesArticle from "../../Data/DestinationData/Moratuwa/en/MoratuwaReligiousSitesArticle.js";
+import MoratuwaUniversityOfMoratuwaArticle from "../../Data/DestinationData/Moratuwa/en/MoratuwaUniversityOfMoratuwaArticle.js";
+import DehiwalaZooArticle from "../../Data/DestinationData/Moratuwa/en/MoratuwaDehiwalaZooArticle.js";
 
 import KalutaraArticle from "../../Data/DestinationData/Kalutara/en/_KalutaraArticle.js";
 import KalutaraBodhiyaArticle from "../../Data/DestinationData/Kalutara/en/KalutaraBodhiyaArticle.js";
@@ -541,8 +551,18 @@ const placeRegistry = {
   "ratnapura-waterfalls": RatnapuraWaterfallsArticle,
 
   "sigiriya": SigiriyaArticle,
+  "sigiriya-lion-rock": SigiriyaLionRockArticle,
+  "sigiriya-pidurangala-rock": SigiriyaPidurangalaRockArticle,  
+  "sigiriya-temples-heritage": SigiriyaTemplesAndHeritageArticle,
+  "sigiriya-village-tour": SigiriyaHiriwadunnaVillageTourArticle,
+  "sigiriya-museums-local-life": SigiriyaMuseumsAndLocalLifeArticle,
 
   "moratuwa": MoratuwaArticle,
+  "moratuwa-nature-water": MoratuwaNatureWaterArticle,
+  "moratuwa-veera-puran-appu": MoratuwaVeeraPuranAppuArticle,
+  "moratuwa-religious-sites": MoratuwaReligiousSitesArticle,
+  "moratuwa-university": MoratuwaUniversityOfMoratuwaArticle,
+  "moratuwa-dehiwala-zoo": DehiwalaZooArticle,
 
   "kalutara": KalutaraArticle,
   "kalutara-bodhiya": KalutaraBodhiyaArticle,
